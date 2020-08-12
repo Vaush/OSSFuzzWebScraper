@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5062520190533632
+
+Project: gdal
+
+Fuzzer: libFuzzer_gdal_hfa_fuzzer
+
+Fuzz target binary: hfa_fuzzer
+
+Job Type: libfuzzer_ubsan_gdal
+
+Platform Id: linux
+
+Crash Type: Index-out-of-bounds
+
+Crash Address:
+
+Crash State:
+
+CPLErrorSetState
+
+GDALPamDataset::TryLoadXML
+
+HFADataset::Open
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_gdal&range=201705131648:201705141650
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5062520190533632
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

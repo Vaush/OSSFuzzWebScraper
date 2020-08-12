@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6058391271112704
+
+Project: proj4
+
+Fuzzer: afl_proj4_standard_fuzzer
+
+Fuzz target binary: standard_fuzzer
+
+Job Type: afl_asan_proj4
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow WRITE {*}
+
+Crash Address: 0x7f2bb94a2421
+
+Crash State:
+
+pj_open_lib_ex
+
+pj_gridinfo_init
+
+pj_gridlist_merge_gridfile
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6058391271112704
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

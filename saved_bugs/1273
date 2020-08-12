@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6428529925292032
+
+Project: wireshark
+
+Fuzzer: libFuzzer_wireshark_fuzzshark_udp_port-bootp
+
+Fuzz target binary: fuzzshark_udp_port-bootp
+
+Job Type: libfuzzer_asan_wireshark
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x6120000008f3
+
+Crash State:
+
+dissect_packetcable_bsdpd_vendor_info_heur
+
+dissector_try_heuristic
+
+dissect_bootpopt_vendor_specific_info
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_wireshark&range=201704231645:201704251645
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6428529925292032
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

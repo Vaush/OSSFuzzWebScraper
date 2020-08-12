@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6238658929098752
+
+Project: poppler
+
+Fuzzer: libFuzzer_poppler_pdf_fuzzer
+
+Fuzz target binary: pdf_fuzzer
+
+Job Type: libfuzzer_msan_poppler
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+Gfx::fillPatch
+
+Gfx::doPatchMeshShFill
+
+Gfx::doShadingPatternFill
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6238658929098752
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

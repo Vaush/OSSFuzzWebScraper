@@ -1,0 +1,40 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6555791318319104
+
+Project: lcms
+
+Fuzzer: libFuzzer_lcms_cmsIT8_load_fuzzer
+
+Fuzz target binary: cmsIT8_load_fuzzer
+
+Job Type: libfuzzer_asan_lcms
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x283d3d3d3d45
+
+Crash State:
+
+NextCh
+
+InSymbol
+
+HeaderSection
+
+Recommended Security Severity: Medium
+
+Minimized Testcase (3.11 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97mhCfFCwTkBaM0gHps_2elHpeCXLm9dhZSkm7cLnohjAi84uh8faNEHTUpjcQ6xrgz3soh7Y3m7FpImy106WDBXBIyo08PZoXBfQzQq_dkNz83o-LVI71TdbHrbgc9kK8PpMketN5Xz9RDNZg8d2SyaoQ3uHgSJ5TsY5ubXMGmRvf4i9U?testcase_id=6555791318319104
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

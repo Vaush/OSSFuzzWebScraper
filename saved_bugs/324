@@ -1,0 +1,48 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4860875387174912
+
+Project: openssl
+
+Fuzzer: libFuzzer_openssl_client
+
+Fuzz target binary: client
+
+Job Type: libfuzzer_asan_openssl
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+pkt->subs != NULL && len != 0
+
+WPACKET_reserve_bytes
+
+WPACKET_allocate_bytes
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_openssl&range=201612232021:201612240725
+
+Minimized Testcase (0.46 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95bbTu4LGfzNlo-8A5MEd-FNwPK7g2-AV93B-xYV3Ucz8sh8DUDaUzbjPbg7Ixf8986z1JZHX9i0k1vjm-BvfvqclTHJwwaPM99m_YRrlpkR9XOscreP-XOoB2bov8p4mDs5UjifrqsSbEV5DyBHQiu7x4hFMTKujbuzRCUvr-NP9LJAmw?testcase_id=4860875387174912
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

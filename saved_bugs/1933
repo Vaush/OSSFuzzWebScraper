@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5918129932730368
+
+Project: sqlite3
+
+Fuzzer: afl_sqlite3_ossfuzz
+
+Fuzz target binary: ossfuzz
+
+Job Type: afl_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 8
+
+Crash Address: 0x0000018be8d0
+
+Crash State:
+
+functionSearch
+
+sqlite3InsertBuiltinFuncs
+
+sqlite3_initialize
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_sqlite3&range=201705291654:201705301654
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5918129932730368
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+

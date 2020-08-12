@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6149379121479680
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+SotStorage::OpenOLEStorage
+
+SdrPowerPointImport::ImportOLE
+
+SvxMSDffManager::ImportGraphic
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703191631:201703201630
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96DzT7vRhZEXNrff_cevza5HoeADWPWiEFVTcKpCKy5NvHxUHsFPkkMffnKQHT7iWvETL8Fp4il1oC1oz2qKxkqZc865-njJS_YQJsIndRInDWy853_12vp1zBmzr5Mu4_3nQ6g6VZwCkS1vfOuvYBjCNzMmwdAm2m51MHzOgoma0xRMQ_0hDqkhc2KVMi2GMHW6qT-M_VM5klW3IZ81lSzpdhTqPOpJnNai_ETd70I0RSEDHf83lHqkc5ucsRot7Ybvi0AzgX5dTO1zpefp-ZH7uLWXl4ugj4PLZRKSyMuCjYX5lK7hk-QoFvwuiFIc_Jvd3ayYj4leISBeH7cupJc-2fcSzgnT1eAA7jcdxQ9bWM0h6tvggJglmppItpWXMB1WZ5hjm4sIMc3D0c0cdHk7uQ_-Gc3jhMNegqnBdEXkGO92_I?testcase_id=6149379121479680
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

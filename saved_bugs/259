@@ -1,0 +1,38 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5046803011469312
+
+Project: tpm2
+
+Fuzzer: libFuzzer_tpm2_execute_command_fuzzer
+
+Fuzz target binary: tpm2_execute_command_fuzzer
+
+Job Type: libfuzzer_ubsan_tpm2
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+TPMI_DH_OBJECT_Unmarshal
+
+ParseHandleBuffer
+
+ExecuteCommand
+
+Minimized Testcase (0.01 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97aZJzbvzb2jHAPT4aqKGfeybE95obh1dEYC122DRN_ucSjIu2ALgQDaw9EXZvdnPKCErz1IfFvAuIcDQkoEIgRQ0MU5FTfWIILdDi56q-dqpEOafjp2phuF3_POosO3HVeVlMcsKrIyHWuxq0X2_NDCSw3xoZa1GszdAQDEvLAr0kQ1yU?testcase_id=5046803011469312
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

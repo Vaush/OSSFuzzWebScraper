@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5768066960457728
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_wqfuzzer
+
+Fuzz target binary: wqfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+
+void std::__1::allocator_traits<std::__1::allocator<std::__1::basic_string<char,
+
+std::__1::enable_if<__is_forward_iterator<std::__1::basic_string<char, std::__1:
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201812200309:201812210302
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5768066960457728
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

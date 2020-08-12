@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5660357915312128
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-isel-fuzzer--x86_64-O2
+
+Fuzz target binary: llvm-isel-fuzzer--x86_64-O2
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+N2C->getAPIntValue().ult(NumElts) && "Out of range element index"
+
+llvm::X86TargetLowering::LowerINSERT_VECTOR_ELT
+
+llvm::X86TargetLowering::LowerOperation
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201907030308:201907040311
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5660357915312128
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

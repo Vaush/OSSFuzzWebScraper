@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5709491979419648
+
+Project: json
+
+Fuzzer: libFuzzer_json_parse_bson_fuzzer
+
+Fuzz target binary: parse_bson_fuzzer
+
+Job Type: libfuzzer_ubsan_json
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+bool nlohmann::detail::binary_reader<nlohmann::basic_json<std::__1::map, std::__
+
+nlohmann::detail::binary_reader<nlohmann::basic_json<std::__1::map, std::__1::ve
+
+nlohmann::detail::binary_reader<nlohmann::basic_json<std::__1::map, std::__1::ve
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_json&range=201810270154:201810280156
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5709491979419648
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

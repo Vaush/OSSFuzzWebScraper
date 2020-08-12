@@ -1,0 +1,30 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5023940269309952
+
+Job Type: test_vuln
+
+Crash Type: Heap-buffer-overflow WRITE 1
+
+Crash Address: 0x609000000085
+
+Crash State:
+
+vuln
+
+vuln
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95_rmKAKyQuvyAtpWttZGhxFpYMyVL5n0PINDhPZT2PV9HwNYEA6VCi9z1VinAhoYOtzq4mvi6PzBzL0cOLae9KgFOTEv2qOcamBuFYapPIqNC7Yaay8lvAnvbBA9-9pS7L6lX5eerhuUR37eIifHtMapTtnhlbBkltqqX4HpYs_-m3Lq_MDLcRJI9XEvMO1IgtZ4CYOsFzLUqSclJEthz7zyWZ6dgjzENXo-mvmAWBoo6oYR-nQjAcTxPmdOckWf6t3YN7u3MLWhotpL98Baw3hm7zDVRmOkNnL-YGQsbP5jX3OhcGi1kNE0oliUllAMLbu_pQNiig2G3nWJGx0Y0QIlwDYVUpYx65muWcoi6D37y7SEjqSluBcROzXZDDNxIGpnxh?testcase_id=5023940269309952
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

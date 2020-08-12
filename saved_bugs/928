@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4788008035287040
+
+Project: ots
+
+Fuzzer: libFuzzer_ots_ots-fuzzer
+
+Fuzz target binary: ots-fuzzer
+
+Job Type: libfuzzer_asan_ots
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+std::__1::__vector_base<unsigned int, std::__1::allocator<unsigned int> >::~__ve
+
+ots::OpenTypeCFF::~OpenTypeCFF
+
+ots::OpenTypeCFF::~OpenTypeCFF
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_ots&range=201703201614:201703211108
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95pY6U_I43IxaXtGbMs7xhB98gRaXsNmIt_HdFsxuGFSkLTRxkmOZHFoC-IwtVBNH-xvAgTMPMbckORl3TGnmC-a-juQnAHb4GMZqfKVrRBm_V7OizxUybzlPTKPZNGOKrpOdoZAgAFvIak0-DGQj2VJIzU2Zz336YzO5MVR4KDmcTn4LZTHezTDabtsf6fg-CZgqKw64R5DxlMfxuo3hNLWUnRjslz2p_6TtI0OaOJVaa3ooCaD3-jMag35_Qc1FxqkIS9hxHMrySPqV6JDGnhfQ-b8bb7nxp8wMGYPIbThwrHDgg3i1qA_1A1IcIYIyfu5cBH75AV5L6xxmwr-ufLZB00u2725Ees1z10mmN94Eelmd7zl3RhZt0mZB3vqqbyqWmN5gc4l1HoQoCYubiznM3Q5vKQiwi5W4J0SeNrvyApCL4?testcase_id=4788008035287040
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5900099865542656
+
+Project: wireshark
+
+Fuzzer: libFuzzer_wireshark_fuzzshark_ip
+
+Fuzz target binary: fuzzshark_ip
+
+Job Type: libfuzzer_asan_wireshark
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x606000055bb9
+
+Crash State:
+
+OALMarshal_UncompressValue
+
+DOFObjectID_Create_Unmarshal
+
+dof_oid_create_standard_string
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_wireshark&range=201704181620:201704191700
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5900099865542656
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

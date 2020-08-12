@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4888222544953344
+
+Project: gdal
+
+Fuzzer: libFuzzer_gdal_cad_fuzzer
+
+Fuzz target binary: cad_fuzzer
+
+Job Type: libfuzzer_asan_gdal
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+Read2B
+
+SkipBITDOUBLE
+
+DWGFileRNUMBER::ReadHeader
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_gdal&range=201705241655:201705251645
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4888222544953344
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

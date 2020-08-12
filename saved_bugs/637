@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5713159862091776
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_VIDEO_AV_CODEC_ID_RV40_fuzzer
+
+Fuzz target binary: ffmpeg_VIDEO_AV_CODEC_ID_RV40_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+rv40_h_weak_loop_filter
+
+rv40_adaptive_loop_filter
+
+rv40_loop_filter
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv958uyFP1JVQX3FDWewRVUdXlf6VkHegDRIKMxULGXfX0eoXYGSx_mJ9jDhdJPs04b9QOnS_V1lMMKn0iagmkonDBSkEEYrD8uSnPOtAWDY9UPgQ2ozPfKiB5I0gYC1QRgJ1OdL9GqL6RzurHwYPnjazDqtGmOGlJnkAhh3MYJn6nOxn7OlwBtm_lD96be6ZgVqZb0eHC4DaV4e44MYOIdIwxdeIOWfHzEZmejm2Jb2RvjrAhUDQGw_vK7NOvAS4vhauHA14sUXLRPBXrhAcRBnhqh-dOt8ZLfKifcnQKYlaWVCCcR9YhHrpDCkndGCIvpNQSyFCZMkDcwbk9ef5oWiNCPbkPGNvhYi7hr2NalbOv-RLBkk6OePqh6fyBPqegoygUld4M1n0trMzs282jYX2wNUqC4Hc6h-mODguASUTRJjiALM?testcase_id=5713159862091776
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

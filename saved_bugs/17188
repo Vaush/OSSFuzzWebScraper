@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5687759599042560
+
+Project: cryptofuzz
+
+Fuzzing Engine: afl
+
+Fuzz Target: cryptofuzz-openssl
+
+Job Type: afl_asan_cryptofuzz
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+cryptofuzz::module::OpenSSL::OpKDF_SSH
+
+cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::KDF_SSH>::ca
+
+cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::KDF_SSH>::Ru
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_cryptofuzz&range=201909060320:201909140230
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5687759599042560
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

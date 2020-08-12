@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4813232304816128
+
+Project: tor
+
+Fuzzer: libFuzzer_tor_oss-fuzz-consensus
+
+Fuzz target binary: oss-fuzz-consensus
+
+Job Type: libfuzzer_ubsan_tor
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+tor_version_compare
+
+tor_version_as_new_as
+
+routerstatus_parse_entry_from_string
+
+Sanitizer: undefined (UBSAN)
+
+Minimized Testcase (1.69 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv948svF82tHtIu5z20KAR5T7iD8zatHFXAwmLEHL0Hj04FGZyYNBv0mIS_U9i0BSlQx-ZMNommoHoAmXpLF07kveXW1f4KijWOKFYJ335evCQ232mdxOM5ruAR91Pj2gwbGJoTO2RSvgTKFf98kfG9Cm8ygnuFzT2g5jo_pEf0efcij9dbqV4CmVUMUuSHWjf_lYHPgE8f2SQGo58CV1ylDc7LZXD9pDpqVuP2aJPrfDKdKu6rmPRhnQRxkzo-8iP1cKOs-UyCgFVf6MhN4_SVEwytLwNRxkqV9sWO4uNKtcaX9ug5Te5voT8GFhFxCYuuo_MViwzsR4fgsC9ztvoQ89ADkWxkovIzdfMPcYJP7MMCshW4_m4p-72U5p3hZerbQlgDrL_vkRDWllgPi56CTX0RfcNJFIHNSNCbdl64LMuzANRMw?testcase_id=4813232304816128
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

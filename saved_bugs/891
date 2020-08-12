@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5058954033889280
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_olefuzzer
+
+Fuzz target binary: olefuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+ucbhelper::ensureContentProviderForURL
+
+ucbhelper::getContentThrow
+
+ucbhelper::Content::Content
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703141338:201703141931
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97iBbrSaEoBWS714UB31NCAw6UsRtSIPe5HN30Iq9a1O-vqR1rQkNj5062VCih1vaXLlU7BhTxspRDZP29v7_dwJqdRB0fIBhHTxPvwYS3s60J7QNos17QchUhvsf5qs1qNX4uySRvE_sHmGwHnvoQA1aP5g0mSru9AQ2mWAev_yg1QE8WIG_RVdOgcoZbTKthffwCj54gpYtaAROb1USjXijoB6LeR8sZ9IG1atlJP6YFGNPNiaS6XMZW-eBcgvIJetLKykDERiNowl0CIHLCCfRDvQKQXPVLmHjy3-wm1oZGk_b3fhGVyPOBWslDHw1_-dk9dZjyH9sgnEb0ViHLQHAmMJbfnv3Dd4oZNQkVrMi-g5HI44sAJdCRtIC-I0HrOdaduW0pozWJBtHuvgtzTf9JButJPzKXXFUkfU-v8ZHY1gb8?testcase_id=5058954033889280
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

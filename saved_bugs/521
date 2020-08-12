@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4642927959605248
+
+Project: ots
+
+Fuzzer: libFuzzer_ots_ots-fuzzer
+
+Fuzz target binary: ots-fuzzer
+
+Job Type: libfuzzer_ubsan_ots
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+ParsePairPosFormat2
+
+ParsePairAdjustment
+
+ots::LookupSubtableParser::Parse
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94qcdfiIgZTyICMN-w5cqJdGHkyanA9THAQgtGVRtXEf-hMKqbCJt4X-2CX62v8g2UDryE7vbNnm5sCmO3yHITihVzF2XvBvKtllZMMqMpOdj0WtBmq0omsR1XBKCN_7bMoTWznlMnJZBMdptELC1cShp_6NdsnQ7YyJIeIDcCsvGDcYnofqkIZYvYYtQekYSqesKnd2KBP_fVE7AGqFxmTaJY6xm2Hmmr1PP3eVthJNolQ_xUOC8NXsfouuF4VfcakxG4UU1yP7Uos61wtA30EWoijKQc3tRVEi-BDgC0hLDQ1f2bbu5F-_qbkZRkxWVHPTf2gJ9j-uBx-Yj629dqtGvVPfMB73-hv6Jy28tQ81bT2pMzZq80_ERNwonJqbL50BD7adsOOC3wjpdXAAHDxn1yP5mun9yV_83dJqE_GrYl2If0?testcase_id=4642927959605248
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

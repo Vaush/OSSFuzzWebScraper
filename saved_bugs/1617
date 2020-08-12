@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5193824051658752
+
+Project: ots
+
+Fuzzer: libFuzzer_ots_ots-fuzzer
+
+Fuzz target binary: ots-fuzzer
+
+Job Type: libfuzzer_ubsan_ots
+
+Platform Id: linux
+
+Crash Type: Misaligned-address
+
+Crash Address:
+
+Crash State:
+
+woff2::ComputeULongSum
+
+woff2::ReconstructFont
+
+woff2::ConvertWOFF2ToTTF
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ots&range=201705141656:201705151654
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5193824051658752
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

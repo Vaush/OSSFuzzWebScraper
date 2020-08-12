@@ -1,0 +1,38 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6311985729765376
+
+Fuzzer: libFuzzer_libchewing_chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: Negative-size-param
+
+Crash Address:
+
+Crash State:
+
+ChewingKillChar
+
+KillFromLeft
+
+ReleaseChiSymbolBuf
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libchewing&range=201610201020:201610201348
+
+Minimized Testcase (8.70 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96Uw3H8ORpd_jtqmw5bM-bppP0XRmkTqkw801K-1zerxw6wW3Rm8rjMHj_KbIm0rdg2_Yp9siWkEqn-0ObBwJwl1Nly3T1G0Fnu7gSRPYWPrANerJhqx4pu6g_mmxPThnk0EDWv78aXcEeyfyjb4u8xYXBjzyTDtVh5qHzqa8t42HRDoYA?testcase_id=6311985729765376
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

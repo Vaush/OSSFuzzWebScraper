@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6643160214142976
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_x509_parser_fuzzer
+
+Job Type: libfuzzer_asan_gnutls
+
+Platform Id: linux
+
+Crash Type: Heap-use-after-free READ 2
+
+Crash Address: 0x60d0000002b0
+
+Crash State:
+
+_gnutls_buffer_append_printf
+
+print_proxy
+
+print_extension
+
+Recommended Security Severity: High
+
+Minimized Testcase (2.17 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv962uNlAEahaTAtcW40sZ0n875SFk3IlnwfvHLofNk8Yf-jrhAWLVVdZbG_G2K9Q3AU5VIiwOPRARQkMRsV0T2iL3-t6Mwzqs9Jd3cf3lbbEGWRop8iQxGpgujPpdBTx6zSVRO1rJMCx22ju-1RXuVs_yrXISkNleY5UeN-j37A0XwYNdCQ?testcase_id=6643160214142976
+
+Issue manually filed by: aarya
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

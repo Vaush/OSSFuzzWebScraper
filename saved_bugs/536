@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4778153528524800
+
+Project: libtsm
+
+Fuzzer: libFuzzer_libtsm_fuzzer
+
+Fuzz target binary: libtsm_fuzzer
+
+Job Type: libfuzzer_ubsan_libtsm
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address:
+
+Crash State:
+
+tsm_screen_tab_left
+
+parse_data
+
+tsm_vte_input
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97WHAFwmIE8sU0kycUiXkCMm22-K2gCHTeM9CO_btyTqLaVIH4tDU_FgqNR2G3zqz4xHE9w0O0upFysFe-4ahm_0apqmimNgtBeG64s8UCLKuMt5nt2vrf5cwgsP328BZhGJrSPBlx5nPehnrO54oaN2maXhdnMQcMvIyuDWb4zBomW1SvHnF7PzrQWK9jbC6aEogKSf2hyElFDmQiYKz6-4tDx7T8UObkh6wbdhK8I5PTkAs1OevBMZiDZ0fIb2apwpxrH-vs6vr0s7VjtQPwxy0Zi7s9QXy-oudpv3s9JiLzqigh-XkE-3ozK0YiCOeJ2hrtsa-zi8Hlt-Ke7NLGmbYZZSCgzYiUKOUzgcW8QksRRrp3PmPvFP5VPE-slbdNzz4oRfhYKO-9v58KJbaDMzk9L8ZwVPPSpX9FPSLtATYgTHGA?testcase_id=4778153528524800
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

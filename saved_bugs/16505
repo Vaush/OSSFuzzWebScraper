@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5140635270512640
+
+Project: libavc
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: avc_dec_fuzzer
+
+Job Type: libfuzzer_asan_libavc
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x611000001fa8
+
+Crash State:
+
+ih264d_compute_bs_non_mbaff_thread
+
+ih264d_recon_deblk_slice
+
+ih264d_recon_deblk_thread
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libavc&revision=201908170410
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5140635270512640
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

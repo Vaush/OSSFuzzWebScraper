@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4966454547972096
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_sdafuzzer
+
+Fuzz target binary: sdafuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+StarBitmap::readBitmapData
+
+StarBitmap::readBitmap
+
+SDGParser::readBitmap
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704051628:201704052230
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96yAigv00sLncrLe7VDQyrUqU4tounNADjNz9SDb0TmLbWcLMNBCb6RxXpxowVG926qkISy52mou2CQC6zId7Oyo8W2oDSPyj4rA_oCNzTUxSHTIbkmmgMIz7ZWew0wUe_lHc5HV4s_s6pWi1N6C73henBQ75HAV-Di3F_SD5YPzvJ_xjgo1oM7NJfB3rAwoFJ6czkUrIV1YlkXDNZ5R6sCrSxY5EEk8erdRZlzZsdu9mWJAutKKARhxJp2GaQ-USwBsuztOuiPETL-Gr9Dw3iHGUL9qrWwLkJpELzAosDvzmPxIDk_ZpN8q2QPjnsS4RR0RwsUBkwEw03xpapF15Z4skYOApQvFM4svvjvg_FTbhpmPi3ne6-Y7_X5BxaIiUfHp4tv?testcase_id=4966454547972096
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

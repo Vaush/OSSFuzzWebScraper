@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5079705933316096
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-isel-fuzzer--x86_64-O2
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+idx < size()
+
+DAGCombiner::visit
+
+DAGCombiner::combine
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201908290314:201908310326
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5079705933316096
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

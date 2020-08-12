@@ -1,0 +1,68 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=4841641154445312
+
+Project: ffmpeg
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: ffmpeg_DEMUXER_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+read_probe
+
+av_probe_input_format3
+
+av_probe_input_format2
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ffmpeg&range=202001290358:202001292321
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4841641154445312
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+
+Comments on individual Monorail issues are not monitored.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

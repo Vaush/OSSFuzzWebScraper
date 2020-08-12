@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4593550566096896
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_dxffuzzer
+
+Fuzz target binary: dxffuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+DXFVector::DXFVector
+
+DXFLWPolyLineEntity::EvaluateGroup
+
+DXFBasicEntity::Read
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libreoffice&range=201701120838:201701121428
+
+Minimized Testcase (0.22 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95H_76SRsSbPse7l8FeXlSdCJ1tNcA0scPPtWiu_l0h87D0iSUuQM0Bzxzczbh8tiHmNvN9hmCeBMTuVhahN_AxcVYYMXHpeKtYchd7wXKNOQp9dKj91BoxpBpw7cVa6dK6FtK6MRn0sSiVLu32XGyz4vNSstcqlRs2PZUgL2x1Jzu1ou6Th1ugw6esI6ceFdlORHlDoCrkj8eAiAbnmsWWu40WC0C3fFEEe2x2LqiD79D4MU6qOPeza2PNqQJZHSSDNKuLvLN00KYvQvpl7Prgt-BZqbJmp6anJLP1URGJyKnjBbNrfzyofzmE1ZScXYQ__06n9i7Twk47_b_P3INnVxoTkmklb7Pj2CSQtBRwQQ4Wm34zl8BZj1LLzYhASczIeFAmSKYo3UeYIvo3G4t7s7BFIdh8pafWZXHHdQnn9COIltE?testcase_id=4593550566096896
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5614051091546112
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_clang-proto-fuzzer
+
+Fuzz target binary: clang-proto-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+isa<X>(Val) && "cast<Ty>() argument of incompatible type!"
+
+llvm::sinkRegion
+
+LoopInvariantCodeMotion::runOnLoop
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201711030507:201711040508
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5614051091546112
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

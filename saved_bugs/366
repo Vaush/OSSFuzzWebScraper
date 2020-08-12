@@ -1,0 +1,52 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6389881328631808
+
+Project: json
+
+Fuzzer: libFuzzer_json_fuzzer-parse_cbor
+
+Fuzz target binary: fuzzer-parse_cbor
+
+Job Type: libfuzzer_asan_json
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x6020000000d1
+
+Crash State:
+
+nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
+
+nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
+
+_start
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_json&range=201612280923:201612281110
+
+Minimized Testcase (0.00 Kb):
+
+Download:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv966Em_K8UOgnsngPWgxZ8qsH_julqkD3HcQfMo22dZ-YX0xGwy1yx2sr_OWR_Es6N15TRNpcNbERPUaO2yfCwmUMx4o6jlF_uJWXM0fnjTXqSCIVEx3KC4oSwOsIIPdcjeMNH9wQlzBEcZtR9M46kWc1fjDdyxEqi9ieUgrZFVBstgA1KqwVRjJ4B_Lspp3tKNyanvYdZYu_A74yUANK8XeW1ClnMzrkOQ_u7hfH7s1DHiH6i4TzrYrY0EKB9xZqYctrUf4V9yKKW1zmlUda0ZSMA4Inv0iWS7ox13NZgJMPdG3Yw9PWQxuiHjjfjKfLCjy5ZsD1DYPDzOVu1KRZkWlRiG4AMz64raXrrOMWg2ThjXWhMWBhrV9J1-uTWlWR1bkulo_?testcase_id=6389881328631808
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

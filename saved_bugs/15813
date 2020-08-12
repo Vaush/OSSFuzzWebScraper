@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5652490927734784
+
+Project: njs
+
+Fuzzer: libFuzzer_njs_process_script_fuzzer
+
+Fuzz target binary: njs_process_script_fuzzer
+
+Job Type: libfuzzer_msan_njs
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x71dffffff800
+
+Crash State:
+
+njs_object_prop_alloc
+
+njs_regexp_exec_result
+
+njs_regexp_prototype_exec
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_njs&range=201907100134:201907110134
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5652490927734784
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

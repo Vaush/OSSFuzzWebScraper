@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5661150714265600
+
+Project: ffmpeg
+
+Fuzzer: afl_ffmpeg_AV_CODEC_ID_WMV3IMAGE_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_WMV3IMAGE_fuzzer
+
+Job Type: afl_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+decode_receive_frame_internal
+
+avcodec_send_packet
+
+compat_decode
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_ffmpeg&range=201906140151:201906150149
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5661150714265600
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

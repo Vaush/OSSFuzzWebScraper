@@ -1,0 +1,40 @@
+[32mIntegration completed for project matio with target matio_fuzzer(B[m
+[32mBuild testing completed for project matio with target matio_fuzzer(B[m
+[32mIntegration completed for project arrow with target parquet-arrow-fuzz(B[m
+[32mBuild testing completed for project arrow with target parquet-arrow-fuzz(B[m
+[31mIntegration failed for project binutils-gdb with target fuzz_disassemble(B[m
+[31mBuild testing failed for project binutils-gdb with target fuzz_disassemble(B[m
+[31mIntegration failed for project binutils-gdb with target fuzz_bfd(B[m
+[31mBuild testing failed for project binutils-gdb with target fuzz_bfd(B[m
+[32mIntegration completed for project opensc with target fuzz_pkcs15_reader(B[m
+[31mBuild testing failed for project opensc with target fuzz_pkcs15_reader(B[m
+[32mIntegration completed for project ndpi with target fuzz_ndpi_reader(B[m
+[32mBuild testing completed for project ndpi with target fuzz_ndpi_reader(B[m
+[32mIntegration completed for project ndpi with target fuzz_process_packet(B[m
+[32mBuild testing completed for project ndpi with target fuzz_process_packet(B[m
+[31mIntegration failed for project mozilla-central with target ContentParentIPC(B[m
+[31mBuild testing failed for project mozilla-central with target ContentParentIPC(B[m
+[32mIntegration completed for project openh264 with target decoder_fuzzer(B[m
+[32mBuild testing completed for project openh264 with target decoder_fuzzer(B[m
+[32mIntegration completed for project libhevc with target hevc_dec_fuzzer(B[m
+[32mBuild testing completed for project libhevc with target hevc_dec_fuzzer(B[m
+[32mIntegration completed for project mtail with target vm-fuzzer(B[m
+[31mBuild testing failed for project mtail with target vm-fuzzer(B[m
+[32mIntegration completed for project wabt with target wasm2wat_fuzzer(B[m
+[32mBuild testing completed for project wabt with target wasm2wat_fuzzer(B[m
+[32mIntegration completed for project mysql-server with target fuzz_real_query(B[m
+[32mBuild testing completed for project mysql-server with target fuzz_real_query(B[m
+[32mIntegration completed for project gdal with target gdal_fuzzer(B[m
+[31mBuild testing failed for project gdal with target gdal_fuzzer(B[m
+[32mIntegration completed for project gdal with target openfilegdb_fuzzer(B[m
+[31mBuild testing failed for project gdal with target openfilegdb_fuzzer(B[m
+[32mIntegration completed for project ffmpeg with target ffmpeg_AV_CODEC_ID_WMALOSSLESS_fuzzer(B[m
+[31mBuild testing failed for project ffmpeg with target ffmpeg_AV_CODEC_ID_WMALOSSLESS_fuzzer(B[m
+[32mIntegration completed for project envoy with target filter_fuzz_test(B[m
+[32mBuild testing completed for project envoy with target filter_fuzz_test(B[m
+[32mIntegration completed for project cryptofuzz with target cryptofuzz-openssl-noasm(B[m
+[31mBuild testing failed for project cryptofuzz with target cryptofuzz-openssl-noasm(B[m
+[32mIntegration completed for project aspell with target aspell_fuzzer(B[m
+[32mBuild testing completed for project aspell with target aspell_fuzzer(B[m
+[32mIntegration completed for project harfbuzz with target hb-draw-fuzzer(B[m
+[32mBuild testing completed for project harfbuzz with target hb-draw-fuzzer(B[m

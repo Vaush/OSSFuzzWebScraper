@@ -1,0 +1,64 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4755798049685504
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AV_CODEC_ID_INTERPLAY_VIDEO_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_INTERPLAY_VIDEO_fuzzer
+
+Job Type: libfuzzer_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow WRITE 8
+
+Crash Address: 0x62500000fb48
+
+Crash State:
+
+ipvideo_format_10_firstpass
+
+ipvideo_decode_format_10_opcodes
+
+ipvideo_decode_frame
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4755798049685504
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

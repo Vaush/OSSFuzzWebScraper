@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6482601374121984
+
+Project: libplist
+
+Fuzzer: libFuzzer_libplist_xplist_fuzzer
+
+Fuzz target binary: xplist_fuzzer
+
+Job Type: libfuzzer_ubsan_libplist
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+base64decode
+
+node_from_xml
+
+node_from_xml
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libplist&range=201702171125:201702172210
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94ZfhgUycYz-b_P4J_WgYauK-vG7YzLvHv30dlmFV5NpJrnmGPqH56cIlx9r6yuM_Kf5lqSu584h-Wz7Zymm2HpaK9VqG7YT4JeHyTKmUxvGJa6Wa6kLhgUY2KKE6mUwW7sdjIqIpmfyo7nYBteJDjzxyySzsifxZzSVp9wjoLl98ErxmoWdHTnvNF2dE8Z9SuaRDWw2-DSeSrU90uJMRSn1UhmgSOkLreEptniSTeRdgt14HrDSdJiSIN22eCXpshjjoRFqunOVSUiiuP22kXDtOgxH4pqVmB6ct7dkwT_qePeJvGtEgMYCw2616KnsUbbMt4zdyiOGMc3WayEpvh3J4ZbiE6EhaiT4QYj2nAVDfA7E07AUuqPa2anEnDcZYDwJrXrmQoP7NL5V2txeRYUx36zLrHkHmJITFC4cAMSFWU-cU0?testcase_id=6482601374121984
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

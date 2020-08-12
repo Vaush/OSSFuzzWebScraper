@@ -1,0 +1,62 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5157853330669568
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: clang-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+clang::Sema::DiagnoseUnexpandedParameterPack
+
+clang::Sema::ActOnBaseSpecifier
+
+clang::Parser::ParseBaseSpecifier
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=202003270244:202003280243
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5157853330669568
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+
+Comments on individual Monorail issues are not monitored.
+

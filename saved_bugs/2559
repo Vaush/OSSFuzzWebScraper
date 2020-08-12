@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5211986457526272
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_client_fuzzer
+
+Fuzz target binary: gnutls_client_fuzzer
+
+Job Type: libfuzzer_msan_gnutls
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+nettle_pss_verify_mgf1
+
+nettle_rsa_pss_sha512_verify_digest
+
+_rsa_pss_verify_digest
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_gnutls&range=201707070419:201707080419
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5211986457526272
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

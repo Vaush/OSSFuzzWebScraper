@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6754780640706560
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_wpsfuzzer
+
+Fuzz target binary: wpsfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+WPS8Text::tokenEndDataParser
+
+WPS8Text::readPLC
+
+WPS8Text::readStructures
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704042048:201704051628
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6754780640706560
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

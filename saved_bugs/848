@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5432155620507648
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_VIDEO_AV_CODEC_ID_VP6F_fuzzer
+
+Fuzz target binary: ffmpeg_VIDEO_AV_CODEC_ID_VP6F_fuzzer
+
+Job Type: libfuzzer_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x61d000010a00
+
+Crash State:
+
+ff_emu_edge_vfix10_mmx
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_ffmpeg&range=201703071922:201703080106
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95a9CMn2jHjY56s3zj-iMX86gQ7FxGoivc0cJ5GmRFZNbROoOZtrCBnGwg3BDAqwyUxgpnZWjbq1KAwppqfYYKTWPV7HszxpEdhlnlOtY5dWdMYJZDe-klnrj82BgG6017zd81TmgKDxmeNPVXfH3RsjJbVaHXyyjcN6vTBKD77RK2xhFjTO3Vsz-jh7ZG9uDBwxuzI6RbzuHh4XsFkupKD74CKsAtV1KQf9fhp1Gon2esGvb0ZRFVXykTYZj8Tn91VP-NWLhIhryZao9PPAiLk363XNz_nDuCmBrjhRFjpoZ1lTkSTiiqXIvQrWN08pwh1tarEx7C4HnxQxeOy2KvhldERm9v_ntbkiASsuObpzPvo6ePhESXzIRvd0MD5V911agnL?testcase_id=5432155620507648
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

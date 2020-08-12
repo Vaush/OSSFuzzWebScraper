@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5570137014927360
+
+Project: file
+
+Fuzzer: magic_fuzzer
+
+Job Type: libfuzzer_asan_file
+
+Crash Type: Heap-buffer-overflow READ 4
+
+Crash Address: 0x612000000324
+
+Crash State:
+
+cdf_getuint32
+
+cdf_read_property_info
+
+cdf_unpack_summary_info
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv950c-k8ZyEVgdYuc9j26IlMQ1xyvctYHbuht88ZGmQn8GHm61VqraDMKlT-LLLfxnHnf7-OdoauqVBvNbJKmURkc6PrMnx9iBR74zhXHWyvFidAMvbu5v49-J3IhAlUGkLKFck8l_CmrL0V514xN0KZYcDIwLBgcZUEfjR55PawXnmWuEY61vL07rep8C0KdHfwQ9feXO9Tbz4a0rDPwZsHUCk3GfbtxFmL5qvH0etFqBCiy5R7xkWkBH7eW4i8Cod62w-_wAT_QsD-3LWiF-tv-IzSXLrZ_zHgtfD4QKOcL-u_5uU_doUtzMWoltsD6k7KK5fontB_4ANTyTa6Pfucc2T7qPeHYQ9BOEL94l88suzrR-QhQHXZzbXGd_se2wDh4CY7?testcase_id=5570137014927360
+
+Issue manually filed by: kcc
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

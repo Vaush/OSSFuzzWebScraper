@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5754526379802624
+
+Project: harfbuzz
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: hb-subset-fuzzer
+
+Job Type: libfuzzer_asan_i386_harfbuzz
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+(char *) obj + size >= this->head
+
+char* hb_serialize_context_t::extend_size<char>
+
+hb_array_t<char const> hb_array_t<char const>::copy<hb_serialize_context_t>
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_i386_harfbuzz&revision=201908230253
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5754526379802624
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,38 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5423111939817472
+
+Target: libass
+
+Fuzzer: libFuzzer_libass_fuzzer
+
+Fuzzer binary: libass_fuzzer
+
+Job Type: libfuzzer_asan_libass
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 8
+
+Crash Address: 0x00000087a940
+
+Crash State:
+
+ass_strtod
+
+mystrtod
+
+argtod
+
+Minimized Testcase (3.46 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95eJ0AAQFeCtmnhBMzK__M9oVGva-We9LtYTAifxcnvdRL5gPPDNzKL-uXT2cQ5o-aflqHF2AAL6ljCg40aAfbVdsjbc9zkF5p_vnXoe4VXL403RFoKO40745We_PoGZhw1STFjr_72FVIYeWAnD1zZE1Eu176fUIahQ5sAYvUmi9t6RTo?testcase_id=5423111939817472
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

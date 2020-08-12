@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6739028850245632
+
+Project: sqlite3
+
+Fuzzer: libFuzzer_sqlite3_ossfuzz
+
+Fuzz target binary: ossfuzz
+
+Job Type: libfuzzer_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x630000524f22
+
+Crash State:
+
+sqlite3DbMallocRawNN
+
+sqlite3DbStrNDup
+
+vdbeChangeP4Full
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_sqlite3&range=201611111323:201611111330
+
+Minimized Testcase (3.90 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97-TdIn6J7wfGe-vYUJjnCrVtFlKJDIZsnv-ZYVd_qSwWoe49y3hjUVhOVrIkTiFYoXWFbjiXAcyUd3owOnniVGZ7kBPARx0dFivkcDpDsX38vpg69uB2QNxyzmpCAbDQRU8vGZZIeiG7jN0YSU9VYnLjKC9AwFeJpi4-1uQy0zPO0DpCs?testcase_id=6739028850245632
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

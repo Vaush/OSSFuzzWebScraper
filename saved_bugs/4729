@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5896781238894592
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-instcombine
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-instcombine
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+!isNonNegative() && "Can't make a non-negative value negative"
+
+llvm::KnownBits::makeNegative
+
+computeKnownBitsFromAssume
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201712190608:201712210617
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5896781238894592
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

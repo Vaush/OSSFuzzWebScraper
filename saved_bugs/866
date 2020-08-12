@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6049161428336640
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_lwpfuzzer
+
+Fuzz target binary: lwpfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+LwpFormulaInfo::ReadArguments
+
+LwpFormulaInfo::ReadExpression
+
+LwpFormulaInfo::Read
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703020622:201703021717
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97JdGiEEL3CJ6RoTYGAcw4col3JVyH5Mt-3KQ3g9i8pybx9JWhrrLqh2ehK9tWVc2YeWf8HHwGyGr5-VJxnVHRYAI8y_I_3u4lFZxUxhBv-AN_J3NNNOKFAsrLwE4M26e3n7xxqyzTkYz6kANcngvcNqdpzoM_HtZ41B5mtBi2jPn9O-Pk0zdggq4PWJLD5g86crUOqTUGc0Mjz2BGq6bisnS7MBaZvxYOb1dgBa8e_Ke8QtfJP89Mio5taZXVBjbxtnLeZJ8b-UNLkqRnZiIojyo5Fikf_g0PbgDHczUODKa48aX6zTOtBZSuw8bOW6xdQcowcwQe87wURSqEZisLMW1bp8mSpg3YcpH5RGh8S58QtHOamdn8a2It2PhmB66bnI4Fr?testcase_id=6049161428336640
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6339875685007360
+
+Project: sqlite3
+
+Fuzzer: afl_sqlite3_ossfuzz
+
+Fuzz target binary: ossfuzz
+
+Job Type: afl_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x00000000074a
+
+Crash State:
+
+instrFunc
+
+sqlite3VdbeExec
+
+sqlite3Step
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96HFSVGqkOHADjoHJSjrch4plgORpv8UTLNTw8Nz4x2bZ_Jo-Ibf3rusNbvcexk7fTjEjpu3-Y3mt_1fmZQUIaHh8RY2z0ElXHEHdu7T87JE6tQVINvF0UJl9d9d3FeQyj_MpFBk7IZ8jxaBdztGxPYiKiKNxqzIpmBDHUwwdCOm6HWFPzKeYH7zNsz6p-5iiDIw2gZzUwyIw7tpeU6LPMB4RDJwYyrSQSL0hHrhlAEhaltHk4rIqtlbKgqqu6DMIHgN7wb8XlkObaZ4FaHsCQsdimUhcidXMBpALp3oS4L8iYO1SCqqomsMqhcWIXokH4byOcz2ntvN0Nfr5ECN42ZGXtHSZ8MJDqBfkX-W2tPAngVOFv9v4eSQFmzmZfXAa4mv6XZ?testcase_id=6339875685007360
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

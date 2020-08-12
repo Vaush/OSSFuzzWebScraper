@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6438237818060800
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Fuzz target binary: pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+DffPropertyReader::ApplyCustomShapeGeometryAttributes
+
+DffPropertyReader::ApplyAttributes
+
+SvxMSDffManager::ImportShape
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703160233:201703161001
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97Z5RKRYLPObdirLzJYXakthcfZFK9kq0IygX8l6hlYd8UH4VZlHjV5Iv11A-VhcOaaXZmniR-VoDjtXWhussG_85SKLRXjxTdnNbs1T-0Y3W0pH96CKw8LJEkre5Y6Ro9GMLym6tMD9aaGdWczamuD1xn1janMtLTUwtqWRbAt9drIcAp10fdncULKnPFzO68nQC7etiTF9yj0etRuwWG_7GMnmg6dPNgNuKNR2PTOc3Sk2JQhR9WKy4fxgj_YHXvo_5yccpuUi2LZ7i5Isc5ju7nbX-vz-ZhqwJ_oY9wf6InpMz-OwZP2MPiEsonJDwj1vGHI7ypdk5B_qjS1kUWDaT36rs0FR9H76Gscnw9_rQYfAXwOX82ypm8ZOe_7MNh6kOSMb0KxlIbkibl5k72UTmm_SOn0R-vFjImfPNiod8AYgzU?testcase_id=6438237818060800
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

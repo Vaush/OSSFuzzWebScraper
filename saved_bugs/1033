@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6536301065011200
+
+Project: dlplibs
+
+Fuzzer: afl_dlplibs_pubfuzzer
+
+Fuzz target binary: pubfuzzer
+
+Job Type: afl_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Stack-use-after-scope READ 8
+
+Crash Address: 0x7fe2cf0ca9f0
+
+Crash State:
+
+libmspub::MSPUBCollector::paintShape
+
+boost::function<void
+
+boost::function<void
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv978Km6NRp0hgU7FAo-jPIvjwyZERwF4JPXn4ijG9_imY26UZj2cJeOmt3GLJGBgMs4nfZ3vHrI1UIHTPiv6k79rkMyzQysggArFsICOeChSo_AJRceY-ukSyoFSj6Bi0J0aVsYgse6Kj4uj-WIDpg3MMAnHoaH6TnNR00HQn8twKH7Wc0i3nPcTZ_UvcMut9kwfdWDptYeHlVVY4bc-BA4TCmFal2-xwks5_TptHoKVkY2Ys0QgrAT1uByOWjDsLA7jnSAjY5y7nh5GQ2jkJZ6DnJY9O93FHdVYVEvkMsDfHY7kuPngietA-A4UOqnKW3l2uxSBDTqAGBa4cuVzBKrqMQ31dG3sLaNdyuVHsOFPT1BFHUH9_gKKW_mFFHg27IxCYwnA?testcase_id=6536301065011200
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

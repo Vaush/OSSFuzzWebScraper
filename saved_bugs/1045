@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5756136898691072
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_powerpointfuzzer
+
+Fuzz target binary: powerpointfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+MacDrawParser::readObject
+
+MacDrawParser::checkHeader
+
+MWAWDocumentInternal::checkBasicMacHeader
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97JByyrBnmai2no326yBDNQAORx_3kHaGMsri7HIFVL6QlGd-bM5Is2gfA2HCiSXtVW_f_u94M-NkuFdyh5JolPLr0TMxkyi1-EPFm70a5psmi3ennwnN5Z5VBvEG98eC33cb-SXGRoCbLAt8-Bn0kU_GEAC6RgRa9Kfg_d_3q1JgaSf_2l3oi2z9ltngqtHcxmfZcukQhafWyibBDf3Zf8-p1UxKXvua0vHsriU1Yxj1qn7DnfNjxuM1IufDqjJTUdg_rOj_8pkWGi4EP1l48RJtvt45stEgc2nMTUbB4AROEwwCcTk6beOzvD3lOWfnoXzrbO95Lmc7LRXcfrV676vm_swync-QpHry0ra6hjsU0_1bBxutM3ukyBYIjLeZtRQUFw?testcase_id=5756136898691072
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

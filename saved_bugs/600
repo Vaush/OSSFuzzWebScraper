@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5240191889440768
+
+Project: libxml2
+
+Fuzzer: libxml2_xml_read_memory_fuzzer
+
+Job Type: libfuzzer_asan_libxml2
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+xmlDumpElementContent
+
+xmlDumpElementDecl
+
+xmlBufDumpElementDecl
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libxml2&range=201702151035:201702151543
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96Db8T6E6sfCOHcOZ3YBu2tPb4hegT4-J9xJd6WjWlaxlehcrd7Gw5O55EACzY8SLYidkrrA3006oZIEarVFO7-8EbgsT3nX2AeGfAeosQChsNuRdyGDgunZ0LvgASdhGNNAALhVaI6JHxpbAZEicexJ2YEUsYOT9vhuOBFHabpQzh9Mqhx6TFqCb6BeT_965GOtfdWXH_3--R2I9Qro27QpycatnAbtuskkvlxopdJkzE3ZypNj4PC9AlTFmcs1CubrOoVrRGvm6ThAabw4qe0uizqNHamc22sa27K545U0b71pWHV1p1Js2HLGUC_y7T8EdhdaRRxZTvgQVV4IEJbOgfcx39bvjFRwLyv2veoK6SmTxXse5MAq215xszLj2uzWbRd?testcase_id=5240191889440768
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

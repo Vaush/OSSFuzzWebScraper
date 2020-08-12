@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5329850650853376
+
+Project: pcre2
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Fuzz target binary: pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x611000008955
+
+Crash State:
+
+match
+
+match
+
+pcre2_match_8
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201611181027:201611181257
+
+Minimized Testcase (0.05 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95zf0T1LTgdGVmztR9lDlxz2yTYVPJxIvWqCv49Aqb0IrnPRksZ4QdO7Fs2vckZvz-LOopU7Ft0IW8RI1cwVcXKGww1fT-USdzRw2Xk0t3hwgFX6WWdgqiLFTQGSNtFd5gT14e6RCxyOOwjjqJeBlk_JO3vnyw21bIa3UDL-vT8hriBzx0?testcase_id=5329850650853376
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

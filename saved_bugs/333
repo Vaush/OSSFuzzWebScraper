@@ -1,0 +1,42 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4504811374379008
+
+Project: libxml2
+
+Fuzzer: libFuzzer_libxml2_xml_regexp_compile_fuzzer
+
+Fuzz target binary: libxml2_xml_regexp_compile_fuzzer
+
+Job Type: libfuzzer_asan_libxml2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x000000000028
+
+Crash State:
+
+xmlFAParseCharClassEsc
+
+xmlFAParseCharClass
+
+xmlFAParseAtom
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libxml2&range=201610131606:201610131654
+
+Minimized Testcase (0.18 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97BtDev4vmwxa9vGlEY_iW4BhaaFB8Skf6D3TN91kX2gC1NcMYhPXD91jOzwQrKpUADa-eiKOec6BLqDg8_SJbbO6_hpR-Pv36JW347vDQBHHGjewrkQkWd7s9NrYDxQOuN5PM_C85cC0gDApKafi6BM3IlUWoFCjgYHg1zxROFvw18DYY?testcase_id=4504811374379008
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

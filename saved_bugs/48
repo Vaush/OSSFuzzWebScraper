@@ -1,0 +1,32 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6288735830278144
+
+Fuzzer: libFuzzer_sqlite3_fuzzer
+
+Job Type: libfuzzer_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x606000000720
+
+Crash State:
+
+exprVectorRegister
+
+codeVectorCompare
+
+sqlite3ExprCodeTarget
+
+Recommended Security Severity: Medium
+
+Minimized Testcase (1.38 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94FvmaMx0QLSrtG70XnwNV8ejCGfVMhazHoHHoTPNqWaAAzF5xAIo2slvKmHClE3hw4e34PB1gc7U9C1839yypTexiyFJxSYtF0jX0AaypWYr2bykhmfn4TgJjmcs39ZH1esK9BwN2alQI8OVnkZRT2E2O8cdMzBE2pAzG9FJw-krzKZmU?testcase_id=6288735830278144
+
+Issue filed automatically.
+
+See  for more information.
+

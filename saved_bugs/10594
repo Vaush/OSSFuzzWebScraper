@@ -1,0 +1,62 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5116507692990464
+
+Project: unicorn
+
+Fuzzer: afl_unicorn_fuzz_emu_arm64_arm
+
+Fuzz target binary: fuzz_emu_arm64_arm
+
+Job Type: afl_asan_unicorn
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+reset_temp_aarch64
+
+tcg_constant_folding_aarch64
+
+tcg_gen_code_aarch64
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5116507692990464
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

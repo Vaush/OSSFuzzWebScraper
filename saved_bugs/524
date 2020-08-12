@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4877993398763520
+
+Project: file
+
+Fuzzer: libFuzzer_file_magic_fuzzer
+
+Fuzz target binary: magic_fuzzer
+
+Job Type: libfuzzer_ubsan_file
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+file_pstring_get_length
+
+mconvert
+
+mget
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94iO3vukqIRnrd-UkPoZyrz9BUHWkaukYHtgfXfGNcvFAzkSv8RcNanWjeXAPkh_vfd85zG2-PqlZZWq4PTK_ZS3NLbsDHMatClFMNEx_Ar7Ji6Magp8WhdcabbgMLP13XoZippjtFfj2p342Mb_NaFdldvBVWgSHK9X_AmjUV_rDkqg2A3MAuAu7bQqqqr0u0zjWc9RMlgw3AYYD3bff9Be9eH3fvCLrD2Rr0PdfTogUKoBWkmzWlbwr8DjPydCX65eAyZ-sEwTn2gschdlF6h8YA2Ag-6NAURZBtbi9ydpXreId2C-rak5KJsy8VuSlYoA1uWWZagS_4w3ONCArTfBjGJg-q7bWiuyb8cPH-uvjSCP9J6KRYYarWNFfTox4xTmXggNyFVkpq8Y0RjTB7wqAMPtef-49_zK3WdFbmeXhcuaVg?testcase_id=4877993398763520
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

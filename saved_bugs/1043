@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5451241599533056
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_mswkssfuzzer
+
+Fuzz target binary: mswkssfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000018
+
+Crash State:
+
+boost::shared_ptr<MWAWOLEParserInternal::State>::operator->
+
+MWAWOLEParser::getObject
+
+MsWksDocument::sendOLE
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97RgHdIrczvQotyi2VElBvyWB3IoBm6Vvo6JDbfEcxA47aF4f5UfpEefH2mjgqSjarvjCzHZ9jTu9_eeiBXp-eDh2xTfaKXi8Mm-_NtILl6CjZ5YmrjutbPmUaQjUJeTeGe-QpXR9jPTUWxdVi6fPj1hE9yRLZIZoZMZuHwg-gqei5rcwiysMTxCAbugKMughqnPSDafAWOzz5W4VPAG3N9naC0ZpgiuxjCJv9XTXaGQOEmirH_0blB_P3XsRSc1EsDlQMq9JUPkD8DdUgPnwjj-eaabFHNIt9QXKgsODCboKRn51JZn--4BV1KR3SPHAYzfDY77x_eUWD3Sa6MVxxKr1iL9eftEgILsUZ0u2wtWA1RASgBQXcs4-U_Dr41RMZ0Jyst?testcase_id=5451241599533056
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5756254332387328
+
+Project: libmpeg2
+
+Fuzzing Engine: afl
+
+Fuzz Target: mpeg2_dec_fuzzer
+
+Job Type: afl_asan_libmpeg2
+
+Platform Id: linux
+
+Crash Type: Null-dereference WRITE
+
+Crash Address: 0x000000000900
+
+Crash State:
+
+ideint_weave_blk
+
+ideint_process
+
+impeg2d_deinterlace
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=afl_asan_libmpeg2&revision=201908212324
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5756254332387328
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

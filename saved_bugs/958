@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5121085282451456
+
+Project: file
+
+Fuzzer: afl_file_magic_fuzzer
+
+Fuzz target binary: magic_fuzzer
+
+Job Type: afl_asan_file
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x611000000280
+
+Crash State:
+
+cdf_read_property_info
+
+cdf_unpack_summary_info
+
+cdf_file_summary_info
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97NiGyHO87Ea3Dpndy83UrJ8JwCA8WKAAJpOtVq60_3UdfbR3m7O8nRsj6UXMDGxDd10IqMiOuiwWubluRXSxkz4ojbw4T3rBj4YvJOfeiZjmHBba1AYTWHuCQey5bFpqN9MxR4ZQkRe7RuP48bj4v66GiGH5x5TW5l_9Fru6Al3n_qLl6hS2ZosaaUGxtvAg8DtyBvbGNU3LogIc9VDRA_h947IXdO-DSLWJ8awP3YsgnMICtl6g3eYo4nTEC6dCNo8rrS8WlWLhWL_YMP-eH8XuOh2ZlK4DURfWqkfdh8lWxkXggfiK1nGlkNZ38lQf6CsI0YZr6mZ6hBsG-ZFmPctC90pbxZlbhk3orbfnOUmIFsXvsmY98_1ejg2JvDTwPegaCN?testcase_id=5121085282451456
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

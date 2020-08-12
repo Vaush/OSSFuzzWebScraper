@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6519608255184896
+
+Project: llvm_libcxxabi
+
+Fuzzer: afl_llvm_libcxxabi_cxa_demangle_fuzzer
+
+Fuzz target binary: cxa_demangle_fuzzer
+
+Job Type: afl_asan_llvm_libcxxabi
+
+Platform Id: linux
+
+Crash Type: Negative-size-param
+
+Crash Address:
+
+Crash State:
+
+std::__1::char_traits<char>::copy
+
+std::__1::basic_string<char, std::__1::char_traits<char>, __cxxabiv1::malloc_all
+
+_ZNSt3__112basic_stringIcNS_11char_traitsIcEEN10__cxxabiv112_GLOBAL__N_112malloc
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97eoAe3gY0TgwhagGNUH9J9-GEd9utZnlgQRYxcCjFM2TJAOUbGsThlRuOUWaNV0w7baGwtvNlGV01yiSZrrNWhwwYK72vkP-sef5uixmq7EB5h64Ggi5xxz3DE8z3AgUm4KyfpFwMlgFuD-mxlhZ7K_JgZDjSmsrKK-kZItad2OoNqZrh9k-tefo1KkrjJI69yKiHJO04IV50BmohGFNzlPprqjEHnTrWkP2TwpdaumA_97761lbnTu3Ohh94cBtUedPy1_zqEqoyyt_uWH5vxsp3Puw_DoeJQviQMnXF-dpHOZZlr7zhj8QHyjRBzGdANBTPHsOmvwlZSS9bsiCMsPJq6Nww3-0gB8XoxEu1afUqaXDy7LiEmmsjPIzrftpnjo4neenzRskxW4Vuab6TIeKaL-bACz1QZyjwZuSl7wq3IGoY?testcase_id=6519608255184896
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5658640424370176
+
+Project: envoy
+
+Fuzzer: libFuzzer_envoy_codec_impl_fuzz_test
+
+Fuzz target binary: codec_impl_fuzz_test
+
+Job Type: libfuzzer_ubsan_envoy
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+Envoy::Http::Http1::ClientConnectionImpl::onHeadersComplete
+
+Envoy::Http::Http1::ConnectionImpl::onHeadersCompleteBase
+
+http_parser_execute
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_envoy&range=201902120443:201902130441
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5658640424370176
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

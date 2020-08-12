@@ -1,0 +1,46 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=6324347450425344
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-isel-fuzzer--aarch64-O2
+
+Job Type: libfuzzer_msan_llvm
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+CodeGenPrepare::optimizeInst
+
+CodeGenPrepare::runOnFunction
+
+llvm::FPPassManager::runOnFunction
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_llvm&revision=201906300300
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6324347450425344
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

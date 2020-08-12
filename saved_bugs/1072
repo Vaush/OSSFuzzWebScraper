@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6456688074817536
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AUDIO_AV_CODEC_ID_AAC_fuzzer
+
+Fuzz target binary: ffmpeg_AUDIO_AV_CODEC_ID_AAC_fuzzer
+
+Job Type: libfuzzer_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x60e0000005e8
+
+Crash State:
+
+av_samples_copy
+
+avcodec_decode_audio4
+
+_start
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_ffmpeg&range=201702211720:201702212316
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97bb-ri9D1JDu_s4UMzwERgMiQlXPPIFI-82wGg1LQP2aSab1pgnDTkllhjeJ3W0NBFwkU5idIfJ-7J9ifV9N3fB4Xzrz3KB_0VbevjpFqWJNX1zXA2MHqzwzVrFp2zW6vMp4iNtpC0wdW2gXguUUJiwZNLHNauVSjAG-UfhKipuBrJtZ6jVtEYioRpvfaDZd9l_x0l6iB3bLuyh_RNqk-uixHXZREpX08w_-po_VD3CvdpF1jMk5KKkBWQVJyR1jRaC7YK9UP8OXCAN8y_CYddVM0z4J4XqQpf4Kkqa_O3xKHtjfilVHXNpFvOpU-zKo_mzX6pYso_2NnK5moXwZYU9PK-hnp8y8bJjcZq4aiTugJDM56cubqclNi4Nxd15uZ2QjVi?testcase_id=6456688074817536
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

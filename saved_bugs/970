@@ -1,0 +1,42 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5737651426557952
+
+Project: guetzli
+
+Fuzzer: guetzli_fuzzer
+
+Job Type: libfuzzer_asan_guetzli
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+coeff % quant == 0
+
+guetzli::OutputImage::SaveToJpegData
+
+guetzli::Processor::TryQuantMatrix
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96gvZ4wChbaS8RIcqKSq3MCXTwr70qNYc5U20FDqAZPZIEQ-mTzzx-eC94dg2lA2gn9oqVxAWIGKz7lpyomMHptZxkDcbaCrUfAICau43AIaojWkIb_H6JnqvLpfxYh_mhUT1rwuULUexZeXh2jUlPiIVA5EisuNLoTyFWb630zv8PnTlZIncxj60f0UprizuBNE_OtQnjG8ks2euN2gfv4jk4nSA2yeJyJjfI2XFMrF7WvYT4Q4gDVhHS7LF2q-9hQHMVb3ZfwhgXzdG_p9s81P3Oxk7XUFUeLGboJtQsN14xC2_pw-sN3Me3FnPp_pxFK8ufng-06mTlBInMx2pXe_nBhuj_CN726GwBTNxVkxFlfmTruzyps_Cbdys0RCUm6GjCn5l1ijiHWqCp7GR16xCsEjhTlaF_whUcnO3iNfD7H9ok?testcase_id=5737651426557952
+
+Issue manually filed by: kcc
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

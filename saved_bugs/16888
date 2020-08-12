@@ -1,0 +1,48 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5696325059870720
+
+Project: cryptofuzz
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: cryptofuzz-openssl
+
+Job Type: libfuzzer_asan_i386_cryptofuzz
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0xf5800000
+
+Crash State:
+
+aesni_ctr32_encrypt_blocks
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_i386_cryptofuzz&range=201908212037:201908310225
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5696325059870720
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

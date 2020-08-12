@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5695345388421120
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_wmffuzzer
+
+Fuzz target binary: wmffuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 2
+
+Crash Address: 0x0000118d78fe
+
+Crash State:
+
+ImplDBCSToUnicode
+
+rtl_convertTextToUnicode
+
+rtl_string2UString_status
+
+Minimized Testcase (0.41 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95lyPwkWwvmZTLz0sSTKUqwYND6PEd8Xpkqf_IpKy05se8N1gpgIVLiwuhMlvYmcnL3sy8WsAiADivJ_NLSYKNbFsFoWUYEeF5bgIk1CyneVeKoyVLJZ0bkkN9h31SIQyMpq_2YXR9_Q8I747AXkNmKOdfXnhq0lqhfhtGk9o9GFYAH6g0w9xIVCrXhGsL6P6RNXKlp3DgAtlTLXxdgRzBo63YawnBAcWydyBdJFXa5AHElx6I9OiOL91xbmoEuerButL-84xddxOAsM6zcrZM9K91AKBKCh6KrdAA4YA-_9qps_mgkcP29lt-aKkXdFCeuTeFXM-j4YWxTiH0QX-CAIxTUmeKKffBD6mL5jQlQ0q52ZD5E8xY-xxR5mOiGpcfr32t1?testcase_id=5695345388421120
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5679642781941760
+
+Project: firefox
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: ContentParentIPC
+
+Job Type: libfuzzer_ubsan_firefox
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000700
+
+Crash State:
+
+mozilla::UniquePtr<mozilla::fontlist::FontList, mozilla::DefaultDelete<mozilla::
+
+gfxPlatformFontList::SetupFamilyCharMap
+
+mozilla::dom::ContentParent::RecvSetupFamilyCharMap
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_firefox&range=201909060306:201909070222
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5679642781941760
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

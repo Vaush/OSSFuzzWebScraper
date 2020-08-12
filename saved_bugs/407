@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4668862683414528
+
+Project: openssl
+
+Fuzzer: libFuzzer_openssl_bignum
+
+Fuzz target binary: bignum
+
+Job Type: libfuzzer_asan_openssl
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+OPENSSL_die
+
+FuzzerTestOneInput
+
+_start
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_openssl&range=201606041129:201611012136
+
+Minimized Testcase (0.51 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95Zitycvw05OCup2bhHBT-drcFM-5oXJ0FG5Mgp5sr0Xe_vSO-xHoIQwOhZpchdoRrdFujXJMZLvCO0HN5oLnGM6QGKlttcJqKWObheNKpag86_i8__jz8zVq_rySw4u0-rRQEXv6k0mBcJeo5NKYMwGM-fySjJ6af3-bOlifyeeJj6ybTXHdLzRE3-fQvxehTMz2kUFeXbVxxVjkZZSOk6GRTTXyeTjguTtliUVCQiV8bb9eNL5aWAdU_GUBbWV6Daeh6UkyuuvsWns-U1nA_zWkoSyY5lVigYdvTDrFMDJVG7ua6mHR_JuXM9QwO-GbKiXdYI-XWhlm_eGo0-WLUYInEEYcBBKpK4lEOC7quoyp8FP8kf4A3DunLThZWfbnYXEFjBnfvrlO1bo_Tle011ePUdF2UH3i2pj3SjeiG2rMKnxTs?testcase_id=4668862683414528
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

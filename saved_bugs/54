@@ -1,0 +1,30 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5993566283235328
+
+Fuzzer: libFuzzer_libass_fuzzer
+
+Job Type: libfuzzer_asan_libass
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 8
+
+Crash Address: 0x000000843720
+
+Crash State:
+
+ass_strtod
+
+process_info_line
+
+process_line
+
+Minimized Testcase (1.75 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94dL4UKrTPpKsnQAdQ7s9ItNsQyrv-wYTKrjtv-5xBb_0hnD6BNXMq3AkUNfNC1G5Qv4KtmDVOAUxZQFXaLJVJMn9CDM_eAEVgp6Z5z7IGbBgA4iCr6sVCbDEqSz8MXA3sFD3WEWYLqyPv2at3OKnxrP4FDqvkh_2ADyETLuZWPwOv-DUU?testcase_id=5993566283235328
+
+Issue manually filed by: aizatsky
+
+See  for more information.
+

@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5803914534322176
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_SUBTITLE_AV_CODEC_ID_DVD_SUBTITLE_fuzzer
+
+Fuzz target binary: ffmpeg_SUBTITLE_AV_CODEC_ID_DVD_SUBTITLE_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+dvdsub_decode
+
+avcodec_decode_subtitle2
+
+subtitle_handler
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv9508ZtFOmVoQHfX6y6xohWzIoAdY6Y-MyklGmVSonh_guXSEqyjZLtnX86A95zaG8ySwGkiW44Xn-uzTaHROvmQvJSXZZ8LIbazfhs3quXJzxZWb-PdnDGU3X_LyfhX76TN5bZFN1dQFFkLy2bhOfTUc1d9epkqgBaRoqdXPwNI0zPqd2ZY-UzCQPK32n6ALiVs4wUCWwVpDEDQoP-fMUlwl1on3ROUTI3Wi-oScSaNCJROF-Dm4yXV9QMvmBZeUA9QfgzjlM_jepzkC2n_yPVr0A6t-OjHvCJWFuL4w1Ly63AlhXN92aSa3RKbjfKz4R6_cyEj_k-dAxy_73RShvDYCou0MvS95LVWRx58ht8aG-GARHtgYhiOXWpK3BZxVzLLcbEHD8Q_tqV8ppX6F23jVi4QrxW-3eo8KoBvqzjZi163rXs?testcase_id=5803914534322176
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

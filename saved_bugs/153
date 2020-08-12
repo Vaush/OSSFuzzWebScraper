@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6349141718335488
+
+Target: file
+
+Fuzzer: libFuzzer_file_magic_fuzzer
+
+Fuzzer binary: magic_fuzzer
+
+Job Type: libfuzzer_asan_file
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x612000000745
+
+Crash State:
+
+mcopy
+
+mget
+
+match
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_file&range=201611072022:201611072102
+
+Minimized Testcase (0.25 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97KoFxZq2DaS8oBI-M6wfL9eMX6dEays1R4KDcv0RgE4mmLmOZn3RxC9zfA0e6qM3kGhjVRqTBP0q7sCAcxRxvIhGon2YZDzmm6-AhJty262sleEzhFyx6cPRcp6CUrsQ_csbWbRhLdIqhIhELJCsYibHv_zthZxOVEh92i0drmPtyxxds?testcase_id=6349141718335488
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4847965409640448
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AUDIO_AV_CODEC_ID_AMR_WB_fuzzer
+
+Fuzz target binary: ffmpeg_AUDIO_AV_CODEC_ID_AMR_WB_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+amrwb_decode_frame
+
+avcodec_decode_audio4
+
+_start
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94eh3rvgafCkZfZjRzyIRln7QeZWg6s4v5TDHxhyISPBvjrxswbjl2wzUHdUCP9Iqyt96CjaePOGBSyPH6-A2AR3l1PrQ5fXRiAJz_e2dl5rHLpEiwvDHI4qE6qat0bNNTYUK1ugV4lEkkPu7ZR9L1bhQ3rnOk3z6ifvgOMd4x8U7LQK9jGVxpUoxJkbMWI4ZBOP208rPhlCIROxiFjPdpsZ3ltiT_dZc5zer4w4PCwb2orKF0v0dDwp0qFd8pZcb3hsgMafkwfdMxug3Air33kNi-OZj050buao9Acw_5vlCF7hK00vV8pl-equkJZXwMPTYCEh-Sj0h6FIoPqfMiehLZ_Gko9haqlq4lgP_JoNjaf8Ju4L-8rBobfZG5bABdIU1M05hZQtMqdY7mpqgRmqH2H8hKq7XDLtoInfJX5Kpvs-bw?testcase_id=4847965409640448
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6547590764036096
+
+Project: wireshark
+
+Fuzzer: libFuzzer_wireshark_fuzzshark_ip
+
+Fuzz target binary: fuzzshark_ip
+
+Job Type: libfuzzer_ubsan_wireshark
+
+Platform Id: linux
+
+Crash Type: Index-out-of-bounds
+
+Crash Address:
+
+Crash State:
+
+dissect_nbap_LogicalChannelID
+
+dissect_per_sequence
+
+dissect_nbap_E_DCH_LogicalChannelToModifyItem
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_wireshark&range=201705081841:201705091620
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6547590764036096
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,58 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5036113288757248
+
+Project: proj4
+
+Fuzzer: afl_proj4_standard_fuzzer
+
+Fuzz target binary: standard_fuzzer
+
+Job Type: afl_asan_proj4
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x7f2c32625b3c
+
+Crash State:
+
+pj_apply_vgridshift
+
+reverse_3d
+
+reverse_obs
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5036113288757248
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6113576072773632
+
+Project: freetype2
+
+Fuzzer: libFuzzer_freetype2_ftfuzzer
+
+Fuzz target binary: ftfuzzer
+
+Job Type: libfuzzer_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+ft_var_load_mvar
+
+TT_Get_MM_Var
+
+FT_Get_MM_Var
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_freetype2&range=201701110726:201701111724
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv951v2c3-9DunTZwYsh0YOJ26bR8kbFP-SXvWRHCvVG6hSN1-Tw-u0rD4ROWDRho0-OKt-44HfByTr_ResytBkK0738UzqxjUIVFv_MuJLHdfVDHaOHnQfjf6XX9vCcB9efrjvz-6hbYsRAyg9SWYbO2Bq8WHVZ6OtWNdRAAH5P7BVs3Y1cNeWElzewv1gOg4rYWW_s9IAgCFprynW8wyQji-nhtnAVdB55AXHIr3cS7p03VWulUlxF7xqNUrlAT9yCHB2E9zCVRz98o0jKZc4Bwr6t8MVeHvEKqfD_UWBXj_O2RCRqq5_5iLPnbeYmPop5969cSaWXZasxB0ySQ6S68uodLTHKLKSLDweg1EHhId2GUkeSAXSTdeAgejNIWa9084f6-?testcase_id=6113576072773632
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

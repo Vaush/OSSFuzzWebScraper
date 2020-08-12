@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5217731903225856
+
+Project: libarchive
+
+Fuzzer: libFuzzer_libarchive_fuzzer
+
+Fuzz target binary: libarchive_fuzzer
+
+Job Type: libfuzzer_ubsan_libarchive
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+read_exttime
+
+read_header
+
+archive_read_format_rar_read_header
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95QlGl8O3O1G8_KjggNX3pYQPC2_2UpfJICs-xZrTlYc3QmIgF2ClKkN95IXXh3PMLQS2LVZu6jXx_Xv7bBf52lbSeCiSlal1WEmGekT7vtxeQST8c541XK9Dk3xiM7aCY0ev7skW1dVwczmCU7c4xssk5DwvtiC3zvL2_yU6a6Lu2BicnEbTNE-Ey0S8IbPf92XNVcvsxk1e1MID0sncMj_FfYQ4Ipm7pErRZiRBjW4tDE2LFhyw7nLTHEaNV5fmwToVPRMK_7gZnwwTZ7dgiiuUJQZvz4Lvw629D_QnSU10HPIGKGk-gFbZ-soz-ubvvjlXtHerMFRIWrehouzjZF-OiIl0jsv_Awn5qr4WEMxFw0F43gbXnlgFDVIajUyPkviHtA?testcase_id=5217731903225856
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

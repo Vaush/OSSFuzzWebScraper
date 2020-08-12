@@ -1,0 +1,48 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=6331386943766528
+
+Project: grpc
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: server_fuzzer
+
+Job Type: libfuzzer_asan_grpc
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+grpc_core::testing::LeakDetector::~LeakDetector
+
+server_fuzzer.cc
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_grpc&range=201902270219:201908290243
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6331386943766528
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4777259586027520
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_vsdxfuzzer
+
+Fuzz target binary: vsdxfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+libvisio::readU16
+
+libvisio::VSD5Parser::readPointer
+
+libvisio::VSDParser::parseMain
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704221619:201704231613
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4777259586027520
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

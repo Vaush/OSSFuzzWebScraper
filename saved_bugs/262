@@ -1,0 +1,38 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5625908215939072
+
+Project: tpm2
+
+Fuzzer: libFuzzer_tpm2_execute_command_fuzzer
+
+Fuzz target binary: tpm2_execute_command_fuzzer
+
+Job Type: libfuzzer_ubsan_tpm2
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+TPMI_DH_CONTEXT_Unmarshal
+
+TPMS_CONTEXT_Unmarshal
+
+ContextLoad_In_Unmarshal
+
+Minimized Testcase (0.08 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96cZQclq28o28M3A8o5F_fC8H7U76y99epYiI2FOYIlItBjhmfNhvPIf7Yhl9_snfuP46S67iCCmXXedmM28gkV5YvUUnmHe83Lu5TZ83G2sPDy_8FXCrsxG-nJEwQWRBhYTCLlzyfjba0SyISoKEjr_sEwFJxXUnyY3tnZfmN-Wdrl-X0?testcase_id=5625908215939072
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

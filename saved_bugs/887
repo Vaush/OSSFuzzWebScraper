@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4556680425635840
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+__cxa_rethrow
+
+GDIMetaFile::ImplPlayWithRenderer
+
+GDIMetaFile::Play
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703160233:201703161001
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96vpvtPlTUhwSMi0bavO46UlSiIjs0kIJi0P3Qjrsja5ely-ybD_W7za3UmZf__h-DDvKM1JDG8v-p-vM8IiF8UbTGWpqIz4Weo8kZY2TH_MUy9Ux0AXsd-NrZ_0NIggHikz3UGjKVhd-_Oo7_JZcTAXUoHtSjTJyYEFcBVqufy1Hem7Laeh9e38uEhYyT4rxEe81Yo6plMgvy-fjroqsEwc_3I7YhT-i4lG-dFdMAOcIBFRbQ7ncBHvxxdYef0aesEnQzJrdOp7kXHMBXVDrZylkVh1yfeEeR7Wd0K-acsQy8-32rpEGJaB0QZv0OyXAA8VjHhERlanK6FEsUdHY7J-4N5Z47m-3Ar_I-ITQNmIeAqdxCERoIidyAEYigMQr1EEOaX?testcase_id=4556680425635840
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

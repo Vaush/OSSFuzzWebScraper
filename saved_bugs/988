@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5520331450089472
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_bmifuzzer
+
+Fuzz target binary: bmifuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+libzmf::BMIHeader::paletteColorCount
+
+libzmf::BMIHeader::load
+
+bool libzmf::detectFormat<libzmf::BMIHeader>
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv974TkVELxgqi_G43IChpQgYhqHEKG5QrJxjE0mu7M5i3EuXAwD-zN8piNmMB2tGZkcBIm7JIUiHrRNPKmivQhCJmoy1Z5EW5bUaGxodyXt-oBa2sLToMehcJrIB316LJXGkcCpvxiMmWpih6g4P9Jon6ZxvrTB5FQy9bYbD4g35mGmkTJZLOUQB9KzREtlAjdCdbnhb-pY_HYU67rHlqqSeOjGCHbusGcgq7XoSMNy79dbCjHPU6MlcAvPboEEJgamexBi71bgyzxRDm5nwAXb5xsjSZTpMhcFbdSvY1XSBE0UTsaMTyiGWW3o0R9OJN3u-XK1ceJfTKtEJcGDEKPfiULgXQm4sgm6uLd9vaTTrOyrYo63DcLnzr1fHqYX_mAwhVROh?testcase_id=5520331450089472
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

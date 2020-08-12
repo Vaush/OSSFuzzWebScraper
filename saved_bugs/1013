@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5607885063061504
+
+Project: libyaml
+
+Fuzzer: libFuzzer_libyaml_fuzzer
+
+Fuzz target binary: libyaml_fuzzer
+
+Job Type: libfuzzer_msan_libyaml
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+yaml_parser_scan_flow_scalar
+
+yaml_parser_fetch_flow_scalar
+
+yaml_parser_fetch_next_token
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96Fnyr0_g53-9_FTyqjtWFJlYOh3aU_2_meqN2AlRy8mPivbI7cl-JThH-hyVkk-AOOUYk7WIdsXYPSWGXVn3ibY8wh_j3mCpJMD8Mmx7LQ5h3AA-v59ZGDeHKqc-wOVqQuOg1Z2hzw3I6Ro9dMipTDDFcZf3UFG0WihaIoHuc1iHORISAD5STmXvfFzeBusq1h2CBoLaSdmwPzJqLf-blY5zPLVJO5UIWMf-UTDQ5VzfRQAfAXABzHUcyoGGv9020RxiwTvz0oHB9jf6VuPDPxoypiA3B8GhHP52IVXcBh9kCcFb-Qi15FTej-IU8nfRsrIYfOgJjoOwdzteXrWD-_FegXJKRjDvYEDahiGuh8XylThbA2fmaX_x2lhGI1EXx2lrUw?testcase_id=5607885063061504
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

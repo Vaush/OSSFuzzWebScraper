@@ -1,0 +1,42 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5082970882310144
+
+Project: jsc
+
+Job Type: asan_jsc
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+divot.offset >= divotStart.offset
+
+JSC::BytecodeGenerator::emitExpressionInfo
+
+JSC::InstanceOfNode::emitBytecode
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5082970882310144
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

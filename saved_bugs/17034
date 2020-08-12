@@ -1,0 +1,48 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5667007357255680
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+Js::TypePropertyCache::TrySetProperty
+
+bool Js::CacheOperators::TrySetProperty<true, true, true, true, true, true, fals
+
+void Js::JavascriptOperators::PatchPutValueWithThisPtrNoLocalFastPath<false, Js:
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=asan_chakra&range=201908010210:201908020212
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5667007357255680
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

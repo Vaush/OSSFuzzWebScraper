@@ -1,0 +1,36 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5606046517166080
+
+Fuzzer: libFuzzer_chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x6090001f30a4
+
+Crash State:
+
+ueStrNBytes
+
+ueStrNCpy
+
+SetChoiceInfo
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libchewing&range=201610201020:201610201348
+
+Minimized Testcase (8.03 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95YhxVrgs2LciI3uENsHnWHzZMsd2L9aeYlk0DVXxQTsZ5an7SQE1Ak0RLwM18U6VCgL6b_JRSD4ivm4dIreg-Cc-wKqU7oe_s3_82jSDrlrvyLX6p_QESikMU6LiEdZiZyAAT6Sm7QxA0AF7EkmQRT9NGZT0KcYnBMU46D2eQsR6-d2h0?testcase_id=5606046517166080
+
+Issue filed automatically.
+
+See  for more information.
+

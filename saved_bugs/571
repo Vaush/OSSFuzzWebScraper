@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4509843431882752
+
+Project: openssl
+
+Fuzzer: libFuzzer_openssl_client
+
+Fuzz target binary: client
+
+Job Type: libfuzzer_asan_openssl
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x00000000001c
+
+Crash State:
+
+tls13_enc
+
+do_ssl3_write
+
+ssl3_dispatch_alert
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_openssl&range=201702072329:201702080152
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96w21MqIcIbkQ2cLqIZ0sN97ic0NgVVgVj9SEZQR5YrrVQ409Wyd5mlIZuhIaTOvK-cRafHd7ToD2lElEnMkEivM5X-bH2-YE6qoXnr2KcwCxXvFGV4fklFBgk1PnjcuBEtG4iLah8QHqojVThbzdtoRBHbT-FryUlFHxHbxIo4erfgykxzrpTqlxJpCLlUw8ZyhOhmJOj3up6e9PpGk4VwqN3xkfFqPGoJJtnYCqwGC8T-CilVyEtTxpzXccUUhI5_Fr_4gz0Q7ERgfn9S1_WsUPaGWDR00pDqnhAQLEGvu_fZFrHW2F5feQA2tExr9MPIVgu_qeu6hwxMpInuFSu8XwwLPtZmM-nilk5glsters-Cj3wC3ZuOVlV8TRG8Kh25lSgdr1vLL-g80-rBK9zxtPdgS17uTolaFLSAbeVFeNDoK6o?testcase_id=4509843431882752
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

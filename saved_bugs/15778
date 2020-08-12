@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5671198144331776
+
+Project: readstat
+
+Fuzzer: libFuzzer_readstat_fuzz_format_sas_commands
+
+Fuzz target binary: fuzz_format_sas_commands
+
+Job Type: libfuzzer_ubsan_readstat
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+submit_columns
+
+readstat_parse_sas_commands
+
+fuzz_format_sas_commands.c
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_readstat&range=201907120335:201907130332
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5671198144331776
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

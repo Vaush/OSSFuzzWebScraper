@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6127362020212736
+
+Project: wireshark
+
+Fuzzer: libFuzzer_wireshark_fuzzshark_ip
+
+Fuzz target binary: fuzzshark_ip
+
+Job Type: libfuzzer_asan_wireshark
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+wmem_str_hash
+
+wmem_map_lookup
+
+ros_try_string
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_wireshark&range=201704181620:201704191700
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94WOE5k5_s7FxR7tl8lpfGxHay4u4gwQOlIVnsF7LPEmGICPPdUv4RrWXAA5ekz_R_MB4YjIQ9gpt-Mfor3_Fn1dOBLLI4FE7UGimcGgnc8Rl-2LeSJW5trD4PbDlW0XdZwWY4NVMpShsKA3DAW0q-yF_dFEEXI4C_BaCMmK7vGrHKroO6AjRxSArY2S7DqlMCbwGAVlHskgJ3ar2A2PIEWWfAZvfVtZ5T1smPDcFxNUed6vgWe4RsdtSa7rrwFTYV_fje6GiCel1RP5G3nw5EUm9EVGBYl3PvCLuMrgAweDOj6a-U15LZiEzhPWlp5yVt8GxWwzxtQCY7diFJkJNHaouo9BIulF8DEFKFuHU0aU76PTYq8qhZg6eAZ-othjRlup1C5YmCMvWUQn2HgSrjKZMh3leNml5TCDU44VBs8GB-pYpo?testcase_id=6127362020212736
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

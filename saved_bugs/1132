@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6462055064272896
+
+Project: grpc
+
+Fuzzer: libFuzzer_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: libfuzzer_asan_grpc
+
+Platform Id: linux
+
+Crash Type: Heap-use-after-free WRITE 8
+
+Crash Address: 0x611000002340
+
+Crash State:
+
+gpr_unref
+
+grpc_error_unref
+
+destroy_call
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_grpc&range=201704140412:201704141622
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97wC-B8wf8LRqOislDIg5BHjJL4pPQqefObAH0KfvQ5EHWD_vi9Jz6mP3Jw2aPVoE5rqs9W6KFB7s1fW6buLc0w7mKWAezJ-08RFWyakiEX5YwSNiW9P35hBoBCJ01L6MdlJWiI43fLwa50e5zNCeckBU04fmz4j6grFCO0N1d4wC2Jpta2y7RmFGyoRJ_v_No8360gd4DlsWvAYoXKsXQYB0wWlwE0wWItvDWI7RcdvfqxAgrKD9stRtAS-TQVtddy7txG5xUSVDAe1mgHkn2gGUhUDSKgqM5RTqrtlBprvcOWYqX3lJ-TfwBISZWLNVsiDfQF_ON9L629GeH1Z419DeGXkcEu6XIwl-Sj7WEDRU53QC3RSVp1KV_LQ1eCiFD_MTh11pmDIFQ_G_XOldL_MUhI7AqVFMLQDUv8YKYPHMXX22A?testcase_id=6462055064272896
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

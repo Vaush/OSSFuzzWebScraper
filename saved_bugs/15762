@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5683266650112000
+
+Project: envoy
+
+Fuzzer: libFuzzer_envoy_config_fuzz_test
+
+Fuzz target binary: config_fuzz_test
+
+Job Type: libfuzzer_asan_envoy
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+GRPC_CALL_OK == g_core_codegen_interface->grpc_call_start_batch( call_.call(), o
+
+grpc::internal::CallOpSet<grpc::internal::CallOpSendInitialMetadata, grpc::inter
+
+Envoy::Grpc::GoogleAsyncStreamImpl::initialize
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_envoy&range=201907100236:201907120239
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5683266650112000
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5181170281086976
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_metfuzzer
+
+Fuzz target binary: metfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+OS2METReader::ReadImageData
+
+OS2METReader::ReadField
+
+OS2METReader::ReadOS2MET
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201701120838:201701121428
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96ziA5S3M-BZywlNYNLoIm-DLR3O-adF9BSda3kv85pOiLg_PERbzhUQu_JqW5h-IB-VS2zuIFY5ueZk8MMPYYPtcZWISf-T_MbnURBy9fyXcPMXbwZJcCbm2wbM7vtDeFmverZATHWwXLwWNpi8JqxWSl9nrTJ7721uDYiwJL7Qr844-GV2lxkfvyyNaGBrpVzESulqFECohPDlrMF7BxXVU0FrXMXz4vNPS8KuicibBNs_ImEIJ1a21z-dwdmKHeajGp4Ht3dcpP1i7xg295ewAcEVuYZm2lM9SqCTmlUQch-2QKOWLUlUBhb34W7LumYRdkeRmbSbY-_n0VEVANeHJMbIB3VnVsyl_Iql0UYU577S9YiLaW9jt2n4q0K6-ZtuNzV?testcase_id=5181170281086976
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

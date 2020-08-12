@@ -1,0 +1,42 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5205917003939840
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_pkcs8_key_parser_fuzzer
+
+Fuzz target binary: gnutls_pkcs8_key_parser_fuzzer
+
+Job Type: libfuzzer_ubsan_gnutls
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+!(length % block_size)
+
+Sanitizer: undefined (UBSAN)
+
+Minimized Testcase (0.04 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96Ss6NBJA-5nfcf72dcq610mbiPtchBoC6hjg3MGCTavYsjKs0-kGO-SWn9viBlBt7j8cjG4hoCOckB7cVK-sGSHT4poDuH5wHMauPITEsBb8yss6i3l7NppvtmYSRxbJNppMtzPERittdXfvydNiRL87SYpsU0AVcKPXiT-2kijFFM-d7h0o9KO0eEc3Acf3CTv5lDmCiOxwV8WehqS-SncVjCE8vYIMYxlpUsQMbYFTyt3Ylg7WXtEMybyWJXmkNwlxqKaOu86_Af6jcY_B7RtfZrZhAliVe4ovc2Pd4rQGmg85iesBOoDCImzs1zdyVdTxRCexOCLAh0xV52FOw-DHubnnJWQZSGGorQ-1fTdOHZDHDyvNeon92cUtRX4-G_C7Pf?testcase_id=5205917003939840
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

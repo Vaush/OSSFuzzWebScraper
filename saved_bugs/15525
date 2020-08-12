@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5642169005637632
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-guard_widening
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-guard_widening
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+V->getType() == flattenPointerTypes(CurFullTy) && "Incorrect fully structured ty
+
+BitcodeReader::parseConstants
+
+BitcodeReader::parseModule
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201906270304:201906280305
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5642169005637632
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

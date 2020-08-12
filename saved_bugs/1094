@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5651075287744512
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_mswksfuzzer
+
+Fuzz target binary: mswksfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ApplePictParserInternal::Pixmap::readPixmapData
+
+ApplePictParser::readPixmap
+
+ApplePictParser::readColorPattern
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704091618:201704101617
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv945MTVDZs5rwlhn1sJEiEFfOs6SMyI8eclroBZmuXheDjC6X2i12huFBpk0CXA5pCoKq5Fu_kNnMhbzTgOq3EoDID1POxWVtXCfcnRV9LSU9q-_tgO_ymZJ0WPHvKcaNjnVY2ve20vMxydwSMd2PpCIzNco8mDRSbJOcpuUXvvWcEnXf5yaf61a-_gRtsO9xUnuW_HGUCPTR8YOgSE6ptg6DvJ4PlI4z1UzOrYGzMSngtRGJPpzW0OcnsKpmE3hXCekG0zuFWNutuBI2HgQ5znBDRizGE0aZn8U-eCCJi4sDQ6uzw-uqLA2lbhAwCcSk_ujinVf5P904pDkRZA_3mQ5OMtpvGnp5RcKYOoNojV-HSCycc2SBS39EObdMcGUorUGoqeN?testcase_id=5651075287744512
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

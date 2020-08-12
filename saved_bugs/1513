@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6246484833992704
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AV_CODEC_ID_H264_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_H264_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Index-out-of-bounds
+
+Crash Address:
+
+Crash State:
+
+decode_residual
+
+ff_h264_decode_mb_cavlc
+
+decode_slice
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ffmpeg&range=201705081931:201705091623
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6246484833992704
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

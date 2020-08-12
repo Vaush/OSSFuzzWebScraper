@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5264417123991552
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_key6fuzzer
+
+Fuzz target binary: key6fuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+libetonyek::detect
+
+libetonyek::EtonyekDocument::parse
+
+_start
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704061618:201704081617
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95zrm_PVdxJYGcCGDdfjzgMx1yPYJB4R_bDafvC0D36PBnzeMVQpOIIZiOkHzoY-Zi06mvQLU23mYmHinoc4R0G663yL1RDcyLWtfPnOGoBy7RdeySHilyageFTnlcq3YPKZxLvzEa2U22G6YfDiTQRS2l8oOur-NpVlIzhBam0kbOwT_m9AtWTKTrNImlzAxRjYPqERAQoc0ZWIWkNXAgTCRcmNiyh2B_9kwpBqCRCEDlSqL7q95MGX3TbrukE01n6tnALRjMMlwJefB7QivaAnktQOV8DIk4WlRC5dg71PXcuqCJ7CBDX_Uo3RP31nDF1AOVW3hXfHdssZ70SuiqIjOGP_ePJeIqLpjE6WMFoGjgh0h4g4HiNsULQAJ7IkFQWtG-t?testcase_id=5264417123991552
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

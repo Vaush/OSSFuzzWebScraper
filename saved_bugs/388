@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5893907011338240
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_pkcs7_parser_fuzzer
+
+Fuzz target binary: gnutls_pkcs7_parser_fuzzer
+
+Job Type: libfuzzer_ubsan_gnutls
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+_asn1_ltostr
+
+asn1_get_object_id_der
+
+asn1_der_decoding2
+
+Sanitizer: undefined (UBSAN)
+
+Minimized Testcase (5.25 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv9677PQMA1zM3p7rONRPmx6g3Y2vuymYs3g4QNlhLyyd5a46ZtGjtTecgYBSAC3sFEq4KFkaw5vA9pwLe1XIRgK6Fn6fTbX35hGEb0vZGMAEMkQuVoB3cKwAbnUaxC91H0ibpR3MPnIHZi-EJ3utrtAylCIbxA53mk-5rxOTntNRNsERCVyvSfzLAE1yxUVySZWBBydl6lRilfPWHvJzyZRgFA3IVFWDHMBXPSUdAIxb6qtuSCkjAW7iHwXBKQu2pWwFBXEmMMUm9SAjWs-pWdytEGAOPO0Ga-RJwLAXpzfNUOiFIf_WXNdmdzLiECBejpJ9GgA-QU9t7s4MENqgzUhjg3qsXdQjJ3x67qMVpi5CDQh7UKofu-2ltuMDxXq6v3jAgJTe?testcase_id=5893907011338240
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

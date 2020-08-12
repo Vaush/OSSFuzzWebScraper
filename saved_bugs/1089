@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5225782928474112
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_greatwksfuzzer
+
+Fuzz target binary: greatwksfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+GreatWksDBParser::readSmallZone
+
+GreatWksDBParser::createZones
+
+GreatWksDBParser::parse
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704091618:201704101617
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv943K75dcJ-5yvMDmlpCcNeUONhziwUg-OmrQjYuzm8VSMdS3w-fjr7pD8Oa7qWQV_AMTcUtX7cHBkiv7A56tqT7dYzHtCrJwJBrgIotAF5ofE8qT2uBf6yqfk2YgliWWX325dgZP7dSFgoETr2-ghRiXxbVYC2OuRMBBg3FjayiNxk3yUeUkWu_lT6onFe4EMZNzvzIKMX4JdRBd4RZrLpwK5l85_gNvm7fp3dpNbwlMXU3S1SkEPqp5qsrQNusMe3n5Y2pdoY-f_P5wsyQWp6qmdaUWnOwibyN95VhEr3vDkqzPcWKG6w2grFaPy4RSMrLWg_cHdothPbMCfc6yNIgd4nvEk1mkCCk2nAmstyDf9QCPhjjH_hbkIwGIRCrfilZIMqq?testcase_id=5225782928474112
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

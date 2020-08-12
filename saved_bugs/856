@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4910609957126144
+
+Project: json
+
+Fuzzer: libFuzzer_json_parse_cbor_fuzzer
+
+Fuzz target binary: parse_cbor_fuzzer
+
+Job Type: libfuzzer_asan_json
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+j1 == j2
+
+_start
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_json&range=201703121620:201703131620
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94QnsU7rQn_6EMKIf1tY03A70fJNBE4s4pBAttVwxsQ--RcPxWkO5KLsQSF6wLETaBEwAFcuKUOd7z6fih_queH7WUrk4Ksrco2ueyrGzfjOG7vn2EDXrSTD8rKizXF9KK5ukS1_3o1IhMvnGnNWNcnMRa4G5YTyfony4huGgLWvUFU5y70NJlQVaTZu6DrMCucs2XSD7JpwiI8QPqeO7fk_z9FbyrJ7rgey0uad0KvAev2R182E6W6jPQa1Uf8wm1gRcgWpxTOHZqw2AGWLaGNIKBFg4a90P-TJV5FaBM-ZEh1wfFIBctpJbAGZNUy1HS1aFhlQer7b5uHeeJeht17gHp1sGIFKs-A5H-T0gWHEmmZQeYyXetNt4ZnZP7hHXPqtwo4?testcase_id=4910609957126144
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

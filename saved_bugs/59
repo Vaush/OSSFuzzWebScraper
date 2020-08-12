@@ -1,0 +1,36 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4733278460313600
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow READ 4
+
+Crash Address: 0x7fa2a5af0ed0
+
+Crash State:
+
+parsed_skip
+
+get_branchlength
+
+set_lookbehind_lengths
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201610131612:201610131701
+
+Minimized Testcase (0.89 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97BhoENl3mkDpyVKpKBHVvmMGSPPxDcIPZDNR4wmYd39d84btCcKp3EzHXD5V9xAgfTPy3uXd3D0-AdJOfCZWOQtVed_bFe4vgpR-JmpqANZVwKUa-5uRewjh8LsH1qy9YgSJWHVdUP6kl5I0Vj--ofVJRmF_m3qRTTFWZP_evH3vcavXU?testcase_id=4733278460313600
+
+Issue filed automatically.
+
+See  for more information.
+

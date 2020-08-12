@@ -1,0 +1,36 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4667213659242496
+
+Fuzzer: libFuzzer_freetype2_fuzzer
+
+Job Type: libfuzzer_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 4
+
+Crash Address: 0x604000000678
+
+Crash State:
+
+tt_size_select
+
+tt_size_request
+
+FT_Request_Size
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_freetype2&range=201609090951:201609092019
+
+Minimized Testcase (0.63 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96Da9SZC35zEe7XisJv8e0Ed46itrEak-JzNGYnZWXDjdlTmI8T-NdCrOUFyX-WW4_QffwbAKMMsW654mKXuV1OeDNOabVa9RW8Fq0V-8v107cSKKG9l6LMQY5Bo4VTygJzz4t0xCWisICDh9jDBIRYeJl_3oFImjZVYuOjeUDne9wi9fs?testcase_id=4667213659242496
+
+Issue filed automatically.
+
+See  for more information.
+

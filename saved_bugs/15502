@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5751466595188736
+
+Project: libxslt
+
+Fuzzer: libFuzzer_libxslt_xslt
+
+Fuzz target binary: xslt
+
+Job Type: libfuzzer_ubsan_libxslt
+
+Platform Id: linux
+
+Crash Type: Unsigned-integer-overflow
+
+Crash Address:
+
+Crash State:
+
+xmlParseStartTag2
+
+xmlParseElement
+
+xmlParseContent
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libxslt&range=201906250131:201906260133
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5751466595188736
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

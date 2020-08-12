@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5188375550099456
+
+Project: strongswan
+
+Fuzzer: libFuzzer_strongswan_fuzz_certs
+
+Fuzz target binary: fuzz_certs
+
+Job Type: libfuzzer_asan_strongswan
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+__gmp_exception
+
+__gmp_divide_by_zero
+
+__gmpz_powm_sec
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5188375550099456
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

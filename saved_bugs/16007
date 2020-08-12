@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5638960371466240
+
+Project: cryptofuzz
+
+Fuzzer: libFuzzer_cryptofuzz_cryptofuzz-openssl
+
+Fuzz target binary: cryptofuzz-openssl
+
+Job Type: libfuzzer_ubsan_cryptofuzz
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000002b93000
+
+Crash State:
+
+aesni_ecb_encrypt
+
+aesni_ecb_cipher
+
+aes_block_update
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_cryptofuzz&range=201907110207:201907120205
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5638960371466240
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

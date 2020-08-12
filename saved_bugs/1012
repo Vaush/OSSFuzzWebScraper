@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5285093406932992
+
+Project: re2
+
+Fuzzer: libFuzzer_re2_fuzzer
+
+Fuzz target binary: re2_fuzzer
+
+Job Type: libfuzzer_msan_re2
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+re2::Prog::MarkSuccessors
+
+re2::Prog::Flatten
+
+re2::Compiler::Compile
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96qQ3X_3cTtSTF2eDOwOv55ZbcEdEHSSYiN98NTk2o2brlgAzujIEqXQX08XqWO9rpp26UtUFbqbhPpQ5Cjv8Soo4RmU76E9p9BHN41w1QexPxcSh4QArS4ppyts9AGpK1tQWzu2KOYeWHhf8mW1Dfg3vU8YQ9Ga3wLlz2LNVkFe6QAXQ0h3tOZHT733L035lTrQcrIDXf-2I1Nv_e__MkDjZDoFthf_YnGknjoREj253EmLiowtsNTZtqC_Gg72pjbWVzFvM_kgVSlUwEyvA52AfvxMirZfiQd-cRVJIuBI3CyepPJMhLpwbvruNPUlML210Ys4gLkPpqWzMNXYT5BqAZCLG8hDl_mjYIwlLnbo_WMh5gW0s8CXdfXRIGqAAJFSVKs?testcase_id=5285093406932992
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,42 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5687735345479680
+
+Project: jsc
+
+Job Type: asan_jsc
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000010
+
+Crash State:
+
+std::__1::enable_if<IsSmartPtr<WTF::RefPtr<WTF::StringImpl, WTF::DumbPtrTraits<W
+
+JSC::StringJumpTable::offsetForValue
+
+llint_slow_path_switch_string
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5687735345479680
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

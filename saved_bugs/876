@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5800055606870016
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Fuzz target binary: pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow READ 4
+
+Crash Address: 0x7fbcffa9b084
+
+Crash State:
+
+CreateTableRows
+
+SdrPowerPointImport::CreateTable
+
+SdrPowerPointImport::ImportPage
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703150851:201703151305
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv949Jo-UFyqNgJYg8kJbN7fO0UfHp6WImyufwjRMwOl-Lq-j3mP8CkFnIPo7iBMeqxoN8Msl2YfTXntcE43SCev1YH_ufAjCe57nrH4zpf9mwTQ9AZmG5Um5hqwtEP1F6oObBXwS207LNsiG0I67-tVsmsgJVkeG8c5jfx7qTPR2TWCClwQdmNPsUqJYwUPys-NO3ycvVhWF8I3sLSRkIlG15HICYqr9oOKivGwQWn14DXGpoDWLPRyr44FXxHdj4n9OEUfupROoVDe7LlA0aFFJ-ZwpMRvvK5OCXXdE094CWAUJjXurRpeavH0BgrIYgAHbsHUSjdr4mqXr-hdm93YlEFSsKewofnSn7POb3axvCgMa4YXHY2-rHaozaKbFkLlQ9r9B?testcase_id=5800055606870016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

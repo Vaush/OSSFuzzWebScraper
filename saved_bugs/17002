@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5713985441103872
+
+Project: iroha
+
+Fuzzing Engine: afl
+
+Fuzz Target: consensus_fuzz
+
+Job Type: afl_asan_iroha
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+__cxxabiv1::failed_throw
+
+iroha::blob_t<64ul>::from_string
+
+shared_model::crypto::Verifier::verify
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=afl_asan_iroha&revision=201909051451
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5713985441103872
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

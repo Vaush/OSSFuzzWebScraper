@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5890037898018816
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_vsdfuzzer
+
+Fuzz target binary: vsdfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Container-overflow READ 8
+
+Crash Address: 0x6060000009b0
+
+Crash State:
+
+libvisio::VSDContentCollector::_generateBezierSegmentsFromNURBS
+
+libvisio::VSDContentCollector::collectNURBSTo
+
+libvisio::VSDContentCollector::collectSplineEnd
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95B7MYngybX0fb9HKr0-VEfS--y6_ODCo67siHIWRT7apxvmecLVNpWWH_HQegBwR3AEqmLwkFhptqtr7qfDLilZfy9SAc6ch8AIP0Pps6MrwVg6F0og6abfmPvmrEHf34913--GG0nRr4i-BGsg-ZFBX79436x4wE3JVNhqaQM87koya-aHog5axxDsvZi662_sBt9egxHZfIBRVT-8WQTuPBxI9Gqy7xO1HwrsLcliAznpde-rBhB_CKwkcx1x4RNpJ7aLPChO3g7KslpWOd2i-4yvdS8ON9-lKqmS7vVBq2Ur6qiChtyTkIymrWm4w8_HsOXap4TrwTkIbzTVANizZVz4DL4-4iLPzm_fldNmLGIPJuLgERYLGJi03eU6W-Qfj5qrcwaE81s1gtjML0fvahYwDbqrKLCYcqQyUq7EleIKUQ?testcase_id=5890037898018816
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

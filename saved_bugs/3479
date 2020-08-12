@@ -1,0 +1,40 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6557876376043520
+
+Project: boost
+
+Fuzzer: libFuzzer_boost_regex_fuzzer
+
+Fuzz target binary: boost_regex_fuzzer
+
+Job Type: libfuzzer_asan_boost
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
+
+boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
+
+boost::re_detail_NUMBER::basic_regex_parser<char, boost::regex_traits<char, boos
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6557876376043520
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

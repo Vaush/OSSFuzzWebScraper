@@ -1,0 +1,36 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6367547175731200
+
+Fuzzer: libFuzzer_freetype2_fuzzer
+
+Job Type: libfuzzer_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x619000001d80
+
+Crash State:
+
+ps_check_extra_glyph_name
+
+ps_unicodes_init
+
+t1_cmap_unicode_init
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_freetype2&range=201605242252:201605250605
+
+Minimized Testcase (3.90 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95r1gvnbK4ykrBIv2FTb_QoEdVv1-PxCfYXXKJBw5PdTbhoCBr3tD2vYwN7X98FlSKmcaIPW3g5DZc1zKSiGRgk0vwnVaqQt8vZ6YzAK5Cqtbr18Uw_ExJaaIDE6ZiTQSosYaCic0eaHZ7WE6SPmKY4jq75hpUZkoFIjU1tML4rFbSqAHM?testcase_id=6367547175731200
+
+Issue manually filed by: ochang
+
+See  for more information.
+

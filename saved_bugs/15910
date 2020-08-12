@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5765804714360832
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-instcombine
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-instcombine
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+CastInst::castIsValid(opc, C, Ty) && "Invalid constantexpr cast!"
+
+llvm::ConstantExpr::getCast
+
+BitcodeReader::parseConstants
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201712190608:201712210617
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5765804714360832
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5772367806595072
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_vdxfuzzer
+
+Fuzz target binary: vdxfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x000000000018
+
+Crash State:
+
+libvisio::VDXParser::readPageProps
+
+libvisio::VDXParser::processXmlDocument
+
+libvisio::VDXParser::parseMain
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704161619:201704171617
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5772367806595072
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

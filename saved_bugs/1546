@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6576177596596224
+
+Project: harfbuzz
+
+Fuzzer: libFuzzer_harfbuzz_hb-fuzzer
+
+Fuzz target binary: hb-fuzzer
+
+Job Type: libfuzzer_ubsan_harfbuzz
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+hb_ot_face_cbdt_accelerator_t::get_extents
+
+hb_ot_get_glyph_extents
+
+position_around_base
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_harfbuzz&range=201705081840:201705091619
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6576177596596224
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

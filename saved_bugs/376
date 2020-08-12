@@ -1,0 +1,48 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6642615457939456
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_pkcs8_key_parser_fuzzer
+
+Fuzz target binary: gnutls_pkcs8_key_parser_fuzzer
+
+Job Type: libfuzzer_asan_gnutls
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+_gnutls_pkcs12_string_to_key
+
+_gnutls_pkcs_raw_decrypt_data
+
+pkcs8_key_decrypt
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_gnutls&range=201612232019:201612240802
+
+Minimized Testcase (0.18 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94ZsQNkLa6Ye37-tM9_QHqYT9bDdI7Wx9Dirvosk6ITcMTuU0Bjgm_vOcfvGnuB6Oldtp2Y8L130l1PbvpQWUB1MY2ESwtXwRJErqDVNgSmCHQpyO07CrAOuoWU3RTk9RUYI4Axqal7v5Ic0X7qvebeVQRj0pdlXVCiDPfyBcF5VMNsK0XuHAmHz6bQOi9GyPdCH31fpJvdQxEE8Ol3tCKCXh3QYIdUklmxr-RptucViD3aplc4F2r-wEJ6yi3PzGZ1CQ7VTCq0FNI0Fo1E2olAwU2wuMk6LjRT5zW-68zf0RMX1HuTYFoLeKx4CIoJtFrmX8EFxXtwlqMI327LMEOrrVXV0-fWf3iQtXfn6BAatNJJ4J1Mdn979dIFJoZXoYmvdcQi?testcase_id=6642615457939456
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

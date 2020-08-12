@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5875260903653376
+
+Project: gnutls
+
+Fuzzer: afl_gnutls_openpgp_cert_parser_fuzzer
+
+Fuzz target binary: gnutls_openpgp_cert_parser_fuzzer
+
+Job Type: afl_asan_gnutls
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+ret >= 0
+
+_start
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_gnutls&range=201704041628:201704051629
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97TvkrR3GMq19NWQqjsAFziF4EoWoGUVRMVMmRgJZdCYUs1VPIgUKf4L3Dp50uNSYgvbipW8eenvslNA3WWyy5UKXNZ-hvsSdT6jElWGbBVEGs5qpluyK2_MLUMJIP4a5gB6203vgXfcz9leOm2XI9xMbHQeDAT1fZwfcTARyxAZn8QhQb8n9DJkJbdI5C-t4auOstB0h9PEQ-YJ0JOCTjIG8OMou2I4dF_JQpLqMqXx-mdt7AkMg0PqVQUqDDjpgfW0N54yNWVggnW0cUCvj8TmHnlpE-xCiz5h1yvj98U0hSVKJbAVm1tfmVnWAR-sURUSBGMgjciF5X6F_hDf1H2Afeurrc0AIqND02J55UVbf8ICeai8zmWGckLgxwgCgX-YhXC?testcase_id=5875260903653376
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

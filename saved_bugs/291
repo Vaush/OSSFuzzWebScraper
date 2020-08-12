@@ -1,0 +1,42 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4717026396340224
+
+Project: expat
+
+Fuzzer: libFuzzer_expat_parse_fuzzer
+
+Fuzz target binary: expat_parse_fuzzer
+
+Job Type: libfuzzer_msan_expat
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+_start
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_msan_expat&range=201608052337:201608080353
+
+Minimized Testcase (0.00 Kb):
+
+Download:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95YrkuvRnEy2NNHKyF7uqhkLzsDlXnrfRxqWt-o5Fi3aYV_7aFk6kba3HT7xGlEGMIWZCQ_2t6EGANZANI8KXDmuGs4nnDcrFM3_kTMkEE1t0OxL93SB0eIbhNuVPl7FZmpjVlNt9oVS2VRz3-P1rEMr84Tv9ewpgv3K3bNzEv0iTzI5NA?testcase_id=4717026396340224
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

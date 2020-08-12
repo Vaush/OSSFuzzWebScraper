@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5834446242578432
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_svmfuzzer
+
+Fuzz target binary: svmfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+demangling_terminate_handler
+
+std::__terminate
+
+__cxa_throw
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libreoffice&range=201701142226:201701151723
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94wUZuo0CtJaZiBq0e5z5JFVWNxxJI-S9NnVt758y2gVv4Ido5yw1g5HeQUG_FEKBe4VPxblUzFFLlbquOZ3VSSVdFUpTcTe6sIQQ_QDOq6K3vJR5W-bBWf1Payukw7byprTQDbGO7JEzhznfPHkhmTeBjhNdEVGHRCOvCDoS3PUaO9D55EfLPm0aZkZygrd9DIsmkuuyI6QyicBwgj3p_cN16xR6uKQokj2W5sCCVBR5_NLeahR2O_l5_f3nTslx87e6EnJY07x93N0t8cOTCTv3P7zs7zOleG5WQ82iW_1RQcBnmB1Tw3Vpn9EuclLZThn3GBxHRmrIW0jtuh7Zf7GlohIkPUjEBi3JhlVHBrFIPlGJzCLIphlnz1FHLscG8hVbtlqH_Dd2f4AqNLTtmXuwGaltcE-8pXUMYc1g7JGFHNIBI?testcase_id=5834446242578432
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

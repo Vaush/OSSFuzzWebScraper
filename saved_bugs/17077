@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5639178787749888
+
+Project: libmpeg2
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: mpeg2_dec_fuzzer
+
+Job Type: libfuzzer_msan_libmpeg2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x00000002b500
+
+Crash State:
+
+ideint_process
+
+impeg2d_deinterlace
+
+impeg2d_dec_pic_data_thread
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: High
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_libmpeg2&revision=201909060418
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5639178787749888
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

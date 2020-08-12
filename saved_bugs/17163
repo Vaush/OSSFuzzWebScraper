@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5720780498796544
+
+Project: php
+
+Fuzzing Engine: afl
+
+Fuzz Target: php-fuzz-exif
+
+Job Type: afl_asan_php
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x60400002f9f9
+
+Crash State:
+
+php_ifd_get32u
+
+exif_convert_any_to_int
+
+exif_process_IFD_TAG
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_php&range=201909110340:201909130343
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5720780498796544
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

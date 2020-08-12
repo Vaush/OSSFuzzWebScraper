@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5248667797684224
+
+Project: proj4
+
+Fuzzer: libFuzzer_proj4_standard_fuzzer
+
+Fuzz target binary: standard_fuzzer
+
+Job Type: libfuzzer_ubsan_proj4
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+s_inverse
+
+pj_inv
+
+pj_transform
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5248667797684224
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

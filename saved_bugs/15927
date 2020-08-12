@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5714545638637568
+
+Project: skia
+
+Fuzzer: libFuzzer_skia_skottie_json
+
+Fuzz target binary: skottie_json
+
+Job Type: libfuzzer_ubsan_skia
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+skottie::internal::VenetialBlindsAdapter::onMakeMask
+
+skottie::internal::MaskFilterEffectBase::apply
+
+bool skottie::internal::BindPropertyImpl<float>
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_skia&range=201906260315:201906270322
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5714545638637568
+
+Issue filed automatically.
+
+See
+
+https://skia.org/dev/testing/fuzz
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

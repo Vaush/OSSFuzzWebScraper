@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5446789447548928
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_clang-format-fuzzer
+
+Fuzz target binary: clang-format-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000010
+
+Crash State:
+
+clang::format::getLengthToMatchingParen
+
+clang::format::ContinuationIndenter::mustBreak
+
+clang::format::OptimizingLineFormatter::addNextStateToQueue
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201805080541:201805100547
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5446789447548928
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

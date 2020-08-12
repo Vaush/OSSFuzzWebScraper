@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4690071674421248
+
+Project: json
+
+Fuzzer: libFuzzer_json_parse_afl_fuzzer
+
+Fuzz target binary: parse_afl_fuzzer
+
+Job Type: libfuzzer_ubsan_json
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+s1 == s2
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_json&range=201702191720:201702191952
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94w39N38cxRVXnoq093KkwROcyYdal22JKzo-nj3whQwSPTkTG7i8PK9q0NVP4bhu2CmIUngm55GOdKuPyL90kfpJpj_UccSvV_VEauQJzs3Ovrf2GS8wsb6epB8uKwFI8_qZlsFvtpq20PSbb-wU2v0ph_u7BGzTTtoyEM4ya0AZEXuM8aLG9TNzJkwCIICHVH4PjjenVeepLoX3tM6vwfGox4oMdvzQi5s_fKENjkVO1Y2sKywgRrHSINujg40Xg1Qqess-Saey2LoHpUd_S1vbWKXnl5NiahfEMI2L5lT0Vn9AhlgiVD0WEii3vG42QrtGGMOmXG-wDYMthrMO1dRsgWsm74C4W_KXPaQ7dEKOSsCs2VoTtWH2im-qpMXX0e7Jic9Jn6iNzbiUYPS6yPoPImCK_VX5nV3EGmrnkjqIwlHqo?testcase_id=4690071674421248
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

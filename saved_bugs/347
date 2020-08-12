@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6240782075822080
+
+Project: json
+
+Fuzzer: libFuzzer_json_fuzzer-parse_msgpack
+
+Fuzz target binary: fuzzer-parse_msgpack
+
+Job Type: libfuzzer_msan_json
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+std::__1::char_traits<char>::compare
+
+nlohmann::operator==
+
+_start
+
+Recommended Security Severity: Medium
+
+Minimized Testcase (0.25 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94z1zLLkKnFP000oNMxeOAENBZKbWPmCdd5VTOLC7sRv6D03OH1FiqBTqgDeYAVbeUqki98vM1nXPEMPmIqvCNX43sCp6u-En4GNFxunbHr_DBoJ1eXXhdFO9pmftkYy4wtQQpioimz3cXNQXEg-NfqyRKy77jI6MfFtuGc0K89O20baCOoQ18kz5Hj1y8Q432hDgRZNM_DuStH0zDr_e7xNnXm0SAKNBQME7tpUZMjApnsb9XJu0A8TKefxgdiGe0mvlTocd1nmZ8BX3sYcsfyeoh_y7Dblf9sLZYfgFtJuOPl6du0ZlSEzq5q-xZqGeB_FzPiNz0x65zhOnobut36P-8g29OyV1vJeHCYpUvE-TTHbFEZtZAuFAacJqYoxvjuNtjL?testcase_id=6240782075822080
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

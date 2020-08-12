@@ -1,0 +1,40 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4913695417171968
+
+Project: boost
+
+Fuzzer: libFuzzer_boost_regex_fuzzer
+
+Fuzz target binary: boost_regex_fuzzer
+
+Job Type: libfuzzer_asan_boost
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+0 == recursion_stack.back().idx
+
+boost::re_detail_NUMBER::perl_matcher<std::__1::__wrap_iter<char const*>, std::_
+
+boost::re_detail_NUMBER::perl_matcher<std::__1::__wrap_iter<char const*>, std::_
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4913695417171968
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5692202612686848
+
+Project: firefox
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: ContentParentIPC
+
+Job Type: libfuzzer_ubsan_firefox
+
+Platform Id: linux
+
+Crash Type: Null-dereference WRITE
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+mozilla::places::History::History
+
+mozilla::places::History::GetSingleton
+
+mozilla::xpcom::CreateInstanceImpl
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_firefox&range=201908200213:201908210218
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5692202612686848
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

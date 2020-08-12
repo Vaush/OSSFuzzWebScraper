@@ -1,0 +1,56 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5830738947604480
+
+Project: json
+
+Fuzzer: libFuzzer_json_parse_afl_fuzzer
+
+Fuzz target binary: parse_afl_fuzzer
+
+Job Type: libfuzzer_msan_json
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+__gxx_personality_v0
+
+_Unwind_RaiseException
+
+__cxa_throw
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_msan_json&range=201701270147:201701270541
+
+Minimized Testcase (0.05 Kb):
+
+Download:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97uPDkobmdCxNESfNAohSeKQ8tsx1Ni5ug5EFQiWitRVK0y8ZnwzVJbr_pYJ3F_AivTjP2p-JUbq4W_VLT5OHU9WofkuRuvvVW-MPD61NHqyu24muu3Q9JHinl8GLO7_btgUfOV8iG5SPQGnGexHBjzCyrYGTlLsZKZbf2VkqpROCpySlZngCslMz3osZixYVsySBUr0oWEUL4jUeEhM-fb_HCXufyiUTGG8rAYPGvMA5tEthCSO-s0d10q_HJWFuYcZeYGIjgcXWf2z06h_0_jCoN-YZv-aJi97KGchkJwsLfE4a0POiWJtChJCnu0OYSKSQbE4IUMafDxz-2FwzQiLkBRH3rxYJbNpoj_YjbUdrndvdTmWOiV-moaPHKUAz0VxyZT?testcase_id=5830738947604480
+
+{"(V[V[":8,"[":8,"V[":8,"[V[":8,"VV[":8,"[V[":8,"V[[["
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

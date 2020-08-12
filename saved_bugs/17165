@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5754109445013504
+
+Project: solidity
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: yul_proto_diff_ossfuzz
+
+Job Type: libfuzzer_ubsan_solidity
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+__cxxabiv1::failed_throw
+
+void boost::throw_exception<yul::YulException>
+
+yulProto_diff_ossfuzz.cpp
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_solidity&range=201909110208:201909130211
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5754109445013504
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

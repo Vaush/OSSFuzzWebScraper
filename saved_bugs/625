@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4574924406521856
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AUDIO_AV_CODEC_ID_MP2_fuzzer
+
+Fuzz target binary: ffmpeg_AUDIO_AV_CODEC_ID_MP2_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+mp_decode_layer3
+
+mp_decode_frame
+
+decode_frame
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96uUx19GCK7VS-NYB6rR5MeAo_wTxoi6ohGdZBDI0NtCe3fwftrkmRitousovvGM2FKLU1L_0i2BEr9Eav4N37DZ6J2WMGRQy50kSNlg0zzhfPB8AZzYAwqWhpLuqSKzcznrSzWNpKIvvQPg39beVGJkb8J_7q3x5aSfvo1mRcE-kkxyKaRgOjoQljCr3FxgUpKtMObKl0S_Op7VUtmSqY7D0PKeV1LThxaiE3oCwq7k5iRb1T5cvr8nxuBRJWkVu6tMTqEKwJ5tSAz5vh1ExqHVh87IA0SCEElEBxgIvALX51DbcD2TFiqwuoTYx3YSppHnl3DN_-MEHzt6jeZfx8WHjzQHh0Qsh2G-xkt4MFi5hwMLKxGELtTFab2QRxZy9IacnbHrGJUEOTUPl71tLYW6FozCN8L5YJgKjP0jexLIfnBdZg?testcase_id=4574924406521856
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

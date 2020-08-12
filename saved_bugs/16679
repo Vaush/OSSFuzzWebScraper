@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5660231211679744
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: clang-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+R.isValid() && "Must have a valid source range"
+
+clang::Sema::RequireCompleteDeclContext
+
+clang::Sema::BuildCXXNestedNameSpecifier
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201908140336:201908150335
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5660231211679744
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

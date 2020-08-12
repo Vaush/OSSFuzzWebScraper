@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5728664968232960
+
+Project: harfbuzz
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: hb-subset-fuzzer
+
+Job Type: libfuzzer_ubsan_harfbuzz
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+CFF::dict_opset_t::parse_bcd
+
+CFF::dict_opset_t::process_op
+
+CFF::cff2_top_dict_opset_t::process_op
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_harfbuzz&range=201909010245:201909020248
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5728664968232960
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

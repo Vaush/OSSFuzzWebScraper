@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6701721724125184
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_wmffuzzer
+
+Fuzz target binary: wmffuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x025a04b40000
+
+Crash State:
+
+ImplCreateDIB
+
+SvpSalBitmap::Create
+
+ImpBitmap::ImplCreate
+
+Recommended Security Severity: Medium
+
+Minimized Testcase (0.08 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv9651vpmokD7GcydcBvbcaF3y7X6ar6ByimZzBPfAuMbbcNza8CJgoGiiH49QmrCuDap4AjMdRJfxqBuKXdMo4eeFSVAn7Woox3rksrwQj7VmJ8aNE7NODYRAM5b9RP8m6ZcKlCYJf7hAbK6xXIxNCf18NVcBcznM_DEAmPesM3aIz-V7s0?testcase_id=6701721724125184
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

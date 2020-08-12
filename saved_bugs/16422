@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5638344905588736
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-isel-fuzzer--aarch64-gisel
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+isVector() && "cannot get element type of scalar/aggregate"
+
+llvm::LegalizerHelper::lowerShuffleVector
+
+llvm::LegalizerHelper::lower
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201908130326:201908132221
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5638344905588736
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

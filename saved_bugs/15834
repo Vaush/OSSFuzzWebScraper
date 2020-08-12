@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5651638108291072
+
+Project: libxslt
+
+Fuzzer: libFuzzer_libxslt_xslt
+
+Fuzz target binary: xslt
+
+Job Type: libfuzzer_ubsan_libxslt
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+xmlFreeNode
+
+xmlAddChild
+
+xsltCopyText
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5651638108291072
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,42 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5694311592624128
+
+Project: syzkaller
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: report_fuzzer
+
+Job Type: libfuzzer_asan_syzkaller
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+openbsd: len(Report) == 0
+
+report.Fuzz
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_syzkaller&range=201908190400:201908200400
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5694311592624128
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5641203443302400
+
+Project: graphicsmagick
+
+Fuzzer: afl_graphicsmagick_coder_MVG_fuzzer
+
+Fuzz target binary: coder_MVG_fuzzer
+
+Job Type: afl_asan_graphicsmagick
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+primitive_info != (PrimitiveInfo *) NULL
+
+DrawPolygonPrimitive
+
+DrawStrokePolygon
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_graphicsmagick&range=201807190219:201807200025
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5641203443302400
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

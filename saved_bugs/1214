@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6130606599569408
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_VIDEO_AV_CODEC_ID_H264_fuzzer
+
+Fuzz target binary: ffmpeg_VIDEO_AV_CODEC_ID_H264_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+ff_h264_decode_mb_cavlc
+
+decode_slice
+
+ff_h264_execute_decode_slices
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv9407Kq0CUhu79mS9GVzmwoCSl54e8qxljm04Jqnx5VvbvCWJUWieeohIRXo_AP39rqPz8NgeRNf27Yjf590WtDWrl8q9hvIkCkMpT2IMYf_quSzQYnIvkfeC2zJsA3E-v9nDc3NEo7s8ExwQipPw2v8P6sm5RxkmHerHjNiKg5LayUC3CuzEERk-prmttpHb8L3rqNh8feRTS6WULSs7p0NTlElf89dSFoSCalR3FsecVaCNawpZE4ZpUDMyPTiC6b6WHksUXmi6j0KgAplR0eIWwH33Ppkc0G4toL_hJ7zTB58jZBUtvJGW2NKBK5Qoj_frsmf3BPUF-NHjgvmff49EZc4_-GAmMk43b09KQ6BpBwssJ9ji5PnXfJ3YLXRa0rbffR-QSUProamacZFq8FuqRTNyqrLlGTWaoSMhI6SAogBODI?testcase_id=6130606599569408
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

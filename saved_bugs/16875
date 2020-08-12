@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5658978675064832
+
+Project: cryptofuzz
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: cryptofuzz-openssl-noasm
+
+Job Type: libfuzzer_msan_cryptofuzz
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+AES_encrypt
+
+CRYPTO_cbc128_encrypt
+
+cipher_hw_generic_cbc
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_cryptofuzz&range=201908212037:201908310225
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5658978675064832
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

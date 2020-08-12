@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5727599193489408
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x00008fff8800
+
+Crash State:
+
+int JsUtil::BaseDictionary<void*, unsigned int, Memory::RecyclerNonLeafAllocator
+
+[stack]
+
+Js::SCAEngine<void*, unsigned int, Js::SerializationCloner<Js::StreamWriter> >::
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=asan_chakra&range=201811080226:201904250255
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5727599193489408
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

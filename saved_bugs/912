@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4634010103840768
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+filter::config::FilterCache::impl_createConfigAccess
+
+filter::config::FilterCache::impl_getDirectCFGValue
+
+filter::config::FilterCache::load
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703171634:201703181632
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv9412sOlFRo1KKjlb_o_po4Z3H70qN_pDIzb1wz67IG_wk50p81OWY1DCuxFwJf9UWD5tYO7C6ZVvslylZGcW7IQg0F9lEPoD8PIPU1hVroJKngmju9WyIIwKRW4wm1VElmHY4omanMukhQ1qx7FCiDg9Vz7dXveJSq-JpcLosslvuHab3RtWe3MGZydDUvbYvgfOwr4JFHo-i5XqKerRpIftD6nSqZAV-_RdVO4HNBV4Qdgb54hHh5M7ZX8D_MBfWNWthXnJ8FW6QiNK2YXovylkKb_TlrUPLrJTbRDHFovGGSAZcokF0KTtcR14aBY-kJD4IxCcFJKI4YHIsrfvFuxlbocGqGC89BI1fud4vHXs7z66TL1ViycDCx2vVWfQovTAAxx7Wcql_GuOgMl4W04J-sjD9DJU0_LmogrYZTysXP_sDs?testcase_id=4634010103840768
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

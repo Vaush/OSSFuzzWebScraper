@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5645042176229376
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-strength_reduce
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-strength_reduce
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+(!F.ScaledReg || !F.ScaledReg->isZero()) && "Zero allocated in a scaled register
+
+LSRInstance::InsertFormula
+
+LSRInstance::GenerateAllReuseFormulae
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201811280235:201811290236
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5645042176229376
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

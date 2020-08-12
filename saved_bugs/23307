@@ -1,0 +1,62 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5677055600754688
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-opt-fuzzer--x86_64-loop_unroll
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+(UsesLHS ^ UsesRHS) && "Should have selected from exactly 1 source"
+
+isSingleSourceMaskImpl
+
+llvm::ShuffleVectorInst::isExtractSubvectorMask
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=202006100259:202006110252
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5677055600754688
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+
+Comments on individual Monorail issues are not monitored.
+

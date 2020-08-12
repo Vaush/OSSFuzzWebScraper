@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4774762205151232
+
+Project: libmspub
+
+Fuzzer: libFuzzer_libmspub_pubfuzzer
+
+Fuzz target binary: pubfuzzer
+
+Job Type: libfuzzer_asan_libmspub
+
+Platform Id: linux
+
+Crash Type: Container-overflow READ 4
+
+Crash Address: 0x629000000200
+
+Crash State:
+
+librevenge::RVNGStringStreamPrivate::RVNGStringStreamPrivate
+
+librevenge::RVNGStringStream::RVNGStringStream
+
+librevenge::RVNGZipStream::getSubstream
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94B4tP9bY8cu9DA4AFvs4KJgd59j4E26tTvJgxVTT_r7N3saLfDvK4251jVlPU1xIUUFTVsY32-3AWgbtN9YiJULr0VEnKI2QNZoVJqzsIkehxGxqZmg0O4f30zJfo-qMS3jA7dvJMwyx9Q9Ks1vMtlZHniE3NBk0MKyyqQkDR3Gt450mjRKSpWLOZJ-nhREJWgcnva44jQC0Tesspa78jl0EPBiZeXtwtGUCahifuIvdGkwkAf46bjNGEZRwekGvNTPMwTMJQje9OPCj8ChP-0mY_YOeU0xcFcKdt7O2fIfBn1GaczW7TbhRKhem1lZ9DZG-zdmn4A6QJd1k2x8glDjPpgn2kZECzfzl3zNyW1JykPkA7NovnSKs_CQYAs9q8iBFR_?testcase_id=4774762205151232
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

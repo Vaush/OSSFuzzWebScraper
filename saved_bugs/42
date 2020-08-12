@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5086706067832832
+
+Fuzzer: libFuzzer_libxml2_xml_read_memory_fuzzer
+
+Job Type: libfuzzer_asan_libxml2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x603000000498
+
+Crash State:
+
+xmlDictComputeFastKey
+
+xmlDictLookup
+
+xmlParseNameComplex
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libxml2&range=201608301640:201608310007
+
+Minimized Testcase (0.07 Kb):
+
+Download:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95S6PbtUXMjQdqzUkb1GHglAfz4fVJdhzfgOXQUggv9A5Eh90AF1PtIykN0yTXcWS0CjocQgxzig3C2c97sC7n-CaO90dw1qpJmI7Y3df-asut07osOcLc0mpiiYieRg9_00tstO4t609PId91sWTN2t9jJbun0xFNGJbGgoISsAD7Ugew?testcase_id=5086706067832832
+
+<!DOCTYPEATA[<!ENTITY	%  a     '<!ENTITYƓncgude&#37;a;"O
+
+a!D'>%N%a
+
+%a;%
+
+Issue filed automatically.
+
+See  for more information.
+

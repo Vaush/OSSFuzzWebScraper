@@ -1,0 +1,42 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5710840499535872
+
+Project: jsc
+
+Job Type: asan_jsc
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x053900000953
+
+Crash State:
+
+long JSC::genericTypedArrayViewProtoFuncSlice<JSC::JSGenericTypedArrayView<JSC::
+
+JSC::typedArrayViewProtoFuncSlice
+
+jsc
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5710840499535872
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

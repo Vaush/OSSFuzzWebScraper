@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6384974469005312
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_abwfuzzer
+
+Fuzz target binary: abwfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x60a000002cf8
+
+Crash State:
+
+librevenge::RVNGString::Iter::operator
+
+libabw::separateSpacesAndInsertText
+
+libabw::ABWContentCollector::insertText
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704042048:201704051628
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95obBy5dHnwc6oyBeIgYaYKL3AHISIunSfxdPb8_pSuQwEvAtZAmN43H70Jd7Kde1VSeQNdipyEqEr3vUDbnLgySCYSeaLL6gDXofrg6vAs4nLgeTqCK69Z49PWlyJZ0abjRgJZp0zfBESQBsXmXSFiIky78JL_n3lRsiUNvJtWovQdFidUaPWP2SZRXkn9NFF-G0rfgUeRF0RGU-JSPkF2UsUGaJLc23lwDyna7LeCqsBmqSxo_kXuQGFzdX_H7TjKJgxybRLk8dLk_yhYTUmAx9XIPMAIaKS0aVSlC_tqqPo-zvQmpoe04VqIwCeSHooHh3Zb6ztNrh9bPIVpIXFyuCFTLJWGEbSeQHT-jsUoZE1XEiL3x-XqjC_ydUqNsvokmvNo?testcase_id=6384974469005312
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

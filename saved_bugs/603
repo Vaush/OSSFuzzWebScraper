@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5348814833582080
+
+Project: libass
+
+Fuzzer: libFuzzer_libass_fuzzer
+
+Fuzz target binary: libass_fuzzer
+
+Job Type: libfuzzer_ubsan_libass
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+ass_lazy_track_init
+
+ass_start_frame
+
+ass_render_frame
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96nkW3h0IwcybAfrOn7kZGFeqoWnPTGjbWIqstwtQS0A7dzhx8XXqo4NaO9auyXq5Z_iHQ3S0dEPOjz6otPOiRFq4xYVMAjm0Dpdp0W6wSm9AX-KaemVaZlh4yJkoICaRfVBLa4P6wgkp6bgGPHXQMNr9Wo3JuFa-7_N_80tsjVt0YY5c0Dgq5MU6C_1RS8JXjTpEUsrSI4nUL_FS2rWZ718eEEoRYMtRQCO7HnYHdLiCivOVknWWaw-xnjP1Eh9yktj7uafsnsTMFOX8awKrRxa286bgoofIcw2IIPncMi78kDs9ACK5MDRIwevAnGfZO59acsilnr1Fz4EOq5P9CqFQmCf1K2Ngaf3k32O5ocecWL9HZ5TvTGmqZgI4wj5LlSnkfW?testcase_id=5348814833582080
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,64 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5165385038954496
+
+Project: ffmpeg
+
+Fuzzer: afl_ffmpeg_AV_CODEC_ID_VP9_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_VP9_fuzzer
+
+Job Type: afl_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x62ffffffff80
+
+Crash State:
+
+ff_vp9_ipred_dr_16x16_16_avx2
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_ffmpeg&range=201706110426:201706140422
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5165385038954496
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

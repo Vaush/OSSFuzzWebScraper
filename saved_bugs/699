@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4553705590358016
+
+Project: grpc
+
+Fuzzer: libFuzzer_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: libfuzzer_asan_grpc
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+grpc_slice_hash_table_add
+
+grpc_slice_hash_table_create
+
+get_lb_uri_target_addresses
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_grpc&range=201702140127:201702140531
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97PAIN5LJAp6lx7tLDjdQ7VKOsZTpEk9w55PSm2Pq83_37iSKigf1YOj76hSt82fBXxfaxYj6UQeh9twTZeUbVU3W634ZbQKzYLZmaIAhErSnfDfSogydcnmBfNVc6Arnbxe75fFogQ-QJ5z6fA11SnCqBSuAaea12jvW0apYyLBcAgnUa2p7BAjyIPJSZ07uIg7W-iFvdj08cqtQKZjLdfGWFOJOBwjYd73ad8i12H8BVAs_UfFCUjxqKzSMs93EHUuEblddjx4vvIbJN1ZS45k5zaNgdA79ygQoHMgCZhtlAqSmA0luJg6BXxIxZmkDkFF6I4GYXWUo2QzPwM7G6N0OryNhV9AkTTSSeOEjXIEdPGiK8qVHmAb5DmqBOw996ULaGB?testcase_id=4553705590358016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

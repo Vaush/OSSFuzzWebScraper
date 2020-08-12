@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5161915090731008
+
+Project: libsass
+
+Fuzzer: libFuzzer_libsass_data_context_fuzzer
+
+Fuzz target binary: data_context_fuzzer
+
+Job Type: libfuzzer_asan_libsass
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x60900000cc18
+
+Crash State:
+
+std::__1::vector<std::__1::vector<Sass::SharedImpl<Sass::ComplexSelector>, std::
+
+Sass::ComplexSelector::resolve_parent_refs
+
+Sass::SelectorList::resolve_parent_refs
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libsass&range=201906170253:201906180255
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5161915090731008
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

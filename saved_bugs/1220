@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5802161055203328
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_ww2fuzzer
+
+Fuzz target binary: ww2fuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 4
+
+Crash Address: 0x00000a054b90
+
+Crash State:
+
+SwWW8ImplReader::ReadCaptionBox
+
+SwWW8ImplReader::ReadGrafPrimitive
+
+SwWW8ImplReader::ReadGrafLayer1
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201704101632:201704191716
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv943XSNXkfhvWf4b7uLMkeJjNIb66kaZpDiR5fNYk1LB6YRS6pzmSuwqpW_HNBvzLZe_IS3AayfNZKxeZgKhyDziNt5Pmm1d5dLUDLKjIJocDclCLEzX2SfYvMSvSeDqIYIrj7PRd5exD88kJ1XcCFFVQdQngeDv1DGnzBKUV8OaBid7Bs2A8k_30i-UCoYZcDPb9DBTGTDdMWua-R0tYUtM1nlxUD-qrRdo-wGy1coziwooaHIEaDYU9WjjmRzls2gWSVClNn3ge5p5aeirrFdsrT_aRf2Uu-nTvqNIIfEKdLRzpjX9Grb9Yn3ahrzREKnYmXLSVnEDr6k7a6IC2Eo69iKh1Nv4V4_N3Qb22BSraC_G9pEIExqpN-0ii9azgOKYZf0EyHAm_jXCf2wSmolZYOvYNIPCLMZhZwrWOu9a0I0KLa8?testcase_id=5802161055203328
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

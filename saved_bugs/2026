@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6399837895393280
+
+Project: wireshark
+
+Fuzzer: afl_wireshark_fuzzshark_ip_proto-udp
+
+Fuzz target binary: fuzzshark_ip_proto-udp
+
+Job Type: afl_asan_wireshark
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000003
+
+Crash State:
+
+dissect_eplpdu
+
+call_dissector_through_handle
+
+call_dissector_work
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_wireshark&range=201706011621:201706020120
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6399837895393280
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+

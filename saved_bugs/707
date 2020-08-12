@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4717453097566208
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_VIDEO_AV_CODEC_ID_VP6F_fuzzer
+
+Fuzz target binary: ffmpeg_VIDEO_AV_CODEC_ID_VP6F_fuzzer
+
+Job Type: libfuzzer_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x000000000004
+
+Crash State:
+
+ff_vp56_decode_mbs
+
+avcodec_default_execute2
+
+ff_vp56_decode_frame
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_ffmpeg&range=201702251805:201702252138
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97WwhKSoI9XscT1IZTPXHJF76nrY8gfBtsK3b8A-FhdqrZ2BRXM07XqA61VnwLr79MNnz2Kmv4zbjJWv_uxz7SgC2GubKuk2ubHCPi94NuPg9eaUJ-IekkG5agh_Ogl4z4ZcFsjVDNYTxj7CUvDJnLOeko4rwxtPl14qFk2mAalYYTT3O273iRohrtnDKleQX52i32YyKIdf-g3g7rYqPkvcoBMItmG6xfjVX73qhjp_QPS-vzbzMFfxcjVwFqJMlblyRpEVybp8EawgTo3LFs82JSIOIEeMxDJw1y4MEJuwacnlb0hTOGxTw-h_K3jjdRhpHFK31AqJM_Y1DXHzRgdhVLIUebu1g5OkT4SfiIEWNOlbGfzSp7R0GT7wh7tmOxrQBJr?testcase_id=4717453097566208
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

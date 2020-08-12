@@ -1,0 +1,42 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5674711677140992
+
+Project: golang
+
+Fuzzing Engine: afl
+
+Fuzz Target: fuzzer-tar
+
+Job Type: afl_asan_golang
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+archive/tar: cannot encode header: Format specifies GNU; and GNU cannot encode D
+
+tar.Fuzz
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=afl_asan_golang&revision=201908212103
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5674711677140992
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,34 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5849123378954240
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 1
+
+Crash Address: 0x000000828bdd
+
+Crash State:
+
+parse_regex
+
+pcre2_compile_8
+
+regcomp
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201610131612:201610131701
+
+Minimized Testcase (0.42 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94DwRDX2xgqlUfMN-FKvWJ4UQrjZhkZipP0fc73s8eYsNu9uygDpJ6vkNGmHNk1Fn0QAdYvHjhzZHnhj_txQMdebwiAynPEZ47bS3Wz-sJfmHr96UDcJ4-OvPRuBpgHCxJS2IY9eCFfQZgFhH_ej11L2vRMYvUJDQzQsySnBxINZd7_nkU?testcase_id=5849123378954240
+
+Issue filed automatically.
+
+See  for more information.
+

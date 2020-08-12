@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5171071900712960
+
+Project: grpc
+
+Fuzzer: libFuzzer_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: libfuzzer_asan_grpc
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+call_start_batch
+
+grpc_call_start_batch
+
+_start
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_grpc&range=201702140127:201702140531
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96AIU0YQXycc2cy1ekBkcffxH5wWp3fG6S8mlCkkawQIC5epRi6iIzlrQFyH6cY3k4SLF1Nut0-Dv_kPI81006o-ByZhdT_nhd8TX6nwEHV1M30aKwKZxZB09d2pEWoRgWlHZDgX9NUia6o-g2SE1OJAec5rz1miKLI43SzP18v9SaQ0ujwWUXLspAKUMvj6tZ9cljHA_G1-2sBA3GETy2yQQzxgjQrZHeVfsNnANT0RHVFmWD1FzcuAIDYZzwPjMuzIesekfkcDHW9wiJ_lUQ9_kE-1f4fp9otRf0szuT-seUOE8Badu7bMGbW6cUqvebOdHvtkFuKEGtUY_Q5UBRRmGyYcHoY_ErKX-WtmRhqMsoeDN6RM_IghWkCzeDXa4ajapU3prZFYAKzD962q8ehKcqBQnls3SVaM8u3yjLWTw76XJM?testcase_id=5171071900712960
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

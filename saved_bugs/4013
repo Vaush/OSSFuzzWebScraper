@@ -1,0 +1,38 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6503761032773632
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x053900000e73
+
+Crash State:
+
+Js::JavascriptProxy::DeleteProperty
+
+Js::JavascriptProxy::DeleteItem
+
+Js::JavascriptArray::CopyWithinHelper
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6503761032773632
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

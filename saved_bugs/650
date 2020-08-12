@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4638954852712448
+
+Project: grpc
+
+Fuzzer: libFuzzer_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: libfuzzer_asan_grpc
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+gpr_free
+
+grpc_lb_addresses_destroy
+
+sockaddr_destroy
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_grpc&range=201702140127:201702140531
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95fIoIe31C_h2xwUAxRgqUsOOcjAHAnYacGDQnGVzpkNMmu5KlaMprOFaqZKLfhvKfmw2U1jxqFbrGhMyZP0-2yqHx_Np26E3PKFW-eMs7BSSvBp3E-MfUgRewHMATkBOLDhWpTjJWEG1xAOWYWxuZfZ-2E4-In-KvhvUkBK0NobMnl7KwoeAhkoy_XgeBxe6oYe-UnPZFf1M065sOFSSwuEdETfGNuR22F-j3n1uf20_ir42TWgdf7xHE-1_rqBH9jVoX5n2hWXZuzJXExTi-kG6Pt7dh7nOqnsF7xSkmCWfqOMl8hfxCzRCoWDTgO-HtKcPUqksbKte1ejlC0QAkJfOSsm3QuR-ygWSdPAJcX8YhryKx8kh4HEtAmrM4TKY3fPj3wuGyOvjAwK_TwOmQ9Kx3YPqd9q-757CtXXITf6xn3Gb4?testcase_id=4638954852712448
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5437603467755520
+
+Project: libtsm
+
+Fuzzer: afl_libtsm_fuzzer
+
+Fuzz target binary: libtsm_fuzzer
+
+Job Type: afl_asan_libtsm
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x607000000070
+
+Crash State:
+
+tsm_screen_tab_left
+
+do_trans
+
+tsm_vte_input
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv960dKSBpFdF0-CNmsU-HW_IruDBe4u3-d7r5b0pLxICX4S6au__7fKZV21lziPiwicscBVfpv3jQ-_ChelUndc_u58t2op2RX7NrUzRgyMHRkkkc_QRrHAFaGHmQgqx3dNb2ZnqGPsY3sDMhI9jZ8r5tqbYDM8lxeQZrTaSOFSd58EglyPJl_tGWwjTEiL3DrajYaJ5Aqz5H_loGdKB4c6vLkmWgliveP3NPbhXIyOcZ4GCnOYsDd7ysTa-WKLsgiHsWorvIJU9mgjT5p4KWSHu3xHeEO3Qy1rFdiRMYalQ3PqQYLoSeDf0i2Bk8io6OxB2KoDIdIgeDzkWlXMNFvibAbE281ns-PR6xFDN0fFbqvq6Ic5E26l3nw5dzIDKCFIiIgCl?testcase_id=5437603467755520
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

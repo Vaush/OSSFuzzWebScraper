@@ -1,0 +1,70 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5662497394917376
+
+Project: unicorn
+
+Fuzzing Engine: afl
+
+Fuzz Target: fuzz_emu_arm_arm
+
+Job Type: afl_asan_unicorn
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x0000007e1c00
+
+Crash State:
+
+cpu_arm_exec_arm
+
+tcg_exec_all_arm
+
+qemu_tcg_cpu_loop
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_unicorn&range=201909210146:201909230147
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5662497394917376
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+
+Comments on individual Monorail issues are not monitored.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

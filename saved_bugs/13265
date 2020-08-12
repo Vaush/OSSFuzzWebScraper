@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5718860483788800
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-isel-fuzzer--aarch64-gisel
+
+Fuzz target binary: llvm-isel-fuzzer--aarch64-gisel
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+ScalarDef->getOpcode() == TargetOpcode::G_CONSTANT
+
+AArch64InstructionSelector::select
+
+llvm::InstructionSelect::runOnMachineFunction
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201902200434:201902220416
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5718860483788800
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5755805853286400
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-loop_vectorize
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-loop_vectorize
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+!KeyInfoT::isEqual(Val, EmptyKey) && !KeyInfoT::isEqual(Val, TombstoneKey) && "E
+
+llvm::InterleaveGroup<llvm::Instruction>::insertMember
+
+llvm::InterleavedAccessInfo::analyzeInterleaving
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201809120125:201809130127
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5755805853286400
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

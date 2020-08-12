@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6747642899988480
+
+Project: libarchive
+
+Fuzzer: libFuzzer_libarchive_fuzzer
+
+Fuzz target binary: libarchive_fuzzer
+
+Job Type: libfuzzer_ubsan_libarchive
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+mtree_atol16
+
+parse_device
+
+parse_keyword
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libarchive&range=201703070017:201703071720
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97rbPbbkehU3rtoNRNNiT8TQkGFetUL6_rH5Fpgn6rXF9HBc80sIhSqmRzeAbrBkasahgv9UWHRxLyUXYRHe3xW2fbnuer9fGZ1a1lSXdJELS_ZAnaa-TluEVQRXnsMY44QSoNy4MA7FxTlA59z2zkZ8y3M0XIPazyj62wts4oFOntPEsmBJ0IFiyRJ95s34O8ySaZ0ZqOZkPnnB1b4WNJPmgBYSCUf-DKYGHgHZQHQZQTXdGqKMs9brrWHuqwYnoB7vox3jbAbnF6SiMZ-MYHLKT17_JTYyzpxJqheo9-koJhe9FziVZorLlEnqU4uJV6QhdijF6vuZPo19Xj3OQRXzYUtBKeFy274GcnVBjPOKhmAwzrYpfKxI98jDyxJDNXiEprL?testcase_id=6747642899988480
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

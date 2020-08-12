@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5688876424757248
+
+Project: aspell
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: aspell_fuzzer
+
+Job Type: libfuzzer_asan_aspell
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x6020000001d2
+
+Crash State:
+
+acommon::DecodeUtf8::decode
+
+acommon::Convert::convert
+
+acommon::ConvP::operator
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_aspell&range=201907310225:201908010230
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5688876424757248
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

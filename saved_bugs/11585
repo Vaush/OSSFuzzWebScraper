@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5737185492336640
+
+Project: skia
+
+Fuzzer: afl_skia_api_mock_gpu_canvas
+
+Fuzz target binary: api_mock_gpu_canvas
+
+Job Type: afl_asan_skia
+
+Platform Id: linux
+
+Crash Type: Heap-use-after-free READ 2
+
+Crash Address: 0x613000000b08
+
+Crash State:
+
+void SkGlyphRunListPainter::drawGlyphRunAsBMPWithPathFallback<GrTextBlob::genera
+
+GrTextBlob::generateFromGlyphRunList
+
+GrTextContext::drawGlyphRunList
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_skia&range=201811230338:201811240336
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5737185492336640
+
+Issue filed automatically.
+
+See
+
+https://skia.org/dev/testing/fuzz
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

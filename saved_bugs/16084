@@ -1,0 +1,40 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5769127314063360
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_clang-fuzzer
+
+Fuzz target binary: clang-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+power <= maxExponent
+
+llvm::detail::IEEEFloat::roundSignificandWithExponent
+
+llvm::detail::IEEEFloat::convertFromDecimalString
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5769127314063360
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

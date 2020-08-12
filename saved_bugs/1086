@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5212211528073216
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_pubfuzzer
+
+Fuzz target binary: pubfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+libmspub::MSPUBParser97::translateCoordinateIfNecessary
+
+libmspub::MSPUBParser2k::parseShapeCoordinates
+
+libmspub::MSPUBParser2k::parse2kShapeChunk
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97WbUMpNdw2L_zJRnsaGe84Hdj8bZIhFJ2wO0wuJYt8F1Gbq7WxtYsAUsWP8XldRBOQknZSFEbG7Dgict2oCWn2-8Qfrm00fsXWW-IMkiynlm6A-U6NwDIGTd2kHZgIocpUJYd2O5wk4n4mLTLTaw31QbyU7sQfzt70UUEcMycQCaEPJTCh62whsBSojHVeIGvy_FUd0JnWjUv2N1_y1SygjDR9Ic5AEZhlBoLyaawUIsfiqml_ScjDt5T_ZnuqEv5FNR9GWyoFujO85s2iOccP-YYV34dwj1Tj1FillEFZ6WeJghCoPeROXj9Kii67wBVY0mXAUzZIPxUFrrUUiXWfM0UNKakYzzDfha-qW02JZdQ4bMtocoerCPyJ__WVR05UaY14?testcase_id=5212211528073216
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

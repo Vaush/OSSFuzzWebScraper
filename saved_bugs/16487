@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5633022333812736
+
+Project: golang
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: fuzzer-asn1
+
+Job Type: libfuzzer_asan_golang
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+asn1: string not valid UTF-8
+
+asn1.Fuzz
+
+runtime.raise
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_golang&revision=201908161757
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5633022333812736
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

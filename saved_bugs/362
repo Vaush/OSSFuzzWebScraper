@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6552225992146944
+
+Project: freetype2
+
+Fuzzer: libFuzzer_freetype2_ftfuzzer
+
+Fuzz target binary: ftfuzzer
+
+Job Type: libfuzzer_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x603000000450
+
+Crash State:
+
+tt_hadvance_adjust
+
+tt_face_get_metrics
+
+cff_slot_load
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_freetype2&range=201612162136:201612170926
+
+Minimized Testcase (236.59 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95XbOAmoh6TOu5w6-xBNqqVjpiF1HYYdHnp7hm5lTZJJo6VGfbg1-GC2nkAnhFVuqsNpcaytf7Ri667rgDOjcSMEruP4-YXg_5jE8PHbWCE2BpCVWUyWgPq6N5XOx5q-vFkfo3woDGtMmFDXDxgreQReNpVrYeC20UVPdekGnC9TUT4mhfiPtUA2yPyA5JnoaeVEjfRKurxiKTMchmeylW_afscyREGbQK2Akd68fPNpumZxxi8Bpb2xhygTH5CVqduX-yQJcsA8cDQObvsYd5wc2qyMZrd7frVKdiJFRKb6_VdNeXXly5vibtCFkzB3nGlF4JuyTl7vTcQrZ5J5WL8b-IDMIbo1F5iZ_UyJ6A_Q253R7ej7F_sYY6nRLYOIwt2VBBn?testcase_id=6552225992146944
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6210431494389760
+
+Project: file
+
+Fuzzer: libFuzzer_file_magic_fuzzer
+
+Fuzz target binary: magic_fuzzer
+
+Job Type: libfuzzer_msan_file
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+match
+
+file_softmagic
+
+file_ascmagic_with_encoding
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97nX-VpmhxAnKVjlH5S8wdBIKVxBvs4WghvngQYu-w0_lvGHfxj05hm8lMpGtvEX1LU_rVoEXqAf1Oqw2ymxlmt6hZqQel5HsnUFskVFs2EwjykHYTxOi9PssSIzzYnOkyva9k8xxFUeaCoEcgX01FL0c9WjJa7HNaYl6fosIwkcvTHLRLLssXmiD5ZxffbgSy3nZ5L0tTbzCbpZ_uOviRm5kIsY-UCBkEKtpF-SoFb-8J2VB5y38dtxlac-agg-YVaPCrhjxf_STeW5CsnUKDKsq9qAglw78dUkopJPFVWw_ptdRplmGeQwGPnms02yIuoZpRM7sU_s_66mPbMhEb31uwc8tFneBQHN_aQcHWc_SsUsPOf7DC9FzsvOMoOp5SpNgaP?testcase_id=6210431494389760
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

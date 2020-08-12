@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5632615670874112
+
+Project: openssl
+
+Fuzzer: libFuzzer_openssl_conf
+
+Fuzz target binary: conf
+
+Job Type: libfuzzer_asan_openssl
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow WRITE 1
+
+Crash Address: 0x608000000171
+
+Crash State:
+
+OPENSSL_strlcpy
+
+OPENSSL_strlcat
+
+ERR_add_error_vdata
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_openssl&range=201907300212:201907310211
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5632615670874112
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

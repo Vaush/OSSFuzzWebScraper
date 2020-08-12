@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4622016384598016
+
+Project: libchewing
+
+Fuzzer: libFuzzer_libchewing_chewing_dynamic_config_fuzzer
+
+Fuzz target binary: chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+0 <= chiSymbolCursor
+
+ChewingIsChiAt
+
+chewing_handle_Default
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libchewing&range=201611221631:201611221753
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4622016384598016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

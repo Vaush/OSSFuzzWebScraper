@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5672737185464320
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-loop_predication
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-loop_predication
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+isGuardAsWidenableBranch(BI) && "Stopped being a guard after transform?"
+
+LoopPredication::runOnLoop
+
+llvm::LoopPredicationPass::run
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201907060314:201907070312
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5672737185464320
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,38 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4931873332527104
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: Stack-use-after-scope WRITE 8
+
+Crash Address: 0x7fd69755f220
+
+Crash State:
+
+Js::JavascriptFunction::CallAsConstructor
+
+void* Js::JavascriptFunction::CalloutHelper<true>
+
+Js::JavascriptReflect::EntryConstruct
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4931873332527104
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

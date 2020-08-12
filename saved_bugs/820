@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6655406061387776
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_hwpfuzzer
+
+Fuzz target binary: hwpfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+demangling_terminate_handler
+
+std::__terminate
+
+__cxa_throw
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703020622:201703021717
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97U6zAnDQejCCY7bSiAkiaDmmSJkdxCd7KvGQhrVt9WhK42Cfkry75SQL4LRA_99HbeamfyulFjzyTWKxQU5n7aejsTeuPCc7TwYd6XE7Brc1g3kUsgMnSMRModh3ILvaZtMP7OOsZvSVyWPbUn5Em4eCinn5yg-TEH7aiWYb2YDEI2yQoriP2e10UJl9xKWXyqCePQCl1bLvtd-bzA2oJ7PnwsFnLWG0wmwRTpBlayU7_9DpUGCg_e3yL6RZWVjbd0ReDQWWqKTP7zRIiScrgbRroOMQV63UBnG3owK4uMVzt-pyfRatNpwaWUGMOPG3Qjl9nur8W77gqKpTp7Zr0YebRRWJOxFwomasbjY3M5mnMJTWfMhsxMKdxJB4C4HFrAd8Fs?testcase_id=6655406061387776
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

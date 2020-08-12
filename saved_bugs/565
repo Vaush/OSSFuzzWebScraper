@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5799076113154048
+
+Project: libplist
+
+Fuzzer: libFuzzer_libplist_xplist_fuzzer
+
+Fuzz target binary: xplist_fuzzer
+
+Job Type: libfuzzer_asan_libplist
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+length == sizeof(uint64_t)
+
+plist_get_uint_val
+
+node_from_xml
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95Fag-IG210CxIXIp-5iHhKh0Imb62YBW0t06ywWb0TECoJKE37Q1tRK2Bchp7rt-2LZRM2YbeXPw8YXmL6rDRCHii-tXpg4juVCqVOGWgNHU8NHliw_J2c2mFD7pl6h2ZgmD8CE_5GqcgEqiC4cc4QomLJZmT5sRwABuqkkP-kXDNVxKev4JX8HF3IpnK5elqXoGJOGIb0JeUIkDm3Efj27X5PgOOaxRKHJ_Kv1dKmlWYQiYZiDDVQ3DuCKdH10IUpPe6QROmFLP2pS3_NWvWChymGKVvHsWEtesogxaFwjD8ng5nuGHlDtNrfowaWg92qzfFG6xuUKmp9--rMH6misVUNp4D8TsagDIpTLj7y-VAXnq9ngAa6VoG8JaSJ5Yant0o7_HF9I4IAeT0nAJqIfqFXkhEOrmu0t7TbEli4vpAaGoY?testcase_id=5799076113154048
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

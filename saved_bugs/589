@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4918207854936064
+
+Project: grpc
+
+Fuzzer: libFuzzer_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: libfuzzer_ubsan_grpc
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+gpr_stack_lockfree_push
+
+grpc_server_start
+
+_start
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_ubsan_grpc&range=201702141946:201702150349
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96ZbN_io97VKwHQUiT4WKWPp8BaEAKLvKgCCKjXj5T6EJiPdSb9LmkLwsWK_2xmqIofdrJtffeLXItexeHltHXkTdYKogstES1viLueuqXqIdQja5o125vKFteC0lOg8E7GBvsAa44nzJAraMzqEiayf4tLrUWO6iFe36KBPYTwOtQf2I0tT_REXUDeMJNuuawO0J6LOnwfMdGFhuWBCW3EU04ZZHA_hq2SV82ITSwP7CeYdbqHJ6YyEj46UrNqKLdFasgAiBgAByjLhkiDmB_BhhNaWPPLIl86kpPycmeiIqIb6qaWAGSXhbXPhQiswar2Rb4HYeKbgZtXecc1aEedKvI8KYNRpsTkW2Q-dUeQGzifFbsl6cuN2NXdmMGhXB0JgHHi7fv9V2jPCFPhQDglifw1oPoRud7ZpJ5a-vX8BiQYLfg?testcase_id=4918207854936064
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6536620682510336
+
+Project: ffmpeg
+
+Fuzzer: afl_ffmpeg_AV_CODEC_ID_MPEG4_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_MPEG4_fuzzer
+
+Job Type: afl_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 1
+
+Crash Address: 0x0000034627c4
+
+Crash State:
+
+dct_unquantize_mpeg2_intra_mmx
+
+put_dct
+
+ff_mpv_reconstruct_mb
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_ffmpeg&range=201804020602:201804030557
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6536620682510336
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

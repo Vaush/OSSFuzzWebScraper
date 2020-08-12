@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5768734862475264
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-isel-fuzzer--aarch64-gisel
+
+Fuzz target binary: llvm-isel-fuzzer--aarch64-gisel
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+(!RS || !RS->isScavengingFrameIndex(FrameIndex)) && "Emergency spill slot is out
+
+llvm::AArch64RegisterInfo::eliminateFrameIndex
+
+llvm::RegScavenger::spill
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201710121744:201710130454
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5768734862475264
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

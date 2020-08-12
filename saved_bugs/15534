@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5685841600446464
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-loop_unroll
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-loop_unroll
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000008
+
+Crash State:
+
+BitcodeReader::parseFunctionBody
+
+BitcodeReader::materialize
+
+BitcodeReader::materializeModule
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201906270304:201906280305
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5685841600446464
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

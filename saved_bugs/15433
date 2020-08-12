@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5705849411993600
+
+Project: libfdk-aac
+
+Fuzzer: libFuzzer_libfdk-aac_aacDecoder_DecodeFrame
+
+Fuzz target binary: aacDecoder_DecodeFrame
+
+Job Type: libfuzzer_asan_libfdk-aac
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+!iTES_enable
+
+calculateSbrEnvelope
+
+sbr_dec
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5705849411993600
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

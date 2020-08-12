@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6352223690817536
+
+Project: sqlite3
+
+Fuzzer: libFuzzer_sqlite3_ossfuzz
+
+Fuzz target binary: ossfuzz
+
+Job Type: libfuzzer_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+0
+
+sqlite3VtabOverloadFunction
+
+sqlite3ExprCodeTarget
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_sqlite3&range=201704101622:201704130605
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97h6vNrBs_jckAlhIfs-JlweHq2VMwtzUsYvQjngWMOorgimJ8ev68_lwUBhDljW1CniaJJR671yBX6bg5qlgR6BThVgetVL62dJy-tUdnKJhEBtw0baHOk7WNb5ccAoftsOEHhl53LDfOe5FS66r8sbROwYvvBvKzMempyiCdsVMcyXti9mz8iNUPanG-a8dRJYOBRKw876IdpHuAWGJLSY7JlcvSe-lpzgw2otgBYNAQzsxHQnOvI_QNHvL9x4_yfQ3s0LplEfOc9aRdxlLmNu_rMpNKb2zgYzw9bVlP834A3HHUdyZBKODDhAi5hHvVnGOo9n07C-UzsxBNDbEVxlNdS7ovCQb0fwkrUwaAB4TMGINYXk9J8pkp6zqaNFDKLo5JYDt1rx1gzzGy8Z8hshjclZRY0dcQ6W_Un5C27vQ1HOpw?testcase_id=6352223690817536
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

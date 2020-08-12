@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6312731374256128
+
+Project: grpc
+
+Fuzzer: afl_grpc_server_fuzzer
+
+Fuzz target binary: server_fuzzer
+
+Job Type: afl_asan_grpc
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow WRITE 1
+
+Crash Address: 0x616000000a48
+
+Crash State:
+
+internal_add_error
+
+grpc_error_add_child
+
+close_transport_locked
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_grpc&range=201704042238:201704051614
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96iHAn4sLhmlvhxTSAbp4VIy_h5ZWz8APemRihXQRyiMXXDNpZ7WtY0bcZ8zznblwv3X_e8kDzdOUynNtpe8AVfFEW9qtzLYMEyJKbQmH-Hx1uRaQOCSqrsbbOF4J_bQjvlIW1Vc9W6SVU7PUAhtkjISyrs569FLgOHkP3sGEB3aDbIPTlylGdtMr3VSWfnNv8zG7MGLYVeV1WIFH7Y4Xm-E0Zmk924zwdmv3nxN7Sh7ke9ynyK07LPHRFbZ-64MriTt7DXvS9ZaN1zfeSn3o2qPrPi8eASnCo7zx-W5g-BmAsBluXkAGwmTpMGsXs2WdFgrk1busnckfCbg1ia6ze2vPs6UUoO6KxYtws-8Nmq8J5DsIXY6yXMWFESo4mMrHluo0PX?testcase_id=6312731374256128
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

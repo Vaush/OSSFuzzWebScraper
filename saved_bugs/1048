@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5497945073909760
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_mswksdfuzzer
+
+Fuzz target binary: mswksdfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+MsWksTable::readChart
+
+MsWksGraph::getEntryPicture
+
+MsWksDocument::readZone
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94OUgnQi8cSwegGgf12wpN2wjibUxOBl3IU4QSZpA7eRu27X_t4l88_5VCCJ0G7ukqdnxXJsWdmnXq47n6XT0wCCVwwBlvZRjvFjLl8BFAxqRpHo1hiQrP3m17QGtAO3GB4OvtzFimpN5iNsjtE1n3n1iVtrZwjD1EAqqAJ8_Mf26LxPFRMK3p1Us3WwL50Ghy_woF82IO1O6i2FWvsls0Mo6prw6rKhM4Uzb5KZgenZLGnqeVTT8z4h7mgMf8KiA18qYl1Pty4PT1FWs1LcX3rsmQApMaejfUDYMZcvLZQP5fUY896HURQvxklsl-7RbRHLHb7AxmePs07is6_wNEzRX_aEK2RuUslEM_MnnwYNWn9H4I8GLoeVY_qV6fdZhONAMvG?testcase_id=5497945073909760
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

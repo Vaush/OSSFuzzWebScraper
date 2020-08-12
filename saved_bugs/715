@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5517117891805184
+
+Project: harfbuzz
+
+Fuzzer: libFuzzer_harfbuzz_hb-fuzzer
+
+Fuzz target binary: hb-fuzzer
+
+Job Type: libfuzzer_ubsan_harfbuzz
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+i <= out_len + (len - idx)
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_harfbuzz&range=201703011717:201703012359
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96VXEUJ1FVB8r3ZAB44H1vo3d7cuONWLhlA8ZI0g_v0X1YYGcnBdFF-Ev0KRFa9dt-jO-1SZQYZQ0zmXJHSOa1UcuFG0JnXNxkMPO3gtCnXeKztbY-OZDXiy5ofiZOtygKLyBXbPvf4qp2EK4tN-6-OgZ0FsoNE6GWBt8rWep3eidAhNSTEBogE0bVFHAVzdL08iDtzU3SjhTClBJTfc75lUuKlmjcF7QtWAKV2BjgPg9pbGI655Yi0Zue0MvPWdLpT8gDgUyIdSedn6KGjWCFhfdv5vYAw28dUG8uON2hoLK3rO_gg5VinlVH7hpB4VDeJBfxNaNdjcn1uluvLxV1Gbgol4hGk8-naR24qeKqRqRM43yBF-9_mcOo5eehIfCa4ds9D?testcase_id=5517117891805184
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

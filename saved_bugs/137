@@ -1,0 +1,42 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4804894724718592
+
+Target: pcre2
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow WRITE 4
+
+Crash Address: 0x7fe78b19ded0
+
+Crash State:
+
+parse_regex
+
+pcre2_compile_8
+
+_start
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201610311947:201610312023
+
+Minimized Testcase (0.22 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv954Oxqhdt1lhI0ZD4Fgh3pKYoGg0S_SdwX-J6ixud5rUZ3piWYVc5mbJA3giGLkfpKBhzpkTgb1gLFKbvS8xWfCDKmYu8nR1dLuKnBvkdClpD5roOMnXhbNVVBdZ0j9b8g0FcJpyhl0F6ujIL88pL3CsG8xkEEYe10AMsoOcaJIj8MT5Ro?testcase_id=4804894724718592
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

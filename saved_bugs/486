@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5528610815344640
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_svmfuzzer
+
+Fuzz target binary: svmfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Sanitizer CHECK failure
+
+Crash Address:
+
+Crash State:
+
+"((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libreoffice&range=201701090451:201701091725
+
+Minimized Testcase (0.09 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95c0PNGuRHYzOJQ_NM0DZUGql4i-wWfNVPAP-VnXNJ_KHRgHU92cL_EB6Br93yT5k0aaYJLRJPRSlV8SZOAmQJpjgkyYmjTjEIfPBfr0n0ziNgtYpL7Fw9dKSm3RAaT3xi8e5_kTazlrrTb2l9Eipb-e-AGVSTKToz1vdCKC_GWrxKhYzBZlfiQlVWaF7Z6OheIyjMWsU-46g7jhXib9sg5hR5mvpJVNULqC0rbv3oI_6wHXq1Zy2KPahG02hqiFmhPj8YK0IjrH4tR0_U9xMiZc5qblC2qeOLBNCk6emK6Yziq3F2PA5b81Nqq_BdjcbqxZCjWJSh-0kFp8GCv08F_kkrPrGqOpbNBd9M-W-r4ayhrxaEjEQV7axIHT83LIX6BYIWK?testcase_id=5528610815344640
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

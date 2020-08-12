@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4813983888441344
+
+Project: gdal
+
+Fuzzer: libFuzzer_gdal_shape_fuzzer
+
+Fuzz target binary: shape_fuzzer
+
+Job Type: libfuzzer_asan_gdal
+
+Platform Id: linux
+
+Crash Type: Negative-size-param
+
+Crash Address:
+
+Crash State:
+
+NTFRecord::GetField
+
+NTFFileReader::ProcessGeometry3D
+
+NTFFileReader::ProcessGeometry
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_gdal&range=201705271645:201705291647
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4813983888441344
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+

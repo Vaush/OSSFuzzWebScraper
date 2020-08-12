@@ -1,0 +1,48 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6042637517717504
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_openpgp_cert_parser_fuzzer
+
+Fuzz target binary: gnutls_openpgp_cert_parser_fuzzer
+
+Job Type: libfuzzer_asan_gnutls
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+read_secret_key
+
+read_secret_subkey
+
+cdk_pkt_read
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_gnutls&range=201612280211:201612280636
+
+Minimized Testcase (0.37 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96CgPXQKBCGXVWveXIFNeIam35gJ78zRLneOlU_3v9FaSjveAHEuf5DggmaehBwtVR9SU8ZNuLRvBwRcBP7KlKGwyMWGxPAXkLUhsy9i7YlMS4DefIAokhURi-IP1rsU4EPShhBGwG_EOcPJIjYei9e4cSqW1K0pDIJlPfxtrk3GZSHLi7SPs31wItplkjteiSmxHvbIktcMwDTrbUUcwHIi7DpgjAYo4_7aVH5Se1S-lxhAim0XzZDNPkjuf7Dm9ChymcreBlEIZTInl6khoHx1iRdH-ALwS7rVZT5ItwHMvb5dWwpfzv6K79QpBEKHOwKYuUfxRCDUBUYNMzTjntsjcAGvYHLDff-uiWd3Hqx7MyiBuC5n5JJhPIWEthz1lH-fe0j?testcase_id=6042637517717504
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

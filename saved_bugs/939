@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6515070404132864
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_VIDEO_AV_CODEC_ID_H264_fuzzer
+
+Fuzz target binary: ffmpeg_VIDEO_AV_CODEC_ID_H264_fuzzer
+
+Job Type: libfuzzer_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 1
+
+Crash Address: 0x000004cbdef0
+
+Crash State:
+
+ff_h264_filter_mb_fast
+
+loop_filter
+
+decode_slice
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_ffmpeg&range=201703241617:201703242211
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94JIM6ii12R_RS4rnaEaCNzPOMcqIvd2qwhX2E4BvVYa-cfmzkzDnvoCvzFt3VkyEpSI2TzbCPw-jJP3qcbG54ud7b223R7CXI2UgEq-7Piqok6XJ48Q6-QhD0KlOKFpRbl-At83NQWa_LpwSqUgIZj4Be3PeaG_lLtHnWi0nM5C-nhwUlnwv4odLdqkPyhRSLUpYPf9SgWTnfOtxQGtMfsYNvA1Ca07jS68_Ad0Al096LeEXG8A_PO-sjSECgODKszAFbb_KAo7nAEIVcPCtHnOMN0ofd7ljhVHiaaBLdw48yRy9o6fYScw7D9sv2yFc1Cw_vcO5ABkCBhVTjItZM2qeGo0de86hOYbFra4AH9sPVNgxoOAd9oQbwZGArDxkL4Yhnx6U-wV9e9tHd9cCE6NMW_ZPNECzFDNF-p89yeolyGVtU?testcase_id=6515070404132864
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

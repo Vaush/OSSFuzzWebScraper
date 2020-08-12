@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6440805822627840
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_morefuzzer
+
+Fuzz target binary: morefuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+MoreParser::readFreePos
+
+MoreParser::createZones
+
+MoreParser::parse
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704101617:201704141618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95LlqMf7ojV3DUvFVww1jPlsJPSpEKHcojAmZdrp6Ebmnz7MYqeSF_Ikd3SAi_aWbUKYxL6n-id_L6bjzQ9ZObiJsDx3k2j5fLzpDPe_c69FjQSFVIXn5cqjaajlu8iUS6rInujbSO6X-jFuGDaofHmiJ92-FMLMXZuatDd-LLs4zQ0nDVFeVSU4NZmln2gDgsD_RiE4fstHu2ljfo8L4OYKFrp5Q7mPdUwWvrHWtduxaN1oJnfHbeDEdloliXWsq-rhbgIqD-YuomiioJ-ii8Na2qOylFoUV13DfWR4mYhsqS2UGIx774C75iH7na-pfJLEnQ3qxWCOw0KAIKaoR4rZAWKgkATyFMm1uLL07xEP3f9cbSDrTDUre_6e2zIjFg7dtrHgDJ1cR9wWd10gF8qXKxWvLeKPiTzhm9XHwgIYSRCT1A?testcase_id=6440805822627840
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

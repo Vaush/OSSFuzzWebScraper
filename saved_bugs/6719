@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4604840443379712
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-dwarfdump-fuzzer
+
+Fuzz target binary: llvm-dwarfdump-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+result <= VARUINT1_MAX && result >= 0
+
+llvm::object::WasmObjectFile::parseMemorySection
+
+llvm::object::WasmObjectFile::parseSection
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201708280446:201708291805
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4604840443379712
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

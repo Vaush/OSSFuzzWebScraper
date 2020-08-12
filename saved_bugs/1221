@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4705287342653440
+
+Project: wireshark
+
+Fuzzer: libFuzzer_wireshark_fuzzshark_ip
+
+Fuzz target binary: fuzzshark_ip
+
+Job Type: libfuzzer_ubsan_wireshark
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+dissect_netsync_pdu
+
+tcp_dissect_pdus
+
+dissect_netsync
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_wireshark&range=201704181620:201704191700
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95Rzwb9aXrlaQAn7glxw-p2cpOYj-XsJejuzDd3qjGsh_pgdO0fvDTZMOi0Jk-KoNtJW1cgzCO0dZZyqeIdDTylZXdMXJtSgNnPKRN_YBiE0r4X8NXoovvtXrH11IeMF3_9FaEbGGpZx9TYOSotHBAypz4Lixt9ne9crHfUEWxlZo_QTNJLey1QSQIWBLeezuXe_Yrn1CIMtl6YF1Cf3JwcmYzhWXJsph0xIqCzf7CLE4o9SZb_TGRVqIKeimMa_onl_xxAAIvtT5-g4MhY3juyTzQ1cODW636yznh6LKNaEye1bkpilPcl2GVasBNGql1FxHI2s4DAwdMp-rGzRF05prZa7gwD2ZjLLjBX7l8j9ebpSL9U5v3v_nJRY_VAjv_NcSj-C4C-T3QdtDlyJKcpQdPNr3iDfZ6MsvxSXTohkAqCexI?testcase_id=4705287342653440
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

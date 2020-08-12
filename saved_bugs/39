@@ -1,0 +1,32 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6308967940620288
+
+Fuzzer: libFuzzer
+
+Job Type: libfuzzer_asan_openssl
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+(size_t)BIO_write(in, buf, len) == len
+
+fuzzer::Fuzzer::ExecuteCallback
+
+fuzzer::Fuzzer::RunOne
+
+Unminimized Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97d-09ctmptq0gFdUWQNItooluOp0gfyUigmFg26LdlHz85GD_3srD4iTVjhaVyCetSLyfPfMoJANWyDBqf7DsYa7mlcmD39SJPb3CaHTNC7LmmYWh5G5SCltjpjrmf8ra_l8dyhOf0KF-MkCubhAyTHNPJkNHIYAUhzvJgT7ZstvxPsQA?testcase_id=6308967940620288
+
+Additional requirements: Requires Gestures
+
+Issue filed automatically.
+
+See  for more information.
+

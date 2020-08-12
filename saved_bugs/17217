@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5769126479396864
+
+Project: zstd
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: simple_compress
+
+Job Type: libfuzzer_asan_zstd
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+bitC->ptr <= bitC->endPtr
+
+BIT_flushBits
+
+FSE_compress_usingCTable_generic
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_zstd&range=201909120359:201909130405
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5769126479396864
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

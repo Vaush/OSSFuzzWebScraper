@@ -1,0 +1,38 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5816764773433344
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x01873fff8003
+
+Crash State:
+
+Js::WebAssembly::EntryQueryResponse
+
+Js::WebAssembly::TryResolveResponse
+
+Js::WebAssembly::EntryInstantiateStreaming
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5816764773433344
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

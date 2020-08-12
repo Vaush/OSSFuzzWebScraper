@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5733147803648000
+
+Project: imagemagick
+
+Fuzzer: afl_imagemagick_encoder_dng_fuzzer
+
+Fuzz target binary: encoder_dng_fuzzer
+
+Job Type: afl_asan_imagemagick
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 4
+
+Crash Address: 0x0000019ffbfc
+
+Crash State:
+
+LibRaw::parse_makernote
+
+LibRaw::parse_exif
+
+LibRaw::parse_tiff_ifd
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_imagemagick&range=201807100513:201807102253
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5733147803648000
+
+Issue manually filed by: alex.gaynor
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

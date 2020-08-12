@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4800676657364992
+
+Project: jsc
+
+Job Type: asan_jsc
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x053900000d93
+
+Crash State:
+
+jsc
+
+JSC::JITCode::execute
+
+JSC::Interpreter::executeProgram
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=asan_jsc&range=201811240332:201811261824
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4800676657364992
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

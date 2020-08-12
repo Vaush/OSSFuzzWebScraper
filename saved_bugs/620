@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5108599057547264
+
+Project: tpm2
+
+Fuzzer: libFuzzer_tpm2_execute_command_fuzzer
+
+Fuzz target binary: tpm2_execute_command_fuzzer
+
+Job Type: libfuzzer_ubsan_tpm2
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ObjectAllocateSlot
+
+AllocateSequenceSlot
+
+ObjectCreateEventSequence
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_tpm2&range=201702171125:201702172210
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94LzKd6CNLtMXgasV3lCfNiVl2VSxnQcC1nf1W90grXtAgxc68cVo5dQh-YYmlotEfxDujSCVj4ulVBTXcPx3auXFJor5R9ReSMd4-_WWffeVHdHUANTmjBnFT7nsOI_m4uunMHJ7b3f4mx1RCuK_T93dlL8Y6V9XSGtVMMgERGdCZfd8bYf9MKFPSJRCvGDjW4_BKZ2TACXjYdNQLpRStakFDVZ_rjunkWue9JgFWVWFdSmcpSzNwH7owsKpxKIICrlL1wjP2h4cqJ8ThCgeDDmEB55cBKsvCgE5ETak00n7UbyBq88HrnxcLlySIjONPGT9_PRsezmAk8pqhF21_N68J0Taw2uFUoJ1wTJSuwzMChhAUHNiUuHzfaVZ_EpLrpY9t6wGDcjXqLupowGk67ODSb4Sn13OUfIkMKExchQIHkCm0?testcase_id=5108599057547264
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

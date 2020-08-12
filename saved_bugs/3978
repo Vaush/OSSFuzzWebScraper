@@ -1,0 +1,38 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6600261297504256
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000010
+
+Crash State:
+
+Js::InterpreterStackFrame::ProcessUnprofiledExtendedOpcodePrefix
+
+Js::InterpreterStackFrame::ProcessUnprofiled
+
+Js::InterpreterStackFrame::Process
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6600261297504256
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

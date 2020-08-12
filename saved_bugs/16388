@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5725897545482240
+
+Project: gdal
+
+Fuzzing engine: libFuzzer
+
+Fuzz target: cad_fuzzer
+
+Job Type: libfuzzer_asan_i386_gdal
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x154fdc99
+
+Crash State:
+
+CADBuffer::Read2B
+
+CADBuffer::SkipBITDOUBLE
+
+DWGFileRNUMBER::ReadHeader
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5725897545482240
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

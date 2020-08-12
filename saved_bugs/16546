@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5757740735004672
+
+Project: gdal
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: gdal_fuzzer
+
+Job Type: libfuzzer_asan_i386_gdal
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0xf0e9033f
+
+Crash State:
+
+Get
+
+PDFDataset::ParseLGIDictDictFirstPass
+
+PDFDataset::ParseLGIDictObject
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_i386_gdal&range=201908120353:201908121952
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5757740735004672
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

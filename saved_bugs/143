@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4753516539150336
+
+Target: file
+
+Fuzzer: libFuzzer_file_magic_fuzzer
+
+Fuzzer binary: magic_fuzzer
+
+Job Type: libfuzzer_asan_file
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x618000060000
+
+Crash State:
+
+file_regexec
+
+magiccheck
+
+match
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_file&range=201611072022:201611072102
+
+Minimized Testcase (0.13 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv969KR5R3szOO0K1rMrDIu8I0K2bdxzJ5MgLrMq1ykQAwz7tulyPp2jI9IDHPd7v-Ia7gacfw-MZQ_KbE-f5W_QmARNr6frcN3YH1ilKo1ycW58Qh9FD2Wrw1cCnqq0KkgkyCKzox7T6qNEjzak9vFdbmCGNNb5WpmC9Qq05bpz8dBsJ1Q8?testcase_id=4753516539150336
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

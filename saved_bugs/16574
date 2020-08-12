@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5192065985544192
+
+Project: golang
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: fuzzer-json
+
+Job Type: libfuzzer_asan_golang
+
+Platform Id: linux
+
+Crash Type: Slice bounds out of range
+
+Crash Address:
+
+Crash State:
+
+json.(*decodeState).unquoteBytes
+
+json.(*decodeState).literalStore
+
+json.(*decodeState).object
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_golang&revision=201908200245
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5192065985544192
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5679958194651136
+
+Project: glib
+
+Fuzzer: libFuzzer_glib_fuzz_variant_binary
+
+Fuzz target binary: fuzz_variant_binary
+
+Job Type: libfuzzer_ubsan_glib
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+gvs_read_unaligned_le
+
+gvs_variable_sized_array_is_normal
+
+g_variant_serialised_is_normal
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_glib&range=201808290215:201808300217
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5679958194651136
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4758712793169920
+
+Project: h2o
+
+Fuzzer: libFuzzer_h2o_h2o-fuzzer-http1
+
+Fuzz target binary: h2o-fuzzer-http1
+
+Job Type: libfuzzer_ubsan_h2o
+
+Platform Id: linux
+
+Crash Type: Null-dereference
+
+Crash Address:
+
+Crash State:
+
+h2o_mem_alloc_pool
+
+h2o_init_request
+
+h2o_http2_stream_open
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_h2o&range=201705051631:201705101634
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4758712793169920
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

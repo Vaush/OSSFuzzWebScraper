@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5020115668041728
+
+Project: guetzli
+
+Fuzzer: libFuzzer_guetzli_fuzzer
+
+Fuzz target binary: guetzli_fuzzer
+
+Job Type: libfuzzer_ubsan_guetzli
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+guetzli::BitWriter::WriteBits
+
+guetzli::WriteJpeg
+
+guetzli::Processor::TryQuantMatrix
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96nyda7KEGE6tf69OBc_Vqe76sFX1dYbzxU0kNo4vnj1pPaNqZpX53EISu-MAzuK2uLQSwBuTGIfeVGpuC2QZ0p44jobfDuad1dik5HReC9448nwLILtjYwj2xA7pj-HgSsKjLhj7wMm86HoQZyRxPe6EogU2iBbOEE9N0kmwRbrYhGFOgmvZFAGKAUYwvlrJu0lh6DANnSsssvcOVujjRsu98p6AXouoHkNvFPIm5fTgHJsNSvtm2u3xBqFQjuIJVbf-bYSchryPd2prbzBf_i37XNWoToBH2I2RCCK1pFBjP-GnWWCyfK3w3MLjc5NIIhYL8vkr8gtPmyCcXVL2v7MZTeHLU0WxdzozB90RFX4EItn28kNF-qDMVYOv78HCRD0xQ7?testcase_id=5020115668041728
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

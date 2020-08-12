@@ -1,0 +1,38 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5628163484811264
+
+Fuzzer: libFuzzer_chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 4
+
+Crash Address: 0x7fa078bd0fb0
+
+Crash State:
+
+ChewingIsChiAt
+
+CallPhrasing
+
+chewing_handle_Numlock
+
+Recommended Security Severity: Low
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libchewing&range=201610201020:201610201348
+
+Minimized Testcase (1.49 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97nU1LN8fNoN0LeKq05ZnqFP8urKyFnCE3VuG9mb9pM6kYdSshiSL0D2oJ-tH7wjN5aXpo2wU3WAx540JOUyjFLJu-t2Q8C7B5aA5nHnUlWUjktRj6fyERjkr-5kkmYRNUhFzYyo5BLax2FNEDxqRiMwtbfcQ0aNIMyQ_BJw8ROZVwlBr8?testcase_id=5628163484811264
+
+Additional requirements: Requires Gestures
+
+Issue filed automatically.
+
+See  for more information.
+

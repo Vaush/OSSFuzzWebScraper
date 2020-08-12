@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5714436358144000
+
+Project: ffmpeg
+
+Fuzzing engine: libFuzzer
+
+Fuzz target: ffmpeg_AV_CODEC_ID_VC1IMAGE_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ff_vc1_pred_mv
+
+ff_vc1_pred_b_mv_intfi
+
+vc1_decode_b_mb_intfi
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ffmpeg&range=201906140151:201906150149
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5714436358144000
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

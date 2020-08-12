@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5196894417977344
+
+Project: libssh2
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: ssh2_client_fuzzer
+
+Job Type: libfuzzer_asan_libssh2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x60300000b0fb
+
+Crash State:
+
+_libssh2_ntohu32
+
+packet_queue_listener
+
+_libssh2_packet_add
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libssh2&revision=201908300217
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5196894417977344
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

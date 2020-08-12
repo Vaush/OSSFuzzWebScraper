@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6132274431000576
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_sdwfuzzer
+
+Fuzz target binary: sdwfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 4
+
+Crash Address: 0x000000a4fcdc
+
+Crash State:
+
+StarEncoding::read
+
+StarEncoding::convert
+
+StarZone::readString
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704051628:201704052230
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96zz9nKpC-JJnsFACE62Xyd3RslkfHWzEPZ1NmlH3Pvk_TlvlyLP0OWaAjsdg20K5f1WzJIDPGfNSB2GOBpsQtUttBShUirHe1yuahn4k2WXg991-M8-2SJk_GGkpyiHj684PMdR277De3-9_fG8vOiOLTmqtKufnkIk8k4dSDxPvPch8EqFoH90I8ku2V-ggwadHrpjjed7GNR45J0VANwU6g8PxxqeByn2TBsIrXpPbvbiHxuN5ArhDVwHt7sZBxR7D121jX-ZGmqFClvp8JYGFxYA39CUZJBjBMdISvquHYFR0dPBwmQYnJcymn5Oa2s0Ej1mLowOqbLow-MNhQostbGteEf5NgtSRGhgiWbYfFCg8Xw_KcG6Sxdp_NQOvNvsGry?testcase_id=6132274431000576
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

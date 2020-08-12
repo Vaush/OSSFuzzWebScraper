@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6025339888205824
+
+Project: freetype2
+
+Fuzzer: libFuzzer_freetype2_ftfuzzer
+
+Fuzz target binary: ftfuzzer
+
+Job Type: libfuzzer_ubsan_freetype2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x00000000140c
+
+Crash State:
+
+TT_Load_Glyph_Header
+
+load_truetype_glyph
+
+TT_Load_Glyph
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_freetype2&range=201806220522:201806250542
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6025339888205824
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

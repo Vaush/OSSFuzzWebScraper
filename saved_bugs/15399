@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5694017381072896
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-simplifycfg
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-simplifycfg
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+isa<X>(Val) && "cast_or_null<Ty>() argument of incompatible type!"
+
+llvm::DILocation::getInlinedAtScope
+
+Verifier::visitFunction
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201906180300:201906190239
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5694017381072896
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

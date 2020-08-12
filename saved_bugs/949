@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6574081912602624
+
+Project: libxml2
+
+Fuzzer: afl_libxml2_xml_regexp_compile_fuzzer
+
+Fuzz target binary: libxml2_xml_regexp_compile_fuzzer
+
+Job Type: afl_asan_libxml2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x60300000008e
+
+Crash State:
+
+xmlFAParsePosCharGroup
+
+xmlFAParseCharGroup
+
+xmlFAParseCharClass
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97TWnXdrnFVZ7Z5R4rpi_TY84UD8bUmSK7AKaC2lpa9gWAhGb_VKVdi9NhAEU-KPgHI11k4zZdr0fPk8bCbps8LPR5XeAvOIA3LXg39VvacR-RlyCgy_bOiQywOKHTVVsIsxR6X4E-_b4l9z5wFIZNgS2tbQ6O3IZM9xQnrEFH4EhqnqX7ju1joXlNWoo0AT0EE8X2fPT6j3dAnM9IxOIq9gqJGpwQcONIqANCot8LSCxwWZcLicp3ZvHdlCuLa2FlHaOJqqz3blPj30GKOkOFTiSYHeuwt2GX4n-81PJ_VhyZu78iAwy-bclenDz7FJD25tGINqu0Xnrn9o8OGPHxVOzBdwt-4KnwmgalAjB0jkjhmlUx7LRGwcv1F2KSQsdqkxxz-_9Zk2d9wpMCrB5W2AvezAIOmtos_WJ5XOV1oibsOqHk?testcase_id=6574081912602624
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

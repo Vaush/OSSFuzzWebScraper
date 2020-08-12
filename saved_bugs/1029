@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5177092629069824
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_sdwfuzzer
+
+Fuzz target binary: sdwfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow WRITE 4
+
+Crash Address: 0x7f3a03d7f378
+
+Crash State:
+
+StarWriterStruct::DatabaseName::read
+
+StarObjectText::readWriterDocument
+
+StarObjectText::parse
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704051628:201704052230
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94Wm2Ip9GnmgpOxXztJxOh_HqVhmWJse9KpKhW6vSY8tukMRPdmiZrDK-Ne4CTPl4Bz64s8455dgkciuGJHAbzksG0OeGEMTbkR_QDXbfjFz6VkK_7X7dA8gSDtIbz5bZ1rstZJ3PfeddfErUJXq5TNXnHQZGAr1ZNh-lLdQEMopfP8owWToKZiOX3jJQRO0486SUgtOesb9QLziCt_mItTuTk-5xZAB7MQgELmbv2I-fnEPey53m1k1KPpCZB7fm8pFHcmmWVT1tNw8PAp3bUP3K1Y1AlSm1GMaDoQwzsBsD2qkZM5LLHqIPqiZLXgVfXsFZfPR7affwJxQFHJQTltndQAhuE-K0l3QnVWl8XZSWvxZT9Lf_UPBhFSL4uyKO08OZao?testcase_id=5177092629069824
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

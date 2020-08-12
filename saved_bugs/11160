@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5704798737793024
+
+Project: openvswitch
+
+Fuzzer: afl_openvswitch_odp_target
+
+Fuzz target binary: odp_target
+
+Job Type: afl_asan_openvswitch
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x60a000000438
+
+Crash State:
+
+parse_odp_key_mask_attr
+
+odp_flow_from_string
+
+parse_keys
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_openvswitch&range=201810260254:201810270252
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5704798737793024
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

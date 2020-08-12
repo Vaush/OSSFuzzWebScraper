@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5715028240498688
+
+Project: freeimage
+
+Fuzzer: libFuzzer_freeimage_load_from_memory_fuzzer
+
+Fuzz target binary: load_from_memory_fuzzer
+
+Job Type: libfuzzer_ubsan_freeimage
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+LibRaw::parseCanonMakernotes
+
+LibRaw::parse_makernote_ADDRESS
+
+LibRaw::parse_tiff_ifd
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5715028240498688
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

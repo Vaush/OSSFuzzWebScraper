@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6481973906243584
+
+Project: tpm2
+
+Fuzzer: libFuzzer_tpm2_execute_command_fuzzer
+
+Fuzz target binary: tpm2_execute_command_fuzzer
+
+Job Type: libfuzzer_ubsan_tpm2
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ObjectCapGetLoaded
+
+TPM2_GetCapability
+
+Exec_GetCapability
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_tpm2&range=201702171125:201702172210
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97Likvq3lh2Vcx_D4F2uthXt8YmnPO9oDYlGfyXJbqEImBG4C_s2kNyxKs3AY6z9cn-_VeYKwKeRjRpp4ifLYQyqwvAcOQ3gz8TR2KoghH9XLbDWCUH_KXASxdF1Yu7D1WRaRyn4fbzKugxFgRN2Aw650drXkluNHxfFkAYbFcwCroeUBA4lG2lVz0zkX4VhWJgdxQCxCOAt0E0Cu96HqBgIlfBRgU0UAJQNx-soHwKQRCf6uqmFwzMXPWaTliM5FULJWRv2wicd4NHG2st6vaTU6tngfDiZVg7RS38aPywohm2CJgKK1jFljviA_w-yNAXFxZQ9DLK8hubvDEh3wbyUF9D02iQY1lA-K7J1jbxLM-yEy8UP9AmK5UObEzCH7l1XsUWHI_j06VCTS9TXCL_4uPlOj0AY3hLrqJN0cVrQ-AJPI4?testcase_id=6481973906243584
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

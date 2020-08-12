@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5597645072498688
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_tiffuzzer
+
+Fuzz target binary: tiffuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+LZWDecompressor::Decompress
+
+TIFFReader::ReadMap
+
+TIFFReader::ReadTIFF
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201702221557:201702222008
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97FruDnZFRgm8vk8uwqcYbLafl3SI03FMrJQLQAuV6kydvyLBAHqkYjvZb_1L6WvUjZ52j_wyNM8Y6q8xXrv53W1Stlc90jXKKhxEfUK9xfZzYbyMctwKyEsMeUdvlfOvkZFGTQjgYKo2pBDXlg_whVqkyjrbFk07j9TGyiEpIMjJKfp1exnLNVnRvQq7FPnbmMb3xUjPpDIKKwAphg7x3wRC476yIaj3H69jVxz-xMci5PRcuk0d4m0MbM6YMuO7cjFPD-RDz5VNW2Fqpy9soQ6OrX32tUpx7sZ44MjUouotGp0AeVAOf8sEopWgkvmBkQc62K3gFLkBngB7SVc7c_2i2FBpMxnZxpOdeJCgcHgPYcRyhveaTLVJYjXZ5LlJzVQzyj?testcase_id=5597645072498688
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

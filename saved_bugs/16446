@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5677295192244224
+
+Project: envoy
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: config_fuzz_test
+
+Job Type: libfuzzer_ubsan_envoy
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+priority == 0.
+
+Envoy::Upstream::ZoneAwareLoadBalancerBase::ZoneAwareLoadBalancerBase
+
+std::__1::function<void
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_envoy&range=201904230310:201904240304
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5677295192244224
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

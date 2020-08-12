@@ -1,0 +1,56 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6547477939355648
+
+Target: libarchive
+
+Fuzzer: libFuzzer_libarchive_fuzzer
+
+Fuzzer binary: libarchive_fuzzer
+
+Job Type: libfuzzer_asan_libarchive
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 6
+
+Crash Address: 0x60400000033e
+
+Crash State:
+
+uudecode_bidder_bid
+
+choose_filters
+
+archive_read_open1
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libarchive&range=201605242342:201605251739
+
+Minimized Testcase (0.03 Kb):
+
+Download:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94-BQBK9ocYPI8VM-qmJYfgWJEJof3CiJZB2-bcW6z1s6MmXC6FzYm_v969RCBQV4IME3h_8237ACD3AqGJvridB26AKS_SiQtLF5s0shehHTrAstdypH7Ou8ieAkBYuqJtWLJc3RjDoZRax1lWGP5u1idvFMG9CdiLTtQbjNomRUSWOFI?testcase_id=6547477939355648
+
+;
+
+Aa
+
+begin 707 R
+
+07W1'
+
+####,
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5488429968130048
+
+Project: dlplibs
+
+Fuzzer: afl_dlplibs_bmifuzzer
+
+Fuzz target binary: bmifuzzer
+
+Job Type: afl_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x619800000f78
+
+Crash State:
+
+librevenge::IStorage::load
+
+librevenge::IStorage::isStructured
+
+librevenge::RVNGStringStream::isStructured
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5488429968130048
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

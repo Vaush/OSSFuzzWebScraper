@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5687136598097920
+
+Project: skcms
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: iccprofile_atf
+
+Job Type: libfuzzer_ubsan_skcms
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+inv.a * inv.d + inv.b >= 0
+
+skcms_TransferFunction_invert
+
+skcms_ApproximateCurve
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_skcms&range=201908200205:201908210211
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5687136598097920
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

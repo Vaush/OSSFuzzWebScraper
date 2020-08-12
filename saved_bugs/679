@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5758488946933760
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AUDIO_AV_CODEC_ID_WAVPACK_fuzzer
+
+Fuzz target binary: ffmpeg_AUDIO_AV_CODEC_ID_WAVPACK_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+wavpack_decode_block
+
+wavpack_decode_frame
+
+avcodec_decode_audio4
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ffmpeg&range=201702181925:201702200712
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96VMTHbivozry015jJ9i0tcZnALOcFFNtbwsxK26ep3NM3sKnewG0NPIR4pnbJ6_0BsUqPXgGwnFIcdNUtPTYGEKmO9PtQKxfWV8wBVtJYHo4rhCNKoNJ0fjbyBhUFcKjGDkZE-A8Pbwj0j2uw15yi_PpSCp7UlMlXxsfCWjdeCGzKrjf_ATy0YH4LMGhXj3IU5KVwPFXhlS2R5BaQxUR0Ng_S_zWT04hGbnkQe7JD-djgv7mhTAICGU4CwqcLt5_6qbSQ4664WlNHsq_XktdqzexE_emwDVHXsVDLe_7wxtDQgiqJ26L-5NuxHjS5nj53hGdTyfUMOGCZ3YnLA7kulFdd6ojY8pXKJEKjLSHbdvFn0UJohEEu-3ZmCXZ86anO9pmMWaN4BoziqfJImuqAoS3yMM5zvdnop18gOE5o0H8ZC6xU?testcase_id=5758488946933760
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5707572222361600
+
+Project: firefox
+
+Fuzzer: libFuzzer_firefox_ContentParentIPC
+
+Fuzz target binary: ContentParentIPC
+
+Job Type: libfuzzer_asan_firefox
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000008
+
+Crash State:
+
+PLDHashTable::EntryStore::Get
+
+PLDHashTable::Search
+
+nsClassHashtable<nsStringHashKey, nsDataHashtable<nsUint64HashKey, LockCount> >:
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_firefox&range=201905220327:201905242229
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5707572222361600
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

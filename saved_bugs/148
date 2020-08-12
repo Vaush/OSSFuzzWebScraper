@@ -1,0 +1,36 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5850953135685632
+
+Target: libjpeg-turbo
+
+Fuzzer: libFuzzer_libjpeg-turbo_libjpeg_turbo_fuzzer
+
+Fuzzer binary: libjpeg_turbo_fuzzer
+
+Job Type: libfuzzer_asan_libjpeg-turbo
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x7fbecb6fc000
+
+Crash State:
+
+libjpeg_turbo_fuzzer
+
+Recommended Security Severity: High
+
+Minimized Testcase (0.38 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95BZFEUC1fwu6UWRjEfgwXn9LUVN3R-USp00ZEsd1nPcmi7wc-8YkvB6vNfOrEBHs0yMsGhKSZIE0-gzksUwjNdDON1z6NuQc7_UXusMApnkRM8lZLm7VBDHwmskveGzqTXsqND9pfueIDW8PrRfmdNXE9HPYf3DoE-Yi0UzrezVOcsCzs?testcase_id=5850953135685632
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

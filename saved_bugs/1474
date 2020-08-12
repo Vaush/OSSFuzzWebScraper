@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5822573776470016
+
+Project: libass
+
+Fuzzer: libFuzzer_libass_fuzzer
+
+Fuzz target binary: libass_fuzzer
+
+Job Type: libfuzzer_ubsan_libass
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+init_font_scale
+
+reset_render_context
+
+init_render_context
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libass&range=201705081903:201705091645
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5822573776470016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

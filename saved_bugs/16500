@@ -1,0 +1,40 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5642462671929344
+
+Project: golang
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: fuzzer-json
+
+Job Type: libfuzzer_asan_golang
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+NULL
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_golang&revision=201908161757
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5642462671929344
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

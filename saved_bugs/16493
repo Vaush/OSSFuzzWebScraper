@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5649300259864576
+
+Project: wireshark
+
+Fuzzing Engine: afl
+
+Fuzz Target: fuzzshark_ip
+
+Job Type: afl_asan_wireshark
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x0000000000ce
+
+Crash State:
+
+fuzzshark_ip
+
+g_hash_table_lookup
+
+dissect_tls
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_wireshark&range=201908140408:201908150411
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5649300259864576
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

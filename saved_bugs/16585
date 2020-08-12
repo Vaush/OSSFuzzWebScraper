@@ -1,0 +1,42 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5089128370143232
+
+Project: golang
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: fuzzer-zip
+
+Job Type: libfuzzer_asan_golang
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+zip: write to directory
+
+zip.Fuzz
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_golang&revision=201908200245
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5089128370143232
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5391910787088384
+
+Project: freetype2
+
+Fuzzer: afl_freetype2_ftfuzzer
+
+Fuzz target binary: ftfuzzer
+
+Job Type: afl_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 4
+
+Crash Address: 0x000000747648
+
+Crash State:
+
+af_face_globals_compute_style_coverage
+
+af_face_globals_new
+
+af_loader_reset
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_freetype2&range=201704052243:201704061632
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95Al531CxXsEi0-Y71SsS2EqO3MQ5St8QtCUXZtJEqItWAbFGRpNrGYzOfYKv5Yg-VKW19XqzPeiqx9OYc0WUFMiD3EkmK6df9ZT0AlhumCSIF8ZZJz6taHtxORGZEcZ-6qbUMCvwg88y9088vnS_I--FbLcQLGgvVEDEvcVvzZsiAwDtG8lyFFJnxsfEI2UNKNIS2fc2HaqJ1NJrZdNGkN2IilzmGhivCRUF9Mn__CNDGSLH1HQe0gDvjy5OO0N2s_ZHPOXRRIYnJzbikle-PYLDYBEZ9pGTb5xRvDF-2Ls6mf3J9LLNmaTUFqbWxRttXatoT7PvKWr823e3L1CgBmVsgznMQikaj1meDn1dysp-OJp4EJSBSTbXgTjDzxm9mVEJ7-?testcase_id=5391910787088384
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

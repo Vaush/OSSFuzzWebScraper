@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4685785548718080
+
+Project: dlplibs
+
+Fuzzer: afl_dlplibs_applepictfuzzer
+
+Fuzz target binary: applepictfuzzer
+
+Job Type: afl_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Container-overflow READ 1
+
+Crash Address: 0x621000001e12
+
+Crash State:
+
+MWAWPictBitmapContainerBool::setRowPacked
+
+ApplePictParserInternal::Bitmap::get
+
+ApplePictParser::drawBitmap
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_dlplibs&range=201704101617:201704141618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94CgcH1_YLnvOoHWbXsuOtySTmteQGYxVVypF5zpnL2eE60SIfR3_IoYAikVMUeEL8I8XOuego699ZEjJ4ABYf9CT-LEam3dZM22wI3phWnEZ4pqsmK1NA0rouLd3jGRRLShHj23PYKgjtpxJj3CahxJ_ZjqkbCeNqvI8AdXwP3PThW6Jqhh2UR83k49ye4Br4g75KPlAgYQZ0sOafj7VmQnm52qRpdgiuhr16splzyytN_KDDSVB6EoXUFhzC4uDnwEiUBJp3NfItt7_e7UGMYHPxrDhYxu7-LelzVXfRrQ4xxX36VeAsZ2rvqRiz4uUuReGplk2ydW0APlCCPfdtzL0uc-qGp7GP6qhmG3nGFvyOPEnjmvrAurD6yZi9dxibdec6CGkkyynY7PGYPABvZ9ATXwHCz-NbJkBDjtaoSRegKTmo?testcase_id=4685785548718080
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

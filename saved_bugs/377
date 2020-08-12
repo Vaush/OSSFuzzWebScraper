@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6051806467588096
+
+Project: json
+
+Fuzzer: libFuzzer_json_fuzzer-parse_cbor
+
+Fuzz target binary: fuzzer-parse_cbor
+
+Job Type: libfuzzer_msan_json
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
+
+nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
+
+nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
+
+Recommended Security Severity: Medium
+
+Minimized Testcase (0.05 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95JewdvXub-dTQH2ZJcTO9CU1JJuX0z2r_ayy2dkqW9dUli-j_DKzAnncumcPUGCJ7--lDX9C92a8r84smAF_9TvgQTWcLL3LnxtCbsPjKoSb9v_Hh2nOyGk3rHxMO68Q8Zl5O3wK4MwnCJjWuNL9YK6ENt_eni6z1IKVRVmS3SMQfYIaQlIngHVtCTesM2IoLdwyADpKlFlotYeVVffhtYs4cF8Dku3lmDj-vjLRDZ5YOF4TfEsBva4-tUMtLbfcxoDXk4NmTkld2cFhD6x9qrwJ8EVlOgz7QvaWxfXYp8prFPZbLVgmYzt33nqSopzQobs8qaFjUhbJ4m3ptfoEeQMvpbZFzND2OF39qFmgbTG4LZ-LAyyEcd6puze-HTurgzL_3S?testcase_id=6051806467588096
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

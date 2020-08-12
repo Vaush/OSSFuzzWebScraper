@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5323924986396672
+
+Project: wireshark
+
+Fuzzer: libFuzzer_wireshark_fuzzshark_udp_port-bootp
+
+Fuzz target binary: fuzzshark_udp_port-bootp
+
+Job Type: libfuzzer_ubsan_wireshark
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+rfcNUMBER_lci_to_fixpoint
+
+dissect_bootpopt_coordinate_based_location
+
+call_dissector_through_handle
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_wireshark&range=201705081841:201705091620
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5323924986396672
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

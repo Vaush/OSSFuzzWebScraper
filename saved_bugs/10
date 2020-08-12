@@ -1,0 +1,36 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4605905983242240
+
+Fuzzer: libFuzzer_freetype2_fuzzer
+
+Job Type: libfuzzer_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x612000009ab0
+
+Crash State:
+
+Mac_Read_sfnt_Resource
+
+IsMacResource
+
+load_mac_face
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_freetype2&range=201605242205:201605242252
+
+Minimized Testcase (1.66 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95fylu4lS8Zc62hlqONhgtgOWWTBbyLUeTPAjCkwC7--67C15qRUtMMDaMbY7vvJiWsZmFV-2CnF_3AZ0v8X5UgNSc3jY1tcpFEZYM-UmdoCT7wcPXwJ1l8kxg4554M6TyPJ0WABtfiIXsO2hH7tUecqzz95bHZy_MbF6wtsNaM0cpN3Dw
+
+Filer: ochang
+
+See  for more information.
+

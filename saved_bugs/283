@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6112238637154304
+
+Project: file
+
+Fuzzer: libFuzzer_file_magic_fuzzer
+
+Fuzz target binary: magic_fuzzer
+
+Job Type: libfuzzer_asan_file
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x614000050000
+
+Crash State:
+
+file_regexec
+
+magiccheck
+
+match
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_file&range=201612092228:201612100722
+
+Minimized Testcase (0.07 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95h8NAGL04GauITbRlwNLmuudzHiKMvoqwf9OtDvB0rCmpCh4kAcI4pX8Byh-M0ixsrUe2VijWkKRlLpijLL4n2Uj_b2UPgLz3BkR_wVQkzngyhO-RLqWs1gFvi0FCa8iolNrRqizLus5TBdVKpe-bNdY5iz7Jz4b2lM34KC12HdZhByyA?testcase_id=6112238637154304
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

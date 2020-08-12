@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4986523302756352
+
+Project: grpc
+
+Fuzzer: libFuzzer_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: libfuzzer_asan_grpc
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+grpc_channel_create
+
+client_channel_factory_create_channel
+
+grpc_insecure_channel_create
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_grpc&range=201702140127:201702140531
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95GzPQOQN6PB6r6g3c2wirU7UTfsnOQbYYdISz32JpBYVuKoXGfqz2_ghcgi8gu1qsePD5JTNcCvdGk0SpTXScEYrtbAdIPbeZ5n3kxvFFdF22dvAL9N33bCE8UJUCEyTnBHNzg_P-RHHbZi0rZDpSyEyr1wN4-ZUjyiVskrSow_wcpHHKcerZwpDAQM89egIxlfhZBUNwIHyxtc_VcKqEbf_9n2F7A42lIRNmEmx216xaeQmR0UusEMAW8f0J1dKDa7LiDfHzvzUG-7samEHpprlJCk3zZkB1YQjq9DhqXDbMDvdWSuO8fag944cFpTDjk905YnyAdDkiFTHkLeW1Axn8SmT95n3VjkSqkW-BxGunib0IL8dqj86QQV2sOhfN_hA8VZdJpDzOxZFfubSqotJsQ_e2X-0aEccqiPfrJ-KxrcWM?testcase_id=4986523302756352
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

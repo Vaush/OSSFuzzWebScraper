@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6591741416177664
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-isel-fuzzer--aarch64-gisel
+
+Fuzz target binary: llvm-isel-fuzzer--aarch64-gisel
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+Query.Types[Mutation.first] != Mutation.second && "Simple loop detected"
+
+llvm::LegalizeRuleSet::apply
+
+llvm::LegalizerInfo::getAction
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201801290646:201801300702
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6591741416177664
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you have questions for the OSS-Fuzz team, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

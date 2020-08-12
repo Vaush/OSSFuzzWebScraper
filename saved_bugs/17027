@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5754702871920640
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-dwarfdump-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+FullLength == length()
+
+llvm::DWARFListTableHeader::extract
+
+llvm::DWARFListTableBase<llvm::DWARFDebugRnglist>::extract
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201909020324:201909060434
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5754702871920640
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

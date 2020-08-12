@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5665785546014720
+
+Project: skia
+
+Fuzzer: libFuzzer_skia_api_draw_functions
+
+Fuzz target binary: api_draw_functions
+
+Job Type: libfuzzer_ubsan_skia
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+SkDVector::normalize
+
+SkPath::arcTo
+
+fuzz_drawPath
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_skia&range=201907110336:201907120337
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5665785546014720
+
+Issue filed automatically.
+
+See
+
+https://skia.org/dev/testing/fuzz
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

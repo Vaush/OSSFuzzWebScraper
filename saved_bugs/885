@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5393597081845760
+
+Project: json
+
+Fuzzer: afl_json_parse_afl_fuzzer
+
+Fuzz target binary: parse_afl_fuzzer
+
+Job Type: afl_asan_json
+
+Platform Id: linux
+
+Crash Type: Abrt on unknown address 0x000000000001
+
+Crash Address:
+
+Crash State:
+
+demangling_terminate_handler
+
+std::__terminate
+
+__cxa_throw
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97XDciMKr6_PypKy2kipdV1daNithj1enT67JgrprThT6JplCYIZtFZ_TCtBzO3zFNgwRZ8Xsg_Khn28ZYzwrJM5vUfpMLfjfnPjFvWGhUMH_ancyg7Inp7syPVn2pDxjmw4t3DTXkRZP1mxbG3arN7EiqS0C6zWNLGddHBz6ZFYmK7zG9c8Pm6jwsT-L6skXi5wgExIdnnf1DsXigBg9qu2rrS7PTgIfJtujTmJj8QxaHSvcdDpvId4OMhnPsip3AFZ4buiJMmxVFXvCH_HkalErQyMLzyMKRtGbYVnD8hQSy3e-uSfoilQDwT-VAbHZdrHIua195E9Sxo6htAZ49uLdIooFBrDOT0enP1Bltl60tx1dO-bobiGxbrPPE5vsqrb0eiG7ArC3_BlWWj0v3aOn-PfJwyOlzdWwbzrikZYSm5PT8?testcase_id=5393597081845760
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

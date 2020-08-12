@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6421901003980800
+
+Project: libtsm
+
+Fuzzer: libFuzzer_libtsm_fuzzer
+
+Fuzz target binary: libtsm_fuzzer
+
+Job Type: libfuzzer_ubsan_libtsm
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address:
+
+Crash State:
+
+tsm_screen_tab_left
+
+parse_data
+
+tsm_vte_input
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libtsm&range=201702171125:201702190705
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv967RMhT6d0mjaT0T3NFogzjN-gwdS6bxHVFXAZ7lWxrWy4u4TAvjjCR9mgP2AMqphhtZTBzL6ppyPwJye2__TlqW_cXrzqKa0NFJ-m0IuHV_RL4sA_LppDSP6-YjYMghCCtb8RuUP7JO2AIY8VyFU-UMzNqZoH-JrA2BnliQqQ7oo1TfIKf9zRu3pumtTVj6YbC8MjQYnFGCZWl1hs4SfnA73om_4pO5UfuJVMo3zY2NZcDoUSGNZxqZjGi0kLjmVCnhlTyYih39jvk9W9VmxI2jH-03DKXt780RSE_XEqXjrdibQiFNfTFr7A4pgUURydNBkX0tBpCZe8WiHght27ryhXCCMKh7AWlignVEpw68xtPAKqBknrX27y6_TK6XqGs2PN9oH-p8zDbB4aO04-rMgnpiYnf0aFEOfgdI_ExQQDwFkM?testcase_id=6421901003980800
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

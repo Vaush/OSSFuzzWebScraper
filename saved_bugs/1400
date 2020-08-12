@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4618963768049664
+
+Project: json
+
+Fuzzer: afl_json_parse_afl_fuzzer
+
+Fuzz target binary: parse_afl_fuzzer
+
+Job Type: afl_asan_json
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 2
+
+Crash Address: 0x6020000000b2
+
+Crash State:
+
+std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+
+nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
+
+nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_json&range=201705051619:201705061619
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4618963768049664
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

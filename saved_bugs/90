@@ -1,0 +1,36 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6454413321306112
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x613fffffd69f
+
+Crash State:
+
+match
+
+match
+
+pcre2_match_8
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201610131612:201610131701
+
+Minimized Testcase (0.25 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97VLZaZqbxVFaNNrvZBQFFYEacPSVi87vDsRZoNA1P4vhBvljnRMjKt-G_UZ3o9bIXeTHfPnft7131TfohIVOCsLGib6VATFU0XYnv54YyeOn6NuY425MyGxm644c8KaBgLFv2llyTDjpj4jEd78tg19fE6j6aI5WHcB9TUrplffISMr8c?testcase_id=6454413321306112
+
+Issue filed automatically.
+
+See  for more information.
+

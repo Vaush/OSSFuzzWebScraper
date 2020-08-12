@@ -1,0 +1,40 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5109352358739968
+
+Project: libteken
+
+Fuzzer: libFuzzer_libteken_fuzzer
+
+Fuzz target binary: libteken_fuzzer
+
+Job Type: libfuzzer_ubsan_libteken
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+teken_tab_isset
+
+teken_subr_cursor_forward_tabulation
+
+teken_state_2
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5109352358739968
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

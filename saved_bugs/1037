@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6108512792870912
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_mswrdfuzzer
+
+Fuzz target binary: mswrdfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow WRITE 16
+
+Crash Address: 0x6030000001b0
+
+Crash State:
+
+MsWrd1Parser::readFootnoteCorrespondance
+
+MsWrd1Parser::createZones
+
+MsWrd1Parser::parse
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95bYM0stZaNmyw7OKI1SBn8yAouJVleMuYjBOUBXaO7nKT3ZmC5o1Hk-V7axME9jTjT4AEu6QJVo_gfWkurWrYIUq9BIER_wXTt0ptqdbUQrE0PBOWaO3Kns939We7nG99QqzeCGIfQkSfBVhpUxN0So4iYyAcTwiG84_L7Z4mydR_Si5vIEpIj3PnRF_tCvKMcAKj490w_SDrJu2CObwARi-i0vYjHOnaI1n0DNyaZ6nkFYz8ZjKWj_-DJBHbZMnvJZzVkGuBCGcNhvICjN0RsYSS8YERzKJxMPT1e8z3Q9LGMPHrfcojcIwkJAcdYJuob7lsMiwhiffYg0tj4kuHZfnO-koppL--Uk5hyNJctrG9tHSD8ZpTG2vigE5wS37l_EtD2?testcase_id=6108512792870912
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

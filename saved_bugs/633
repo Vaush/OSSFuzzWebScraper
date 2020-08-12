@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4553133554401280
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_VIDEO_AV_CODEC_ID_DVVIDEO_fuzzer
+
+Fuzz target binary: ffmpeg_VIDEO_AV_CODEC_ID_DVVIDEO_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+idct4col_put
+
+ff_simple_idct248_put
+
+dv_decode_video_segment
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95y0Y0ucmiDskl-PPLm8PyeZ_v9FbsmsavZ2HBWNryddoDK8LDfb0VJ3rkNzmrK_wCSyrBp2_HtwAm65j_oidS2rlNrUYcXDPEm7Vx076DSV9pD6NOMS35oh1aW-ka7CzpgF-tebgttPvFF6iAnGTA1zQ54_r5I69sG4jvYGPme-NqGfkOvFICkVG-SoeLzbdLaJ3NtHOye0ERdntkcNvAChEVLbd_yP_5LZdsB-lRmHOnv9Fo42hI6w6I4PewLGwA8wlCizGS4X5voU-GWL56SuOPgx9-Cd0VhoxZffPMb3xcds7hHMYUPKw8Yyd09Xl6S0us_bY1LzGe469E4fEwRSrd3MMD_9YFOZHB9jMwhWIBvhh7rjNnFkdSQeTY0Q-Qh1zCzmrJeqxnpqTE6xI9YPOtY8Fm7ziHlHbZQgPd9LBNK6Us?testcase_id=4553133554401280
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

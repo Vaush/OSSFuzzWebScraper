@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5665813578645504
+
+Project: grpc
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: client_fuzzer
+
+Job Type: libfuzzer_ubsan_grpc
+
+Platform Id: linux
+
+Crash Type: Index-out-of-bounds
+
+Crash Address:
+
+Crash State:
+
+grpc_static_mdelem_for_static_strings
+
+grpc_mdelem md_create_maybe_static<false, false>
+
+grpc_mdelem_from_slices
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_grpc&range=201902270219:201908290243
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5665813578645504
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

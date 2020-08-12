@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6475706777206784
+
+Project: sqlite3
+
+Fuzzer: libFuzzer_sqlite3_ossfuzz
+
+Fuzz target binary: ossfuzz
+
+Job Type: libfuzzer_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 8
+
+Crash Address: 0x000000860150
+
+Crash State:
+
+sqlite3VdbeMemPrettyPrint
+
+memTracePrint
+
+registerTrace
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_sqlite3&range=201703121620:201703141448
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv942untptXw7WQz7luc0WITB3eiHKQlsSpx_kEkhouHTo2pyU604iiOiC0osaMvPqKnho6-Jd6CmaOyBE0a3y6w_sFP7_6bgv18FLXJlG81gFQTtjgav3V9PQZ5t2C5T06tc0igTvYYDY4z9VUEAV4Bp3FrRYRJcIpUaCTHWXsxTcT-e-ZzG0pzGqrdzgzjfnZvxLp9OF4K4jjnu5h-F219X9GToBzO4dkgrF5jDDO3qN5Qwjt8hRFdaEKt-sylZCMXxWF9PILrZGeoIGGfKI1OmDdvOYiSI0l7upIdPx3AZ7GFNyPV4DyWHi8qX3bPnvcCtdn7gcVYYhe6SjziRb2n_qzVHrftSmRYXD9ffX_gvW8yTUZoP-2IOrWwPS_rhYoQrlukp?testcase_id=6475706777206784
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6633131901714432
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_wmffuzzer
+
+Fuzz target binary: wmffuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow WRITE 16
+
+Crash Address: 0x7fbc651be7f0
+
+Crash State:
+
+tools::Polygon::Insert
+
+WinMtfPathObj::ClosePath
+
+WinMtfOutput::ClosePath
+
+Recommended Security Severity: High
+
+Minimized Testcase (1.93 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97Nk3qSEVIfUHq4NTGzMgu2kNVCWmGByrWQTCQiSWpufYy_9rFQ2WBmyddjE7xpZskhNGefuG8yFhEJfsya4xJ-711BhufhrsA3mw7bq0cLcnxIANLUci45HiIIo1I23te3BgcTFjOmGkj2-il7qi6_IBDb5S_wFtuufoCEuZNtROrGXWrAaCnba8P0PmIIHyHch0vW8Wu8Zb3gEUY8jrbk907gJCi8_DJSnDBOdqrmg1BSxrjt3AY1YJ6PkyvdRxOYIY5QVEkwDmIqsuQMINRj_of_OFTunX0n6yBN5D4wdEjfu-jE4FXrXey0gqHGDBt8et8JYZ-fpryk_tMEIYnvSdZr2p1-5WLibYLKPNIMUZ926IM5_riD8k8jZiypmW7aJni_?testcase_id=6633131901714432
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

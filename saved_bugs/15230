@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5734321052188672
+
+Project: wpantund
+
+Fuzzer: libFuzzer_wpantund_wpantund-fuzz
+
+Fuzz target binary: wpantund-fuzz
+
+Job Type: libfuzzer_ubsan_wpantund
+
+Platform Id: linux
+
+Crash Type: Invalid-bool-value
+
+Crash Address:
+
+Crash State:
+
+nl::wpantund::SpinelNCPInstance::handle_ncp_spinel_value_is_SERVICES
+
+nl::wpantund::SpinelNCPInstance::handle_ncp_spinel_value_is
+
+nl::wpantund::SpinelNCPInstance::handle_ncp_spinel_callback
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_wpantund&range=201906100303:201906101800
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5734321052188672
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

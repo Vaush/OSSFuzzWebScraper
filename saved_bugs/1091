@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5353706717446144
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_clariswksfuzzer
+
+Fuzz target binary: clariswksfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+ClarisWksDocument::readDSET
+
+ClarisWksDocument::readZone
+
+ClarisWksDocument::createZones
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704091618:201704101617
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95cGKqI6gxaz-bMC8RlmUP0O9qujfOifo1KP5GD5hlVshMwbfGXU1AKxRUtnOJwIgOnxeu76lMGjZGMUtTnzb97iNGAp943-wAdcRL2X3NgywbBt8dwwDeBck3eHmthV069c7eGXx0oi_Dv_sS9JHaPEf-WKxdRnRZwvELxgvG4zztuJ8_1r2MxzMyJk0YJcLOHTLlW2tqe9d6ChGpmPo2cndpoiygGUc5F-IZCkGMsgUJDkFm1TRLmO0Xhk5kqczLM1JkId770qtytRNJdu46KG4CyPQ0F-tbmkpXvk7u7t_KegnzI4aCPEvjzM471v9KEnfO3kgtXFEPz2HGkKViPge_jdateSiq-jig-9LvFZtKMRgyzpUYTLg7gfpT5ff2QgtuI?testcase_id=5353706717446144
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

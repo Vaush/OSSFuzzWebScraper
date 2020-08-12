@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5701120023855104
+
+Project: qcms
+
+Fuzzer: libFuzzer_qcms_fuzz
+
+Fuzz target binary: fuzz
+
+Job Type: libfuzzer_ubsan_qcms
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+build_output_lut
+
+qcms_modular_transform_create_output
+
+qcms_modular_transform_create
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_qcms&range=201810060120:201810070119
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5701120023855104
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

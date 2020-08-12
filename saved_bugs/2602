@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6396364558696448
+
+Project: libteken
+
+Fuzzer: libFuzzer_libteken_fuzzer
+
+Fuzz target binary: libteken_fuzzer
+
+Job Type: libfuzzer_msan_libteken
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+teken_trim_cursor_pos
+
+teken_set_winsize
+
+teken_init
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_libteken&range=201707120414:201707130415
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6396364558696448
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

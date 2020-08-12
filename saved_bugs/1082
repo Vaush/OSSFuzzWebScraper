@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5907588317184000
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_wpgfuzzer
+
+Fuzz target binary: wpgfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+_extractDisplayReferenceNumberFromBuf
+
+WP6ContentListener::_handleListChange
+
+WPXContentListener::_openSpan
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96f6NEDxYCZFFJFyqAHXsxZFDRUtry0UHLdS6VhN7uDiz2jy7kQCUezp8MMjahvaHYNULhc3MbXrj_9FkadK3R8CeeJ3bRS6-1PyZcNhrDhtg1SbKIPUmzZecJmHeQtLRhusYGs54-uegciT0_FWOafHw9O-Ss6758oBYEe66OdAG7EGMD7Fe0ehxVVXwtJ9TooN_12qSPnslAfH2S4qnfMQOPy4hCPgOCRh60kK-Of8CAedGN9gMgTPX1d4XfURsLRKfCELMosd-3Niyg-k4V85XuIOAen33hjc3tgnnNyUB3LGujass5Bql75RiWSq8A8zSlydgMTNL4gxAwCgRE69N4Ksfp6JznxfSMNF3ZNqwzMAFXB8-DdhrnPlhuaVGzySZiJ?testcase_id=5907588317184000
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

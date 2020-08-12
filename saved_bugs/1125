@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4931154505367552
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_pixelpaintfuzzer
+
+Fuzz target binary: pixelpaintfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+MacDrawParser::sendBitmap
+
+MacDrawParser::send
+
+MacDrawParser::parse
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704101617:201704141618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv979xu10V7RYE2pU3K22veE1dukw8n5MxW9wD1qisH7dETW6oclVg1GtlHIhhufwEngRZogPpSGciKuYmw1Y1mihoBV7ls3EN687LZgZfHErIPoU15wt1whMfyGf1tirhzDkMAxolwTBVsFff4bENcX_M1vYYpX7ocpti8oJQEC5L50Dvw1gupbRhDoGMujNEYnavgxlvuEsC3xvW-g3v--eaCKtjil5GYNF51sgM0Cpjrd233b4l7XWRVSPm1TWdIgLc_9nhqYUDYKSV28xlzXgJozsE-RHxJeQRZ-D0M6LAeI5iEb0TI1EzgK5pgm7guh2fPJjyoMboaf7YflAjgIhd6QESc_i-jIsrCAUMXWt7P9EJkO1icMt_cwB0UzC6J2k8oImEC30MwOrZ11dDQoPcjPyqp0h-RcGHtvfa9Pc6EnShjc?testcase_id=4931154505367552
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

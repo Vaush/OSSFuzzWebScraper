@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5138114927919104
+
+Project: wget2
+
+Fuzzer: libFuzzer_wget2_libwget_metalink_parse_fuzzer
+
+Fuzz target binary: libwget_metalink_parse_fuzzer
+
+Job Type: libfuzzer_asan_wget2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x610000000200
+
+Crash State:
+
+_iri_unescape_inline
+
+wget_iri_parse
+
+_add_mirror
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_wget2&range=201904230146:201904240145
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5138114927919104
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

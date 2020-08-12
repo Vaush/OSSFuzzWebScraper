@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5209078743695360
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AUDIO_AV_CODEC_ID_DTS_fuzzer
+
+Fuzz target binary: ffmpeg_AUDIO_AV_CODEC_ID_DTS_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+decor_c
+
+chs_filter_band_data
+
+ff_dca_xll_filter_frame
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94YQk5CslGpzTDAcseQlEnAbLV9X5C-7Nh2jFcf2nI05uleH6lJLcNbYfU4rRnY8W3J0G9WTOwUYjGQpSHcnE7ky8vaCJds34qijKEtCFri5mBX1hsZGhp4NVdsBJ5hytRdSYhacHLQSbaVE8WpQsLJqh9jqOGz-VvZ91M_VGv9X12QzMRvY8porF_86u_gBcEvAVGx8EG3lL4On1TWzzaLNlCXfB6tUAMJfA2kgyRrTGOIth3W0Ze2Rz59PqKuV3GrPEBhz35jd-6kbMV9UPCPys9SmAZxxazkZ2kW99SoeKYo8TH-0LK4FXuSCRDhp8P73Or8n_e21FULaGESGxgDcOdh7YOO736LJ1rbsB3Nw001HiZYWziNIJetKsUYoYgKA1iDpq6jJq83kw2Gxy0NOGxtp4SVcmAO5D7XYtx4mS55PTI?testcase_id=5209078743695360
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5738978499624960
+
+Project: harfbuzz
+
+Fuzzer: libFuzzer_harfbuzz_hb-subset-fuzzer
+
+Fuzz target binary: hb-subset-fuzzer
+
+Job Type: libfuzzer_asan_harfbuzz
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+bytes_count
+
+trySubset
+
+hb-subset-fuzzer.cc
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_harfbuzz&range=201907100245:201907110246
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5738978499624960
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

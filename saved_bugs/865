@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6499188437155840
+
+Project: pcre2
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Fuzz target binary: pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+_start
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_pcre2&range=201611231503:201611240926
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97ClkO2RZsdThHR8-8E2-36EcK0FBtKBgwm7aNTM4JU42wIdhiertHAMoWUUnB7gz7S7S3t8kVbGVn2s2Jj81igj_eM9Xgc_2PWB3w4077KqLNjqlOWDtY636IFnbm4-SxadyQwTuPjFOfK2xCJYpaS4tkP0XLrjzFvKsj7ZnYiSDW73tHtz4PLjQ4cBYUsMWItOpfbqphXXhyf-mBbr40gmlCyBzpsu3r2whpruTsBOCSxWHfAX0qT9Al98cl0f0ZADQ9FzzGf9SepUZG0gtzbmLYhawJtElKOzYRK-erdhkj702NHsUjE9HRHFVoErC1_NKB_huWdcP1beOhnUa0tRU1CIwQRccYzELBpEWHZCCxI449PMay_KHcEkYbW0HE0aez5?testcase_id=6499188437155840
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5757717800550400
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-isel-fuzzer--wasm32-O2
+
+Fuzz target binary: llvm-isel-fuzzer--wasm32-O2
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+isSimple() && "Expected a SimpleValueType!"
+
+llvm::TargetLowering::SimplifyMultipleUseDemandedBits
+
+llvm::TargetLowering::SimplifyDemandedBits
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201908010319:201908020315
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5757717800550400
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

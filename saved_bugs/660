@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5331901587914752
+
+Project: harfbuzz
+
+Fuzzer: libFuzzer_harfbuzz_hb-fuzzer
+
+Fuzz target binary: hb-fuzzer
+
+Job Type: libfuzzer_ubsan_harfbuzz
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+final_reordering_syllable
+
+final_reordering
+
+void hb_ot_map_t::apply<GSUBProxy>
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_harfbuzz&range=201702191720:201702191952
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv940O1v99khTv29V3wlFPJQzHB7DvLlLrlplNHpzqzPuU_MMPHdGU-pq9VkwjiM27x09h4w2G5SrdYam-cCRXgXZ6V7Sngg6Ynk_1Yh7VJPMx40n217pWfyHmarfBLcWcHPwx2Jhz4yQaWxCBUmgN3iele3E8P60zjLxUesnv-YrVD3u0wHmgvOfG0LAEyeyj07tY2GGWMP-5okY2DD2aBYxWEvCSYvojtEhKldHVGcJ4A_9BgdK1bUg8GzaPO1mUeHB-0X8jln__euIICh8Zq7Y4sfJWtUFrvRMKyeTS-IfVH2X76USoE5hpfpmDMs-RAqLpdxA8yA9WOlKvk8TBPVfzydQ8t5tbtj4a2P4TIGwdcwMfaWYQZZc9ZU_0NXudmaeLCEJbLwTV-w0im36B_3pdmC7GgwiQuyVU-szJksCvid2SIw?testcase_id=5331901587914752
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

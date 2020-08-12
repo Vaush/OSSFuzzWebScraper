@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5748792192663552
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_hwpfuzzer
+
+Fuzz target binary: hwpfuzzer
+
+Job Type: libfuzzer_ubsan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Bad-cast
+
+Crash Address: 0x000008ff5100
+
+Crash State:
+
+Bad-cast to HMemIODev from invalid vptr
+
+SkipPrivateBlock
+
+LoadDrawingObject
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libreoffice&range=201809070124:201809080126
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5748792192663552
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6112371284115456
+
+Project: grpc
+
+Fuzzer: afl_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: afl_asan_grpc
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+finished_batch
+
+_start
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv941YLFLjRnpeaiYtFK_z8Y2j3JGT74duwA6_UpGrw5uL3z8UOqfruo4oon8rdVvPaDnLc-SkOWg3js4OUake3lXislqCJaEqpA-egSpRw360-hxfXOi7ihLRmrGMyhF-etaOwn3Qgn2KEncYsXv8WdIq1IYNOfuVIJC1AtRNhwoTM8yDM4TVBKL9JgAVpPUdBt1bOw7FXyoa74LfOSB10vXtxHg8a1Bl_tco19XK7Nqg5QnjEdUXQHy7b-0iNqkwauPIk22Yl-0TcJmmEIx2ck3oWYd-EoPktZU-jfJrfdGTCDZc9WKxUcLHQHOIRK0IGWfcuwZvxLByaAwb52PyF51RfUDx2LVqueXcpA_njLSdjU2k7sGmlD5rH1RX0zdd0Y4M04s?testcase_id=6112371284115456
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

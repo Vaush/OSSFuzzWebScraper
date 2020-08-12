@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5730449699110912
+
+Project: libvips
+
+Fuzzing Engine: afl
+
+Fuzz Target: pngsave_buffer_fuzzer
+
+Job Type: afl_asan_libvips
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ {*}
+
+Crash Address: 0x611000003c00
+
+Crash State:
+
+vips_value_set_array_int
+
+vips_image_set_array_int
+
+vips_foreign_load_gif_set_header
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_libvips&range=201908240209:201908250208
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5730449699110912
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

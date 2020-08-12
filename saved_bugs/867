@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6677346901819392
+
+Project: nss
+
+Fuzzer: libFuzzer_nss_tls-server
+
+Fuzz target binary: tls-server
+
+Job Type: libfuzzer_asan_nss
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x604000030000
+
+Crash State:
+
+fexpand
+
+ec_CurveNUMBER_mul
+
+ec_CurveNUMBER_pt_mul
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_nss&range=201703141436:201703141740
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96XauHYI8oE1wlyzT7bzWmsPxS2_avHjWWbydCDoCCNLfR8FAx059_4agiEzy3C2hlPQI8gIw3mBj0GIxgLejjGvxom6BbFYspxq676aDgcRv2RddODJ6qGBq4H9-fZA3GsNXwmtb2mnbJY7yDwmMTfhwhYRuokbppwtDonfbd39Nx9tuBHOsm3T9yRLgFk027qeOOaL36gzdg4j6eqE9XxtbWPbHn7U_HNfTkYIYfXLwAhgXclZoj15Fry7vOtweT94pBOEyFsYz5Uc0xus669qntf6KMTvuZ5DTZIWD1tGA-UTA8TwGxyGbZso1AfUTVE5B2RH7L-UXWLeq9FRwSnROWBQ-zJLD0k08_KmqqRUzeEue13K7hiIJd05xrVuDZnZ_mn?testcase_id=6677346901819392
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

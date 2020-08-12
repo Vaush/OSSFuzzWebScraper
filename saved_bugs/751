@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5730351039119360
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_openpgp_cert_parser_fuzzer
+
+Fuzz target binary: gnutls_openpgp_cert_parser_fuzzer
+
+Job Type: libfuzzer_ubsan_gnutls
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+cdk_pk_get_keyid
+
+cdk_keydb_get_keyblock
+
+cdk_kbnode_read_from_mem
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_gnutls&range=201703062317:201703071720
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97CGhA3XvLG5eCOINe_jCgjlylQcPdWv-VlpOiu00Sx2TKfmgEKaTwzAjmie-EyI1MC8UCSXSe_GgOXLdlmno7k7ToxzOYuYxwTwmMB2rY9cD6fg32LH4EdMWPW3OjZkSuLj_AfqsE4lLiLXeZ_S6uiZYBoH0tS-xdi5r1eCQ_rs1vBIou-GygJTWVUDF6QmUSPlM9_S92Q3MrTa8wplJbLECJRvme4qVRqsP5TPGuJ6PCJEqqV8Ik5vYqe0_pKdwsYPykPViPQpuZqJXpJh_6oIc3TlMGZiUtKcCvVk-1H2fG5AY45sgn7gnJBiAOEyHm8rzUpUMivx_HB3JqjfOrPr7IqodJwZ7ygwMySYh6BZFpj43LollUzmUJFgEyRGmLVEVqE?testcase_id=5730351039119360
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

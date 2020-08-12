@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5689363899351040
+
+Project: jsc
+
+Job Type: asan_jsc
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000022
+
+Crash State:
+
+JSC::MarkedBlock::Handle::isFreeListed
+
+JSC::HeapCell::isLive
+
+JSC::DFG::AdaptiveStructureWatchpoint::fireInternal
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=asan_jsc&range=201903270141:201903280138
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5689363899351040
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5669948070297600
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_vsdfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 4
+
+Crash Address: 0x00000096a278
+
+Crash State:
+
+computeBMPDataOffset
+
+libvisio::VSDContentCollector::_handleForeignData
+
+libvisio::VSDParser::_flushShape
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704101617:201704141618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96Hu-t7OFgSQDBF1ix7Y8fBc6TNo1ersP6h-DBsCsP8O0KJngRIW8YHA1kWdN_6rBTDNTYdNhJnzVK8fsfYZde6IAOuhF8ZzmaATmdVD14v-KT2tS771_6M2NJEbJ5ECO5BIWjU4OI8Ks-r6dEuj-Ld34F3lR_b-wqXDtn95kiqy-2P9QeAokhiGJ58pBNKPsV5IGxz-AMgcsuuRmy7hP8aA72Zcbv1uzh6rMDCTtkvJGOWygFxw0y6Ro_lG1tW43gASel71sm84a-wCmIAF7NemXLCz4FUgFHxOzYB41v7O47DUrvXheVkxlFV2VQRtQwEoTuvwxHbMzw-y3zJ9rgQRo5MT2C_xznd82gK3TIYBtPO-sETXXPEH5jsPULCEeO95fjbApsDnGhdVpFunNF5u6d3_0B8gRMaYi7EzH0-cQ9seZI?testcase_id=5669948070297600
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

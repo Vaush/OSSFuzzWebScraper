@@ -1,0 +1,64 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6042404720214016
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: UNKNOWN WRITE
+
+Crash Address: 0x5617b9e05560
+
+Crash State:
+
+Js::PathTypeHandlerBase::AddPropertyInternal
+
+int Js::PathTypeHandlerBase::SetPropertyInternal<false>
+
+Js::PathTypeHandlerBase::InitProperty
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=asan_chakra&range=201807310500:201808010446
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6042404720214016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

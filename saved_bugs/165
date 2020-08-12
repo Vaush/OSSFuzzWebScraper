@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4890595495510016
+
+Target: libchewing
+
+Fuzzer: libFuzzer_libchewing_chewing_dynamic_config_fuzzer
+
+Fuzzer binary: chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 4
+
+Crash Address: 0x7f12f8f917f0
+
+Crash State:
+
+SetChoiceInfo
+
+ChoiceFirstAvail
+
+chooseCandidate
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libchewing&range=201610201020:201610201348
+
+Minimized Testcase (0.41 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94idIZws35azNFdbSYy0YFEOAAyY_yn4nQP7QBm4aNQacnEUDPwDuHGy_tUimWyScHHjFWk1qWvs5tFuNKQWWB_kKyVA5jlY2DLSKNRPwBizc0zfkWtZzTxLNHzQCI4s5x2cnQydi2tc7l9zKpkJXueMhH3AlpUBkxn5yLl0XGYmkijv50?testcase_id=4890595495510016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

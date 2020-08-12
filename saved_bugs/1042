@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6346507265507328
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_pdbfuzzer
+
+Fuzz target binary: pdbfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 1
+
+Crash Address: 0x0000008f4ceb
+
+Crash State:
+
+boost::spirit::char_encoding::ascii::isspace
+
+bool boost::spirit::qi::char_parser<boost::spirit::qi::char_class<boost::spirit:
+
+void boost::spirit::qi::skip_over<std::__1::__wrap_iter<char const*>, boost::spi
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97dqICAeayem-4853bXKzg9oDNbvhNbrLVojIRxMMTtLe9KjppuLfmIyzvHh3Lvr0ShVQkHo7YAGHEO4btlX7vJC3Jknzx9Vcz2X045VfntSIt6-c3ocWQTm8J8w35Y0FY2AizZQIEGWLgXSf81PfllF3ViSjBub2Wh64EEIAIoS1Y2eSKfvNsAZ7pa9MSR6sJY0KEQiZ2wzMsbrQQKuWYpKuHZ5dN4zvXZ2Vqgg8fmS7lWlGSdsOeGUAthPYxnX_Blj0XaMNrOaOcEwib1v-5uC5n0L_6of2gLmUotmI9dwnc8vxLHxIRXBgki6p8TVsHi8GtcvMHUW0PY6pkGr6Rkeqy18pCQle_5okhdykDodZcSIFr-4tyxJBxKz070EdYSAKC4?testcase_id=6346507265507328
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

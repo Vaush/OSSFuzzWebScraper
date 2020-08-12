@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6275080005877760
+
+Project: imagemagick
+
+Fuzzer: libFuzzer_imagemagick_encoder_dng_fuzzer
+
+Fuzz target binary: encoder_dng_fuzzer
+
+Job Type: libfuzzer_asan_imagemagick
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow WRITE 1
+
+Crash Address: 0x7fa32d0ebc2f
+
+Crash State:
+
+stread
+
+LibRaw::parse_makernote
+
+LibRaw::parse_exif
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_imagemagick&range=201804090435:201804100437
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6275080005877760
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

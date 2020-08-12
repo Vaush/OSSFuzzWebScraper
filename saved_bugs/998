@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5271977818324992
+
+Project: dlplibs
+
+Fuzzer: afl_dlplibs_cdrfuzzer
+
+Fuzz target binary: cdrfuzzer
+
+Job Type: afl_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+libcdr::CDRStylesCollector::collectBmp
+
+libcdr::CDRParser::readBmp
+
+libcdr::CDRParser::readRecord
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv954hnSF0vMYXU9rBhLTjRV1tm2H9QAt_NchMn8xa3lg4DMajx7e-kqYp3LAR34oE7BrqH9Ps0bl_b6gOy_IbcHGPK6DaEkePRAA-zNIWZy20VGvXCx6mGgZZ_fHV4NsRFBQL3CJgQm1gKQlthnbv-lj5pykfb335hR-c5T7bW11XWtJeyqJlrk-NwE1jtc75yqZqlpl5CCSOBASI3NV9fV5CK8KgpCMGMfxRPC9QBoEDUP9KzFugkaXpvFJwZe72Ld0mPslM3RKCoif0EOL2e58mcoFPg6vDXaCVmMDYodJYAbnoR-CSeSyHy01bnuRUNZ1d2JQTEQcsWyD3NTM0cRnVRTNjx1keTkE8BxGLkm_oAPI1EYUKbDNq18gSwnooYrSBgwx?testcase_id=5271977818324992
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,36 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4668730988560384
+
+Project: libchewing
+
+Fuzzer: libFuzzer_libchewing_chewing_random_init_fuzzer
+
+Fuzz target binary: chewing_random_init_fuzzer
+
+Job Type: libfuzzer_ubsan_libchewing
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+range[1] >= range[0]
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv941RAS_WwaVTZVLt-WBcj3gQn-3hL3CcqD2kuTCpCUjXlWS7Ws08BnbNkC95ao5e9-HAEwJ45BOAWYYHZso7GZtzdnTAaAKiQupZksSvy5HH89Bi6LddQz0XLV0Djc5dRTSiyCHrD0rTSLJpSwt3LHMYl_fWZMrIdlauRHoPXghepsNUQqMGPxn-Ji_-bcxrh_LXorhx8aj2Hh4_TMmrAqfsyWRW_cxP9A0XTPBzOni9IzM4fbZ8Hu69N9Gmv3UpQmwc4s6aTtO_lbfK8rKnLQNeMIqvfRuYBIq5JvtMSfLoedc3T7whl3Zgh1AXscKWD6udU_LRickPlj1AUTXSTZ2VEHztWffSk69qaqiSsRYyreg7RllR61ZxgX_IRbXlCFprinP?testcase_id=4668730988560384
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

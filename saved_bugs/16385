@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5751823645802496
+
+Project: llvm
+
+Fuzzing engine: libFuzzer
+
+Fuzz target: llvm-isel-fuzzer--aarch64-O2
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: Container-overflow READ 8
+
+Crash Address: 0x60600001ec38
+
+Crash State:
+
+MachineBlockPlacement::runOnMachineFunction
+
+llvm::MachineFunctionPass::runOnFunction
+
+llvm::FPPassManager::runOnFunction
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201908100315:201908110313
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5751823645802496
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

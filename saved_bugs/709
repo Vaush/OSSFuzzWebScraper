@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4789836449841152
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_VIDEO_AV_CODEC_ID_MPEG2VIDEO_fuzzer
+
+Fuzz target binary: ffmpeg_VIDEO_AV_CODEC_ID_MPEG2VIDEO_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+mpeg_decode_mb
+
+mpeg_decode_slice
+
+decode_chunks
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv977ze9w6s88yS5QdQr_mhYKeOHAWsDtOvFNjCVWonkcP33l9zBRKVxMROEhE0ofeyWfmW-Y-wk2VLXDFiglOXMNzmnTi4FUIVe6Qs2USXTeACkN6uLPEHdvipz7ntf5n8o39J6K6ugY0jsYr8ILRGpABZ6I2pEpZNJqXT6WXIQQG6UrrtDBWAlBPmj-UurPQldCUhsq8W2w4lrLrGbt04z-J66HCEhx5AgkVLwjZQXzoPPpLHLGBwRfueudRvbBEnMEtI_N1_Y-x0Y5FfyM2MELKzuoq2xgRW8bv4ktFPMaEqisp02Hl4c8LmCq6kR_ITJICNjrWIbUwALRooEMVbXVaCIXTEQT2Qm3scDeTGwZJZy0lI5cXj2b1Ku4NqTDI5A9ZFov?testcase_id=4789836449841152
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

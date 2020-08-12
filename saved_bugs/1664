@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6587801187385344
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AV_CODEC_ID_PIXLET_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_PIXLET_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+read_high_coeffs
+
+read_highpass
+
+decode_plane
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ffmpeg&range=201704301625:201705042156
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6587801187385344
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

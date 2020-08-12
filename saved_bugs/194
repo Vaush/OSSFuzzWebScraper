@@ -1,0 +1,40 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4693221439438848
+
+Target: libass
+
+Fuzzer: libFuzzer_libass_fuzzer
+
+Fuzzer binary: libass_fuzzer
+
+Job Type: libfuzzer_asan_libass
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x60d000000337
+
+Crash State:
+
+parse_tag
+
+parse_tag
+
+parse_events
+
+Recommended Security Severity: Medium
+
+Minimized Testcase (0.46 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv964dDTMrx0roh_quF1r7blx_4c5vPiMzcUazRfKzw1fYswPv5TvnLAgFequ0sQtpmq5lEKp_OdyRdEzU9VPEE40j7b_SVllpphVSxkCSQ_JkNCQZz7kP69ekIZe-6GTIKWOwgAuxPEJtx0N9giUoA5TuBTft515oQ1ul69RoulR6WtXivA?testcase_id=4693221439438848
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

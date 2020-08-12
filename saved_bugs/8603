@@ -1,0 +1,68 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4887809402863616
+
+Project: imagemagick
+
+Fuzzer: afl_imagemagick_ping_ptif_fuzzer
+
+Fuzz target binary: ping_ptif_fuzzer
+
+Job Type: afl_asan_imagemagick
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow WRITE 8
+
+Crash Address: 0x7f2d55c1d900
+
+Crash State:
+
+_TIFFVGetField
+
+TIFFGetField
+
+TIFFGetEXIFProperties
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_imagemagick&range=201803230437:201804010434
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4887809402863616
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

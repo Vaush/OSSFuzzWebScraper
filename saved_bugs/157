@@ -1,0 +1,40 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5572304247455744
+
+Target: lcms
+
+Fuzzer: libFuzzer_lcms_cmsIT8_load_fuzzer
+
+Fuzzer binary: cmsIT8_load_fuzzer
+
+Job Type: libfuzzer_asan_lcms
+
+Platform Id: linux
+
+Crash Type: Heap-use-after-free READ 1
+
+Crash Address: 0x603000000200
+
+Crash State:
+
+NextCh
+
+ReadType
+
+ParseIT8
+
+Recommended Security Severity: High
+
+Minimized Testcase (0.03 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97VTVe6aGdjKFeP3kSfBeqAOQcizyJWKoOYwHOSOlcyFCQAtmsJFEYMQJTl-cdu0Ei5cTLZ-ZVKjlsGBWvwn27JFLkgFnLZvtX93J15uv2Spu2tikN9I7eaKx4wGUi3oknbrrirmz28p6TL2u50mzobgi-Gc7YbaZsL1UoiXhht2pTJsAU?testcase_id=5572304247455744
+
+Issue manually filed by: aizatsky
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

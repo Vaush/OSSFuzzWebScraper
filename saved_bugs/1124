@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6448405767258112
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_marinerwrtfuzzer
+
+Fuzz target binary: marinerwrtfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+MarinerWrtParser::readEntryHeader
+
+MarinerWrtParser::readZone
+
+MarinerWrtParser::createZones
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704101617:201704141618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95xuRzWKcX_sqXH0G9qEA9we3o_xU3P0Kfvdfj8-gfbKLlm2oRKj9qHej8sx0zoJgbkzlS-Z3a8C1cFJPXXIIhvc4tNp--h5YYYUtzqXcJFbRT0SQbpda8XhHno-yUmj6DcCV2pJHWr7rejUb5wllF89KtriYZy3LvZAAx1bgLPgN9_rVy_7aAZzrGnAoDxu_BZcyQzN-YaTVIGTO76msoBHDCzTWgME_oqPBOquyohVtZES_L1z6-Qy0KuRizwabUBiQrgBwkdAWLAx5IkFm156NrfvrFgDIjmR_yakCbPUnPGNnbaYGez4j11TAmyo4_pvdujrzoCHOnpH3zeG-w-hBUB2tBHOpSVclCdHXh7bQ2PBuCQqoq4hDelWFtGKORbTvc9oyn8Fd20XEPVppc-_txGJ5BWiC42v_EhAwystCacEJ8?testcase_id=6448405767258112
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

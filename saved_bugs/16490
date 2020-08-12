@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5674430449057792
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-isel-fuzzer--x86_64-O2
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+InOp1.getValueType() == WidenInVT && InOp2.getValueType() == WidenInVT && "Input
+
+llvm::DAGTypeLegalizer::WidenVecRes_SETCC
+
+llvm::DAGTypeLegalizer::WidenVectorResult
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201908150335:201908160326
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5674430449057792
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,46 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=6235835631927296
+
+Project: ffmpeg
+
+Fuzzing Engine: afl
+
+Fuzz Target: ffmpeg_AV_CODEC_ID_THP_fuzzer
+
+Job Type: afl_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Null-dereference WRITE
+
+Crash Address: 0x000000000008
+
+Crash State:
+
+ff_simple_idct8_put_avx
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_ffmpeg&range=201909020240:201909040323
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6235835631927296
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

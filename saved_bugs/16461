@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5762476137775104
+
+Project: dav1d
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: dav1d_fuzzer_mt
+
+Job Type: libfuzzer_asan_dav1d
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+y < h && x < w
+
+dav1d_prepare_intra_edges_8bpc
+
+dav1d_recon_b_intra_8bpc
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dav1d&range=201811150234:201811160232
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5762476137775104
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

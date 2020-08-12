@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4849253088231424
+
+Project: libass
+
+Fuzzer: libFuzzer_libass_fuzzer
+
+Fuzz target binary: libass_fuzzer
+
+Job Type: libfuzzer_ubsan_libass
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+numpad2align
+
+process_style
+
+process_styles_line
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv9505IE6djmE8btix-Pz4Q1uc5CCk1SBiOEHcei4005W7rOnQIG_pUjpotmTeaYPagjgOCDz6QhEu_ywdDKPW2EJu7SxfKi71VM6JSmEZDEt3PqfrQo7tWNUSRUqicfE1SqWhlI6SkLdigmYBAzwkI6JEHFBz7hc-4nV_kSReXhgomCjUcII2VN0uawR2PN2EgEu5VsLPV5xZZZba2BKC46aOcpQCt78-LmGU_AwsghbM3V-Ejd5XAkGukfv2bzrie4BNE2zHhvUBnsKZQ9qYDa1bLN77ZgZpYxcbD3G0lUG__n-ttuoBlMylMuqYcuCRLFauKKG9jds3LCCB_8Z6D6lqo-8yGKeRnJfVPe4GA5_aZBMFq5rBSlNoWobChasqrhBaXUttjojb50LqVFeTTE_dFal37VqJ9JJvUxqETxEcropwHc?testcase_id=4849253088231424
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

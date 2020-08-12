@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6568306800590848
+
+Project: wireshark
+
+Fuzzer: libFuzzer_wireshark_fuzzshark_ip_proto-ospf
+
+Fuzz target binary: fuzzshark_ip_proto-ospf
+
+Job Type: libfuzzer_ubsan_wireshark
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+dissect_ospf_lsa_mpls
+
+dissect_ospf_v2_lsa
+
+dissect_ospf_ls_upd
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_wireshark&range=201705081841:201705091620
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6568306800590848
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

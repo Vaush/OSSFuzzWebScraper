@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5758807440883712
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_DEMUXER_fuzzer
+
+Fuzz target binary: ffmpeg_DEMUXER_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Index-out-of-bounds
+
+Crash Address:
+
+Crash State:
+
+cbs_av1_read_frame_size_with_refs
+
+cbs_av1_read_uncompressed_header
+
+cbs_av1_read_frame_header_obu
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ffmpeg&range=201906010222:201906040222
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5758807440883712
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

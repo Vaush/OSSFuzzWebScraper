@@ -1,0 +1,38 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6578305067122688
+
+Fuzzer: libFuzzer_libchewing_chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: Negative-size-param
+
+Crash Address:
+
+Crash State:
+
+_Inner_InternalSpecialSymbol
+
+InternalSpecialSymbol
+
+FullShapeSymbolInput
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libchewing&range=201610201020:201610201348
+
+Minimized Testcase (4.26 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95wH9ZK3oFc1U8EsBuQ2p8areteOVhhvndBJNw0MaRDTnNM-c_9HdihFCqTXA6G6CcEnxge1Z13ZhSzuVd5gSE7BiW8tUEDmIBayfoiDKCFTwyMBZyrHMyDOTwqj2DxkD68GPXDyA0fvktRyygRhNGyQuN0TJorLjP6LL0QXe_PY0nKYas?testcase_id=6578305067122688
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

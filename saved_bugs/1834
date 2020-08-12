@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6527817976119296
+
+Project: llvm_libcxxabi
+
+Fuzzer: afl_llvm_libcxxabi_cxa_demangle_fuzzer
+
+Fuzz target binary: cxa_demangle_fuzzer
+
+Job Type: afl_asan_llvm_libcxxabi
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+k0 <= k1 && "parse_type() mutated the name stack"
+
+char const* __cxxabiv1::parse_unnamed_type_name<__cxxabiv1::Db>
+
+char const* __cxxabiv1::parse_unscoped_name<__cxxabiv1::Db>
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_llvm_libcxxabi&range=201705231612:201705241614
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6527817976119296
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

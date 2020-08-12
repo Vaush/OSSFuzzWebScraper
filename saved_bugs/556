@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5241996977373184
+
+Project: libarchive
+
+Fuzzer: libFuzzer_libarchive_fuzzer
+
+Fuzz target binary: libarchive_fuzzer
+
+Job Type: libfuzzer_ubsan_libarchive
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+zip_read_data_none
+
+archive_read_format_zip_read_data
+
+_archive_read_data_block
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97zU9zKjU3FnSNH7Dpleb8WrtKKplNOUjwn1q_nt4lQtBPYVv9bOSs5xKzOPbufGJQap-jMaR0pdIOGzUlUd0Hc-di_nJ1IoKir5BnudwimqlrM9dUZm9Pb6bFc9Fqonq_0YEazM4FsZ6CYf27ymzkxqXfM-OswHFRsLU1mYJHhZW9wtCedtplZ-qNCPgMv20gj2MBvXXZssEQaJUYro3hgzCCxou0Egof-u6ZW-5OZWDYhBhwZpelpt2W40ORp4UdRo6J1MnTN_vrTHTLp6HTh2wNSI3DlylrFDMFU6evRxSgaGOL5Ge11WlnebgVxdVz4jnHWKHwzHGE5njDW9KMaJpk5JJanV4mtM_QoNcaIja1I0veGrHAdTBxTqYCIC8ap2vFmFQs-KKAGa4DW_g1yFSS9vVOicRxRZq5HP5pmkwKIiB4?testcase_id=5241996977373184
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

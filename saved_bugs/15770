@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5658467861266432
+
+Project: perfetto
+
+Fuzzer: libFuzzer_perfetto_producer_socket_fuzzer
+
+Fuzz target binary: producer_socket_fuzzer
+
+Job Type: libfuzzer_asan_perfetto
+
+Platform Id: linux
+
+Crash Type: Ill
+
+Crash Address: 0x00000055ee4b
+
+Crash State:
+
+perfetto::socket_fuzz::FakeEventListener::OnConnect
+
+perfetto::base::UnixSocket::OnEvent
+
+perfetto::base::RunTaskWithWatchdogGuard
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_perfetto&range=201907100330:201907110328
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5658467861266432
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5671129716359168
+
+Project: solidity
+
+Fuzzer: libFuzzer_solidity_strictasm_diff_ossfuzz
+
+Fuzz target binary: strictasm_diff_ossfuzz
+
+Job Type: libfuzzer_ubsan_solidity
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+__cxxabiv1::failed_throw
+
+void boost::throw_exception<langutil::InternalCompilerError>
+
+yul::test::Interpreter::closeScope
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_solidity&range=201904110326:201904111923
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5671129716359168
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

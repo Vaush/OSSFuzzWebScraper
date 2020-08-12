@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5986646595993600
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_SUBTITLE_AV_CODEC_ID_MOV_TEXT_fuzzer
+
+Fuzz target binary: ffmpeg_SUBTITLE_AV_CODEC_ID_MOV_TEXT_fuzzer
+
+Job Type: libfuzzer_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+text_to_ass
+
+mov_text_decode_frame
+
+avcodec_decode_subtitle2
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97SPl6pTTGI9rJwz4LJOMKRaFkglquAlam7zI5KP2gGZxXwG09ioufRAY6mJsvgzzqqcAPALYc_k71Ptj-zJjoHQ4COiB_rNb3PWmH-L4QNDTl5c1BssOAt1UjGjWsSKtxfcHoNgbZQwU3O4PqnFNri27YuuGSNZ4GmuByP-kPJ10sbQKs6WRirSwXMPnUhGHoAgrJs-L1lvzoRl70GfMdfdk070_WnCJb4KCes8Mv2Q29xHAsSnnGqAgN_PCGaDZZCwGUZAoeKuePs-PKYCRSYyCyjY80qFVF2SDr1BCyUaNjhsl3wNIviVC9VIPtdhz1oZ3vOINrsC7Pxg0HOj0zsxX2Wzq7YiKWlz5Qd50jV0KzZRyj8VpWLHxElsREaEO18rgg3SVL_yTPTyZXtHqsOg0X237rtGlJYPNtRHezuWyDiUDU?testcase_id=5986646595993600
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

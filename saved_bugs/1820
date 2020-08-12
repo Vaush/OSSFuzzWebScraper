@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5859332488953856
+
+Project: gdal
+
+Fuzzer: libFuzzer_gdal_ogr_fuzzer
+
+Fuzz target binary: ogr_fuzzer
+
+Job Type: libfuzzer_ubsan_gdal
+
+Platform Id: linux
+
+Crash Type: Index-out-of-bounds
+
+Crash Address:
+
+Crash State:
+
+NTFCodeList::NTFCodeList
+
+NTFFileReader::Open
+
+OGRNTFDataSource::Open
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_gdal&range=201705181644:201705211646
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5859332488953856
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

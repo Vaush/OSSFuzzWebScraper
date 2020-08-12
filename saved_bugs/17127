@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5723360180305920
+
+Project: python3-libraries
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: fuzzer-decode
+
+Job Type: libfuzzer_asan_python3-libraries
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x60c000002880
+
+Crash State:
+
+PyState_AddModule
+
+PyInit_zlib
+
+_PyImport_LoadDynamicModuleWithSpec
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_python3-libraries&range=201909100219:201909110206
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5723360180305920
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

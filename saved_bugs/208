@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4892227272704000
+
+Target: pcre2
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Fuzzer binary: pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 1
+
+Crash Address: 0x62d00000cb81
+
+Crash State:
+
+_pcre2_auto_possessify_8
+
+pcre2_compile_8
+
+_start
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201611041604:201611041646
+
+Minimized Testcase (4.65 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97ozmCD0ZxVFeklMz_sZBXm_VPrnaaF00EYu0vCWFIsj4HJim0Z7GMWnfRAolj3HD81xo2GXq_zw_Qb1lVCjQDp1Di63JCWZMKyc_3yok1ITPiIug5Zm3g9l7Ck8DjsRghhvkp4Vfg4rNHpqrIZVCBrrktoJfyn_dmwzSzrxqQIilk-BEE?testcase_id=4892227272704000
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

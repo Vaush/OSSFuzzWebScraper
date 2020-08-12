@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5630676251967488
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AV_CODEC_ID_MSA1_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_MSA1_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Index-out-of-bounds
+
+Crash Address:
+
+Crash State:
+
+rac_get_model256_sym
+
+decode_haar_block
+
+mss3_decode_frame
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5630676251967488
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

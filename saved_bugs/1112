@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4923876255465472
+
+Project: dlplibs
+
+Fuzzer: afl_dlplibs_zwrtfuzzer
+
+Fuzz target binary: zwrtfuzzer
+
+Job Type: afl_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x614000000de8
+
+Crash State:
+
+MWAWEntry::valid
+
+ZWField::getString
+
+ZWField::getInt
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_dlplibs&range=201704101617:201704141618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96MVCUG9Mqh2AG7uI-9hvMdXAuPSxqdcrYV1I5n5iG0mAOY2q8che0aP14Ua92NgN2D3dGaHR0_wElA6YUGPUWX64B0jsOdMdC495RWdRucTFHdejhTFzPFHOYjlnD-KoCgvv-hAH6xsYAMwbdJq6pnDGT9YwA12Moi2re4CSMgtFoOvbwWwfvio5NBSSpFQRy3eOQDsZA1WSmTQigdjuWdxg2qDGdEAWV-um3kDwiQKzYJOgjQ0HTjWH20jNAYcDn9N9BxtgVNcMmNoiqtVZDoKdHPBRfdhbZl6ml7WKDy1_nBYCIYwz6_QD9ZrG7MjAoQRbW2a_HL6V8rwT8Fn7cmyKEY9bjESr_3BJRiA4FY9s6P8jUAdc4DrfPqy0Yr2K2PTvd8TxmVaPgriGyh8PIO6uWJ8nlqk957fJO-1iJuG_6kupc?testcase_id=4923876255465472
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

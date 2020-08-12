@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4791735110598656
+
+Project: ffmpeg
+
+Fuzzer: afl_ffmpeg_AUDIO_AV_CODEC_ID_AMR_NB_fuzzer
+
+Fuzz target binary: ffmpeg_AUDIO_AV_CODEC_ID_AMR_NB_fuzzer
+
+Job Type: afl_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Global-buffer-overflow READ 4
+
+Crash Address: 0x0000047e78f8
+
+Crash State:
+
+ff_acelp_interpolatef
+
+amrnb_decode_frame
+
+avcodec_decode_audio4
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_ffmpeg&range=201703241617:201703242211
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv951OHwcfNV1TKLlJEeT1S6HPsKouwyUFT_ZRbqmPbk_qyK8V1Hh3wnSFzXUQm7z7YXctZ20NPaf-V2IwSdutWW3IlR5bK7MTaCJ1BaArJ_HIuC1eFLLySbrSDgz-UJ0pQ6gdmT1GsJaH1UnUciEPpqU0cG7u9tlVMGWW-6DTlyCp4cgk1mFkMCkKiy0F2Y1jc1VUfJLNkYzMYNL2yKApevOVJBdVJmND_mwFCBXWWUK9EdGr2oKCUl7-ykD3sCPCfGbzazzGxO_0kIbA3aCWbyU_zFSX0d75_POKV__4lSj1dp1B6vyJaqbzHZzAKLraFWn-YG0HFx13ZwFjh0qbXDeOYRk1GKbIOF363nhasDPLigTaOmKBpH3O7cjs3AI0FaKcc7vA1oj5U6KEKkoqMbHX8rtVN198RsrKuBqYLMiP7mu2z0?testcase_id=4791735110598656
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

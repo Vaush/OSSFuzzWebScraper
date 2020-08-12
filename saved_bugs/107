@@ -1,0 +1,32 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6356831496568832
+
+Fuzzer: libFuzzer_tpm2_execute_command_fuzzer
+
+Job Type: libfuzzer_asan_tpm2
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+g_forceFailureMode
+
+TpmFail
+
+PCRComputeCurrentDigest
+
+Minimized Testcase (0.08 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96MK2K1zx37v_mdhlsQu8kn9-HJWRIZ7FdBwLfz4bsPgau-IeZz9wPKKfSkVUxo7k2ncT170yAHpVrgL4F4TARZ8_-8QussiHpTN1zXB4yhOP_GrU9t1FiCiYlrE_67jhMiNGWbtm27Um3_1DOG5eNoYlwfv0NpuYMaEKSBPjSGZme_8XU?testcase_id=6356831496568832
+
+Additional requirements: Requires Gestures
+
+Issue filed automatically.
+
+See  for more information.
+

@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5673813550825472
+
+Project: aspell
+
+Fuzzing engine: libFuzzer
+
+Fuzz target: aspell_fuzzer
+
+Job Type: libfuzzer_ubsan_aspell
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000001cbb000
+
+Crash State:
+
+acommon::DecodeDirect<unsigned short>::decode
+
+acommon::Convert::convert
+
+aspell_speller_suggest
+
+Sanitizer: undefined (UBSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_aspell&range=201907310225:201908010230
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5673813550825472
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

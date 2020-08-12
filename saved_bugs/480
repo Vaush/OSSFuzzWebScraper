@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5416064150142976
+
+Project: boringssl
+
+Fuzzer: libFuzzer_boringssl_ssl_ctx_api
+
+Fuzz target binary: ssl_ctx_api
+
+Job Type: libfuzzer_asan_boringssl
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000018
+
+Crash State:
+
+CRYPTO_refcount_inc
+
+CRYPTO_BUFFER_up_ref
+
+ssl_cert_set_chain
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_boringssl&range=201701270728:201701271732
+
+Minimized Testcase (0.00 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94f2RiFPT8T5WHjnJQHcSZxLN7a58bdcJXU2tYdQqlCR5jYpXyfN0s1R4vklY3wVS1Cu4K3xyChguxmNHNzwMkqrlnzCDZ0n3NI8TNw-6L08xI6aYa4qs8qqYPsGID6BPlcXhaMb8dpyGun_jqd-s-2banZXwdseVYFmLv7NUX0Z_8TOCMZ3O0q6v2A13ltSyd_qB36TaPcIk4rwhxcS1Drcv1M8YIzvmGDx7xB1P_E7FVfkHimaHeutTK2RmrltpOWJiKX9oo6TWwYuNCh_q8JL-SqiERFaaOL_Vegzy6h_Cja49-jr8jkZLz7bPZBxiTfcaTD1ZrvxKUyOaRNTltM0rWw-v_ANmDap3S7Tk-bjPDEYzXtDPWQ5JnY5P65zBnytGob?testcase_id=5416064150142976
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

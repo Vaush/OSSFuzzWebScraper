@@ -1,0 +1,52 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5770842466156544
+
+Target: sqlite3
+
+Fuzzer: libFuzzer_sqlite3_ossfuzz
+
+Fuzzer binary: ossfuzz
+
+Job Type: libfuzzer_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: Heap-use-after-free READ 1
+
+Crash Address: 0x60c000000813
+
+Crash State:
+
+sqlite3StrAccumAppend
+
+sqlite3VXPrintf
+
+sqlite3VMPrintf
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_sqlite3&range=201611111706:201611120926
+
+Minimized Testcase (0.03 Kb):
+
+Download:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv95qEryVHxDtL_i2kOnGg2X2R5Nw403MV6G_9gCU3h4P-hcBTGmD61IUZ8JSHDK3EEfoQzYOpDMiYfFNbRyFHdEz1MpUU0WIPEH-0ZOOygGOtmcV0BMYjJPQdIyoZNhS_BoR6cNwg4SWdHHtqbs0lXWV6LRHwyha68dzBVOHVWCQp1-ToEQ?testcase_id=5770842466156544
+
+CREATE	table	i(O
+
+UNIQUE
+
+UNIQUE
+
+Issue manually filed by: ochang
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5644627001999360
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-isel-fuzzer--aarch64-gisel
+
+Fuzz target binary: llvm-isel-fuzzer--aarch64-gisel
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+II != MBB.end() && "Didn't find the user in the MBB"
+
+llvm::Localizer::localizeIntraBlock
+
+llvm::Localizer::runOnMachineFunction
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201906170258:201906180300
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5644627001999360
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4821044789510144
+
+Project: json
+
+Fuzzer: libFuzzer_json_parse_msgpack_fuzzer
+
+Fuzz target binary: parse_msgpack_fuzzer
+
+Job Type: libfuzzer_ubsan_json
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+j1 == j2
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_json&range=201703121620:201703131620
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95r3siDN2ltToQ5vN36W9lve3Ln8EXjFiROzufTiDX1Y4GYkxsXvg5nIbXABtyUXl4dfW-Fn_pmbCc_1r3VfsyfzpeEp0MTaFe3oIQTKSt7YgrLUVxGZmR8fB1C6MIUA4DyNVwsjf1HC4arVV-O5g31YbYleidY5uzC8KQilSkYNIjQYdDmaUJUKfHe5zig5uS6gevOeIW3RIcIMrAjJgf7Uoz03CxVxO1CYhmrJuoAx4JZOeAWmRE0u8UCa9XHLrm_l1kei87ufEplTIOYlXFGDzxcMtM0UqIHY4WW5XWjHGp_QnZSLMNDBeqGIhlCpMcUuEETwU0Yqo0PJnZAwG2EkmvPJVADA28pdK1WuxyZdGaPvlG8nzFf40TQ8J80h7M67Ouh?testcase_id=4821044789510144
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

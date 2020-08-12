@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6271237008916480
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-loop_vectorize
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-loop_vectorize
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+(Value == 0 || llvm::isPowerOf2_64(Value)) && "Alignment is not 0 or a power of
+
+llvm::DataLayout::parseSpecifier
+
+llvm::DataLayout::reset
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201908050313:201908060313
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6271237008916480
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

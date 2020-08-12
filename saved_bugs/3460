@@ -1,0 +1,40 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6189682419302400
+
+Project: boost
+
+Fuzzer: libFuzzer_boost_regex_fuzzer
+
+Fuzz target binary: boost_regex_fuzzer
+
+Job Type: libfuzzer_ubsan_boost
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+boost::re_detail_NUMBER::basic_regex_parser<char, boost::regex_traits<char, boos
+
+boost::re_detail_NUMBER::basic_regex_parser<char, boost::regex_traits<char, boos
+
+boost::re_detail_NUMBER::basic_regex_parser<char, boost::regex_traits<char, boos
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6189682419302400
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

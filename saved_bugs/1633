@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5670366873649152
+
+Project: libchewing
+
+Fuzzer: libFuzzer_chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: Heap-use-after-free READ 1
+
+Crash Address: 0x7fd1dcaf1d00
+
+Crash State:
+
+GetUint16
+
+TreeFindPhrase
+
+LoadOriginalFreq
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libchewing&range=201610201020:201610201348
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5670366873649152
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

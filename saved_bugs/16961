@@ -1,0 +1,42 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5664410915307520
+
+Project: syzkaller
+
+Fuzzing Engine: afl
+
+Fuzz Target: report_fuzzer
+
+Job Type: afl_asan_syzkaller
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+fuchsia: ContainsCrash and Parse disagree
+
+report.Fuzz
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_syzkaller&range=201908190400:201908200400
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5664410915307520
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5957616408723456
+
+Project: gnutls
+
+Fuzzer: libFuzzer_gnutls_private_key_parser_fuzzer
+
+Fuzz target binary: gnutls_private_key_parser_fuzzer
+
+Job Type: libfuzzer_asan_gnutls
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+__gmp_exception
+
+__gmp_divide_by_zero
+
+__gmpz_powm
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_gnutls&range=201612151030:201612151203
+
+Minimized Testcase (0.07 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94oAYzXKJBcuQ8U-TSIY2OCFl-pTrMQNkQaIPyjgF1bFoMU0D1X4tTBi3VlbZcDV3W5J9bb4rIL3efWX86eJ_F-0XLnmoAI2b6F8yBUD8GG7pXC1fWWH8JSMprseg24Fh5nfp8-lLKX3gk3KvOUlH60BocDmL8eYYcKyBsPuALB9iur4OmzyKjjxsW1EzdCLhTB3VYkLVGOGZ3FzDJiHY3GGA4b2N4qO8aIJR-hVTuKjvUaxcmA9usuu5oy8iJJNqLfn_OZ5EDkFAieflRJWHiSQW_WMVfhmEMQz_LlyuFajUugRnSE81-trNm5MlP_LWtD0OPNwrfeGT9_vH1z43zw0caXEg-wwnmQSUQkDpS9wXgPJGaNmn3w177epLVeNMLPwhw6OfLdFNlLwY-pzbQkp2NiGu9TCD6PPzuJSgedlJm_5Fk?testcase_id=5957616408723456
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

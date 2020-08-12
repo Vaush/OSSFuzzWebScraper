@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4557789953261568
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_pubfuzzer
+
+Fuzz target binary: pubfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+librevenge::Header::compute_block_size
+
+librevenge::IStorage::load
+
+librevenge::IStorage::isStructured
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94NyzsbBHdWEJPOx3QIdphhc6tdvyxaKEbKnF05NcxDiJ7SYRAoXqUOdCja7mURHbTfKlMiw-p48HncLZs3oSXq6coPlKJgbMVNNEUDz7egRPEMqkf1jU3cEj-g-dj0K9Oib-kCha1Z4ZaeGNAGsGQE0wOpf5-Nc20n5AI9lTBSRoymoL8b3chzO486B-Zhx6T7xjLa5klTYWmynmuqcwM_qvMj2WZaMUhDYKpxQ3cIlqP_hxdff-qInUgWwI2eFYyLBHXg3tPcx8ZaGcjzF1MQT1yq9-b3dacOE3rsnXShuhYqGUzOUIKf6MSuNeBW7Z1K6CITC0ulwp9-yCNMY5vhICmVXTQVcf-YS824Zbz-2OwSk5GDmBV29vtA2J3x1kUH8roz?testcase_id=4557789953261568
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

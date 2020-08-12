@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5085409259814912
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-itanium-demangle-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+Parser->TemplateParams.size() >= OldNumTemplateParamLists
+
+llvm::itanium_demangle::AbstractManglingParser<llvm::itanium_demangle::ManglingP
+
+llvm::itanium_demangle::AbstractManglingParser<llvm::itanium_demangle::ManglingP
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201909060434:201909070331
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5085409259814912
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

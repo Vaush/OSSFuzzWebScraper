@@ -1,0 +1,42 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6390503111131136
+
+Project: boost
+
+Fuzzer: libFuzzer_boost_regex_fuzzer
+
+Fuzz target binary: boost_regex_fuzzer
+
+Job Type: libfuzzer_asan_boost
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow READ 1
+
+Crash Address: 0x7f9129b43538
+
+Crash State:
+
+boost::re_detail_NUMBER::perl_matcher<std::__1::__wrap_iter<char const*>, std::_
+
+boost::re_detail_NUMBER::perl_matcher<std::__1::__wrap_iter<char const*>, std::_
+
+boost::re_detail_NUMBER::perl_matcher<std::__1::__wrap_iter<char const*>, std::_
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6390503111131136
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

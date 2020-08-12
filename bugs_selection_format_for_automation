@@ -1,0 +1,2 @@
+binutils fuzz_disassemble 2019-12-19T03:18 32769083d1b6b1cb325409b3c9b99c06026f70d7 binutils-gdb 26
+binutils fuzz_bfd 2019-12-19T03:18 32769083d1b6b1cb325409b3c9b99c06026f70d7 binutils-gdb 16

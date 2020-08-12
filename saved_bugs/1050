@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5625019734425600
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_mswksgfuzzer
+
+Fuzz target binary: mswksgfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+MacDraft5Parser::createZones
+
+MacDraft5Parser::parse
+
+MWAWDocument::parse
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94egjq60VIIkIbrpBSxP517yyWmcTaHV0xw-Bk7xIVn7X8-wWGBhKzEqcvKtDWqozJtOkdWvTpJGJMOCXUY1FcpJZOO_2BLTYg22sZloFeTS8gzIq-bsbVUsB-X_Ga18U0-nyYPhbUfc-PS_ISUgSjfZ7hi1d455tsuQJL3bx_tNdCnRoLlZ6iGnTRwI5NJfcoq7dAZGsAipdR4v8_8Uo9rcs9sF_yml4_M1_bssFTte8IBdEdwkLhhhT63Z5nTvBZok_dRoCNsgM389fCwk6dMfoDL6IPqDYKSguO92yDh1tMzSQJ7_3lAx6kwk12LEkaMQk1nRs2_rIn9_APdDaa3lBIFN1T_zfVFvpmI3BuSAq44g76ZvfsILhnHQbnIA2m0so20?testcase_id=5625019734425600
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

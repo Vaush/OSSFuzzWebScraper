@@ -1,0 +1,38 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5717017357189120
+
+Project: tpm2
+
+Fuzzer: libFuzzer_tpm2_execute_command_fuzzer
+
+Fuzz target binary: tpm2_execute_command_fuzzer
+
+Job Type: libfuzzer_ubsan_tpm2
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ObjectAllocateSlot
+
+ObjectLoad
+
+TPM2_CreatePrimary
+
+Minimized Testcase (0.08 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv950JK2NPSKWYadtx-VhWPvSjS05zsJnS8V5-Al3CGXn_ZosARTXju9zyArhcczC0y7MckolZrJjfsS6W4gSr58P4TDBAqajlbDwnZEjrO1DyFdNB2r8F1txq6qSb7mx52TrSfeTeVdHwc2T7WEP3rR5DzV3S43enUs8S3-9uVXvGJECPAE?testcase_id=5717017357189120
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5229366676029440
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_powerpointfuzzer
+
+Fuzz target binary: powerpointfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+PowerPoint1Parser::readRuler
+
+PowerPoint1Parser::readZoneIdList2
+
+PowerPoint1Parser::createZones
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97bMlOWmT9WfFMkThSB_4jlfdQopdBjECr-qBFQyTDRUwn7yuYTtX4xfMxfZxKKPDIiMi6hBJl2qnmfsDUfFzxHfX--eQ5FNR_TE8oxala5RfV9zxJHuPY3z2zccsLwj7BB58Qx_wbUZ-JRexAim4VGsmSjdRBEvRNoiEXH-KmStyu7nwVxMeJ-InQk0vIMID_TzXLeszjCSjOCYvPFZXHapypGBluzYyppF4JZnbpVI4ZacdKtfBReZd3J6Cnd-ijCgMgAfkFSnHgvFbVp1hYi3btyHi5dPMlCwQNHr2kNhNjTk8DLUBOBngLiYADi9a1rcMCL4aLGFzeQoxC7frW3f2CLdt1l40fEQpMjddPwPdxVW0p26Rk1CM3uO8DJGXJZ16Cn?testcase_id=5229366676029440
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

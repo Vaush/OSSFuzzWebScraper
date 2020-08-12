@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4621448559722496
+
+Project: libass
+
+Fuzzer: libFuzzer_libass_fuzzer
+
+Fuzz target binary: libass_fuzzer
+
+Job Type: libfuzzer_ubsan_libass
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+decode_chars
+
+decode_font
+
+process_text
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97ZRWh_cNjOQcvta3Idagwko3IvyxNSOvbDxJY5iq_-2X7Pc6Y40L_Yj7SL2cyYec0MExrekHJIWnxRpsQpQ00EFuGTlF6h__6w7S9kDrb1EkrcOys0kA0gj5KC0nZHRQaJJ2lAxDqxqCdaDINfNjR3GLMz10o04Qhq1BaKHTX0cF6a4X1gVrBhIkj4IGIkGHLg9r-mhAFoPE1tDtub8-h8zdkEW34gJvboJ-gbd2_ZKtxy5FFx32y6xX5CsO73t82OW-koQVKB7ZcEdq4pJ4nQYn8wTbCjj5nA6oNjN9qpaaBxeisNmwG9lE3Ic9ZerjK_tRae7E9FNPMDUBw3s6idF77k4z4RtCb7i2DxcTXE6P0m-avGh42TsUEdCZ_CW4Xtu_bswk1PXm8RjxWPsk2m6-89o3x_wOl8Uype3heYFiWBxV0?testcase_id=4621448559722496
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

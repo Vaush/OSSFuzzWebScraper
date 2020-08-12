@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5753491172098048
+
+Project: skia
+
+Fuzzer: libFuzzer_skia_api_null_canvas
+
+Fuzz target binary: api_null_canvas
+
+Job Type: libfuzzer_ubsan_skia
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+SkRRect::setRectXY
+
+SkPath::addRoundRect
+
+FuzzPath
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_skia&range=201809170315:201809180326
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5753491172098048
+
+Issue filed automatically.
+
+See
+
+https://skia.org/dev/testing/fuzz
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

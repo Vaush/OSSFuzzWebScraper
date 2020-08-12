@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5630487451664384
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-opt-fuzzer--x86_64-strength_reduce
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+!BaseRegs.empty() && "1*reg => reg, should not be needed."
+
+Formula::canonicalize
+
+LSRInstance::GenerateReassociationsImpl
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201802210603:201802211531
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5630487451664384
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

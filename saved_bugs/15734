@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5692605972611072
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-isel-fuzzer--x86_64-O2
+
+Fuzz target binary: llvm-isel-fuzzer--x86_64-O2
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+llvm::Expected<unsigned int>::fatalUncheckedExpected
+
+llvm::BitstreamCursor::skipRecord
+
+llvm::getBitcodeFileContents
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201906260258:201906270304
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5692605972611072
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

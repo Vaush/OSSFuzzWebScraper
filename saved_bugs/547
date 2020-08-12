@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5883502419509248
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pctfuzzer
+
+Fuzz target binary: pctfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+PictReader::ReadPixMapEtc
+
+PictReader::ReadData
+
+PictReader::ReadPict
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libreoffice&range=201701311422:201701312015
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97Kw5Dd55XQ94MTVLTwnCwKHGm1giwtTZFT30-2QeXTxPS4ntNm13E9aaYes-MkENYn77JCxC4Em5gB4FawP3MWbevYiKpciuIved0XUmHgzj3zaS9gidTmFRmcL-JoQD8FGiC4dAW2Vbwpdo9j0AcSWgQGqCqGy7iMhwPM0TZ9cBOoJtT9JYZDO5acR5qe0mfVX-12gF0EzXIyo7pxxvC-6i84qONO1t6OMTdKj5bVZ4Gsuz0xPex3MnDHi3n2wk0f9a3trKW1amTKsDnbjmtB-1af2rLtNwUTt1jxXTbDf5rCKXGgFoIil1x-w0seexV8IK_ao3tSdttwYxddaI063OMCD7d8XETt0Sez21YDlvbE1azDZQeH9aEK38vBKoiufSdTnLBFTgJb8hybb0JwuUvrYJuw9IP-JWWMqAmbKf2T4C4?testcase_id=5883502419509248
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

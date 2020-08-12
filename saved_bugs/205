@@ -1,0 +1,42 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4661941528166400
+
+Target: libchewing
+
+Fuzzer: libFuzzer_libchewing_chewing_dynamic_config_fuzzer
+
+Fuzzer binary: chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+pgdata->chiSymbolBufLen >= pgdata->chiSymbolCursor
+
+AddChi
+
+chewing_handle_Default
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libchewing&range=201610201020:201610201348
+
+Minimized Testcase (6.82 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94vR9Gf4WDnWTrnLbnzwrilGcm_TJ5SrLxMMX_3hIeFgW41ZD92wDKp3Lg23vvrBcsFgPlgu_yBaaGQscsNBYsz6V78inQ2u4JOOG4OAjvDfL4xxQ74_eCY0iPBvHSdMuPx29aWaXGQwgeBMOjqNyqGOHEWQnLmWE-3zka19qJ-zoMh2KA?testcase_id=4661941528166400
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5703900080373760
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+comphelper::EmbeddedObjectContainer::HasEmbeddedObject
+
+comphelper::EmbeddedObjectContainer::CreateUniqueObjectName
+
+SdrPowerPointImport::ImportOLE
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703171634:201703181632
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv959hBIXxEMzGebh2Gzrrta4USn6-NoHF80w4gs46DhhqUGFg6q9rPwXN9eADCNYeSHOcLjm_K66YDlIaQVGv2e5m5qTpqjzcot5fGZDCPL2rFJvHM3B9cG9g6ctPljF-9gQPlGLIllx-VF9LKvIudkcUK_aXQcVFzn9osIcs1Vto2uMbAOo4YmNTZN0rEXHN7ns9uJg91oi7FQ-re22q9MPTBIjA4MNAJGGpyl9V6eTbzUMKDwi8QYDM8ZN2WZST1vqFUSGg_2GNiHrHUX-5UHHOvrDZyaNEA5vGkQ7dvs0X1YvaDpE3xQ_h173V6pYFEyqVjw00Q8EcsvjyWMvlNA85_TEpVmtEDXjlo_fyYthPH-O-M0x6iQ64t-OeinAXkFIs3U2nYNL-8rtl_fL22p9EWaS90DlLDmOVeP5gbmYSHwx-i4?testcase_id=5703900080373760
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

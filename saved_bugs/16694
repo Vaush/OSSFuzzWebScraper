@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5725403313864704
+
+Project: libavc
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: avc_dec_fuzzer
+
+Job Type: libfuzzer_asan_i386_libavc
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x00000000
+
+Crash State:
+
+ih264d_insert_pic_in_ref_pic_listx
+
+ih264d_init_ref_idx_lx_p
+
+ih264d_parse_pslice
+
+Sanitizer: address (ASAN)
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_i386_libavc&revision=201908230135
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5725403313864704
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

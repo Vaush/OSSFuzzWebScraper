@@ -1,0 +1,48 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5728435288145920
+
+Project: bignum-fuzzer
+
+Fuzzing Engine: afl
+
+Fuzz Target: fuzzer_openssl_go_no_negative_num_len_1200_all_operations
+
+Job Type: afl_asan_bignum-fuzzer
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+Runner::run
+
+fuzzer.cpp
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_bignum-fuzzer&range=201808300200:201903100229
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5728435288145920
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

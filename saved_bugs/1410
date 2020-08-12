@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6065423843852288
+
+Project: ffmpeg
+
+Fuzzer: afl_ffmpeg_AV_CODEC_ID_MAGICYUV_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_MAGICYUV_fuzzer
+
+Job Type: afl_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x603004000110
+
+Crash State:
+
+magy_decode_slice
+
+avcodec_default_execute2
+
+magy_decode_frame
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_ffmpeg&range=201704301625:201705041753
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6065423843852288
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

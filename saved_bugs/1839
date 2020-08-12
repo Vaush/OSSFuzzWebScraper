@@ -1,0 +1,60 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6238490993885184
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AV_CODEC_ID_INDEO4_fuzzer
+
+Fuzz target binary: ffmpeg_AV_CODEC_ID_INDEO4_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ff_ivi_inverse_haar_4x4
+
+ivi_decode_coded_blocks
+
+ivi_decode_blocks
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_ffmpeg&range=201705191624:201705211622
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6238490993885184
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+

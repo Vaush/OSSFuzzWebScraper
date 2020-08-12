@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6725491035734016
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_AUDIO_AV_CODEC_ID_MP3_fuzzer
+
+Fuzz target binary: ffmpeg_AUDIO_AV_CODEC_ID_MP3_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+mp_decode_layer3
+
+mp_decode_frame
+
+decode_frame
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97gfINJuJJbPQpgAPI-g_vdUOI7fGeg3FQKbDrlS3PhttzG5zeJpCwccqHOUB4FgHxeO4bsouCKW39btEvYzG3uivOEFnuWDiGzQNA6Fac8i_bWKElBdCc3V6H2haL0AZRQVQCo3jh8FV74atzy1NAy15LqLiasqW-LUhDS6aLodECmtSjGhGac7WBQ44zt93AZ18NMtvkX2TmV2NxnBYKn1ELKKl90vaBnob1mqKfalHpod73uCnSW0rh3dJP9T0pLu5vYCaz0xMvsa5ySyZdrvA0sCZyoQoOQ2Xse-iAvrZR7QkRxzZ-IwPzZEbOLsLN7L52p8PYgbf3WjHaLF7SzZllxnm__vtSRnMNWskijKavxWDNeYT9KEHGf0mjnEECo5U7Xegwh10Nsxo_NC1IOT_ZtylofwPXILCFQfGuHnEJ0NEA?testcase_id=6725491035734016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

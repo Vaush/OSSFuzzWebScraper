@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5743560961294336
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-licm
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-licm
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+V && "Unexpected null Value"
+
+llvm::ValueAsMetadata::get
+
+llvm::MetadataLoader::MetadataLoaderImpl::parseOneMetadata
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201907140313:201907150311
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5743560961294336
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

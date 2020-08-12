@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6634669489520640
+
+Project: grpc
+
+Fuzzer: libFuzzer_grpc_api_fuzzer
+
+Fuzz target binary: api_fuzzer
+
+Job Type: libfuzzer_asan_grpc
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+prior > 0
+
+gpr_ref_non_zero
+
+cancel_with_error
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_grpc&range=201703160214:201703202105
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95j-rp1uvBXbgJenAhHGTL0d_xXCZZMFXmrG55pVqJZFzDprMokyKFnemoPEwrny55AsPgn_pmPyu_httOolq00gtNV967xIslu5pC93qe9F9G5ypoT0UXsx978bDIMB3ERMhL7mMRXQTWjwdPrnUkkI7fXQPCx-jMo7YexekLjco-ZT2kjvTh2cO_2FJ_OKwtYii8ye8H8n1NLxjUJzp7Pt4aMrwfHcTrKIMQdpxMju7Yr7NobnGSewyQTes6PA-Z7PHZrIQBE_M85Z0OPyej5iqp3lGCO2HpZPojLN3gfML1q_qec4F6ib3qAHT_6jCekcP34LL041yRAdV-FbivqQIK34DQJl5C6TxcVnIR_afq5CMRTvhEF1l28YaEBOVcS4hljG6AbXYo8smD9A92YlhRLkG0BG33toa50e67UCGEfSSM?testcase_id=6634669489520640
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

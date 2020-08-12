@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5009099907399680
+
+Project: libssh
+
+Fuzzer: libFuzzer_libssh_server_fuzzer
+
+Fuzz target binary: libssh_server_fuzzer
+
+Job Type: libfuzzer_ubsan_libssh
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ssh_analyze_banner
+
+ssh_server_connection_callback
+
+callback_receive_banner
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libssh&range=201704191710:201704191803
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96C_qdsWSoQn5J7AxmCNDVE8w8rmVvjLdKHahsa-dg1xvbYLiRyzhdlLlaND6BoZsEsYykQG_2IeAEIQJBmDvYaqPb2jpEaghs2I6wJIOYa_vt_c0JkQGx6dCfMkbkkN6EGLHGH6UT8Vnh658G4FMFagCY7N88y3Oc4oyVbMrcgbBi1HW9XDZASPHca-xnKyugobov5E7rei3eLrfPMhhMZTUn8f70IZH4eajCEuJGnmTQ61HMhhIhRrrULuwmSxBjdLK1rMEC4gtWB3tsL5fQ0Tz1fRbXpxFlB7dZm3OADetD-u9ONMYO2ZeOcwFTWnwdeoXKteFIjo0RyJMT_2OGT-vH0wz_RdXrlZ3ZlaUHf1zyFXRIc8GmaNC3pgrkJ9PNB9ycLeu2PSg27tIkqO3HJah6SD08IeY4rEfDOlxj4SLDpG9k?testcase_id=5009099907399680
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

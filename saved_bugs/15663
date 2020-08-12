@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5664652278628352
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-dwarfdump-fuzzer
+
+Fuzz target binary: llvm-dwarfdump-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+!KeyInfoT::isEqual(Val, EmptyKey) && !KeyInfoT::isEqual(Val, TombstoneKey) && "E
+
+llvm::detail::DenseSetPair<llvm::DWARFDebugNames::Abbrev>* llvm::DenseMapBase<ll
+
+std::__1::pair<llvm::DenseMapIterator<llvm::DWARFDebugNames::Abbrev, llvm::detai
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201801290646:201801300702
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5664652278628352
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

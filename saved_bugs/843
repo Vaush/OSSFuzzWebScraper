@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6595199411159040
+
+Project: harfbuzz
+
+Fuzzer: libFuzzer_harfbuzz_hb-fuzzer
+
+Fuzz target binary: hb-fuzzer
+
+Job Type: libfuzzer_msan_harfbuzz
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+OT::RangeRecord::cmp
+
+int OT::SortedArrayOf<OT::RangeRecord, OT::IntType<unsigned short, 2u> >::bsearc
+
+OT::CoverageFormat2::get_coverage
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96VaG2QYpw6ejAsF2UFdQPClfC3pnd91dd1sXu0m838sgRzkftmAmZaRX5fqghAofmyKkBLslmZzW4r81QUPqOrBqQz8lR0SGzV-0nC-1CHSjQOtX4XxbL1a2x-qfIhoZo2bTOLn8Jh49x2cDYik0YtqA_9w7e0wn7EvGdH0w0dRG1S33LmMfuHW51Xm5rLthcKpAtq-zDqEzqu9wVdd9ywKIAYpXl-x14XiH1uFdpiFJGACQtNlzWJXR9wKvPy21aTLLAGhxzEluEPWnExsobMKyUnsakZAU2UM2E2Fba4VeJZCRd4rPmXl4YMnmJCdSb-29c3-HzYxdcAtbyw3YWBqsFZSugntInjkpIUs5QxRDTitKHKss8Orjb4C7NMBgY9vqB9?testcase_id=6595199411159040
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

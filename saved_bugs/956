@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5828472368791552
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Fuzz target binary: pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Container-overflow READ 8
+
+Crash Address: 0x605000124518
+
+Crash State:
+
+sdr::table::TableLayouter::SetBorder
+
+sdr::table::TableLayouter::UpdateBorderLayout
+
+sdr::table::TableLayouter::LayoutTable
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703150851:201703151305
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96BeQ0I07jeKaWjo_Sr7oVfVGL2tiNkntUVn2QGyhJXS1oLkxWP68VXlCNxcKZ9sAE4QuP1lJ50NN826WU-q2ZgumPVCM32pBFfNNcFql_dTNxZXCr8Ld9C-jtgiJri-5gyYUr9BemqxgBDPDx5EjOEzrT_GistkWvxKD4zhZUlHLhH9N4z-TMHl0SC7b2J3Jmz6_brrmnCPSPRGkGq71CkWCeRY2W2DsqolSjSf-2WCJLTuPqz2fXpPslCzkPpV3Vq-96QmLiLyZHyRjNsiPNosRsYBU0pJHiTNUVOtPQBYlQMGVZ2EjeF3hRs7DboSwZRdPyNVLbJowVwAaQWp016EOPMKj4e0hlZ5XM6K-WfTUtDHkHe7lqwtmF5KyXLEdQRpFikj59x1coyF7c7pHKOyUpsAoAAb7TTdYIP2WL983yXZso?testcase_id=5828472368791552
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

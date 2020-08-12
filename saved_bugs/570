@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4604979111264256
+
+Project: libchewing
+
+Fuzzer: libFuzzer_libchewing_chewing_dynamic_config_fuzzer
+
+Fuzz target binary: chewing_dynamic_config_fuzzer
+
+Job Type: libfuzzer_asan_libchewing
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+chiSymbolCursor < ARRAY_SIZE(pgdata->preeditBuf)
+
+ChewingIsChiAt
+
+CallPhrasing
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_libchewing&range=201611221631:201611221753
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94COwapeytmULGv1L48CH708rJMLL_7dY-t3ICWrs4YsvP8YnTrE2HnyCwqckaeSyemoy0kGeuXuj5LeOG3jEw67yS1LpJq8JUQOWpX5tgE1_eVGxPXOKUCIaHL1vONf4IuW_H1jAuunRSEWNEJOiKmqgGMj3hK0ewZDpSTIremO6ZvQOYFm8FBYqZGoQXS6x2QV1qUe8CVaeyauUWn22CS-XBv27OfiCz035i_NzhTiomNmtkjJAcp1_khXazlPlyVPYEcaCpio0XMFSdke99iPilew9IJj-p27N3ZnXRO8jvGWghfdzfwDQjHfzROmdHY0fle2V5U7izFsPVhcW5is-KnPKVVdKVGYUC-hSesexqkh5w3iyJCnSxdi2aaM6KX8vceTJ_ztR_yRchvwpcpAgVFUQd3XMjxfAuGQ8ff-0Sjm8M?testcase_id=4604979111264256
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5586788462624768
+
+Project: freetype2
+
+Fuzzer: libFuzzer_freetype2_ftfuzzer
+
+Fuzz target binary: ftfuzzer
+
+Job Type: libfuzzer_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+tt_hadvance_adjust
+
+tt_face_get_metrics
+
+cff_slot_load
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_freetype2&range=201701061724:201701062128
+
+Minimized Testcase (6.97 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96P9rrzbtS_XA5v-ping6m2YA8sg6fcqW-9bqD9SNg0N5WkfM5J7RkF9QNgp8N7j7VgulqhXOTn9El7MUM2nkos95e4du0sIXWSZhk722ioNkOCNQY9rJbyH1NeoTUcP_yoJtQtBvifM28itENAzwG8IvEcW29wUDZXM2DPIVhXREw948YJCbp-SYz1_IPTh6itAmSsPdn0Hp_8wMreLn8Z17gS-mRONYUjIHz7Gsvnxo56v0V1U7wuEzEFVM7p2vMW6pXIMwmSQDjrLOFn_yFtVkETsn2iE8WmH3KxouSs1z1QzRKFh0ZijOToCueURv7dIjiErSJhiyeYhbqZPFRq5958DI6FqOWIb7cblHso03LkRXX7oo0_6-mc9s6Ae_lGv-4p?testcase_id=5586788462624768
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

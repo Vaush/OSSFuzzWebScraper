@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5757955860856832
+
+Project: skia
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: skottie_json
+
+Job Type: libfuzzer_ubsan_skia
+
+Platform Id: linux
+
+Crash Type: Divide-by-zero
+
+Crash Address:
+
+Crash State:
+
+skottie::internal::TileRenderNode::onRevalidate
+
+sksg::Node::revalidate
+
+sksg::Group::onRevalidate
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_skia&range=201907220338:201907230335
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5757955860856832
+
+Issue filed automatically.
+
+See
+
+https://skia.org/dev/testing/fuzz
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,44 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5641614776598528
+
+Project: llvm
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: llvm-isel-fuzzer--x86_64-O2
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+llvm::llvm_unreachable_internal
+
+X86FlagsCopyLoweringPass::runOnMachineFunction
+
+llvm::MachineFunctionPass::runOnFunction
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201903270300:201904052014
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5641614776598528
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+

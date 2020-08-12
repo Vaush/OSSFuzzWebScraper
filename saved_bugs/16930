@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5688606802313216
+
+Project: cryptofuzz
+
+Fuzzing Engine: afl
+
+Fuzz Target: cryptofuzz-openssl-noasm
+
+Job Type: afl_asan_cryptofuzz
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x602000000f60
+
+Crash State:
+
+cipher_hw_desx_cbc_initkey
+
+cryptofuzz::module::OpenSSL::OpSymmetricDecrypt_EVP
+
+cryptofuzz::module::OpenSSL::OpSymmetricDecrypt
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_cryptofuzz&range=201908212037:201908310225
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5688606802313216
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

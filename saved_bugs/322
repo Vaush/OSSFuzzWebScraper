@@ -1,0 +1,48 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=4827735151083520
+
+Project: harfbuzz
+
+Fuzzer: libFuzzer_harfbuzz_hb-fuzzer
+
+Fuzz target binary: hb-fuzzer
+
+Job Type: libfuzzer_asan_harfbuzz
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+i <= out_len + (len - idx)
+
+hb_buffer_t::move_to
+
+OT::apply_lookup
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_harfbuzz&range=201612211833:201612220925
+
+Minimized Testcase (1.35 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv940rj8otQmTWddXyaD4gxSUuolWyZRYIpwdsUvLgnYgSxwanw9ETKvFcEpNVWim8AL0cSdoBmpf2XRBGNgCCpgMuD6YruqBwvTxOpcHoBoA-iztrVSZqrz-xi75faL9Xzzimp5yclvs0P9r68-AU2jnKizCBjN8bNc2LhtqEGLXwFlAegE?testcase_id=4827735151083520
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

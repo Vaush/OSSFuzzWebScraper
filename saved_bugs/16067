@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5630652736602112
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_clang-format-fuzzer
+
+Fuzz target binary: clang-format-fuzzer
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+!Line.startsWith(tok::hash)
+
+clang::format::AnnotatingParser::consumeToken
+
+clang::format::AnnotatingParser::parseLine
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201907260314:201907270317
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5630652736602112
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

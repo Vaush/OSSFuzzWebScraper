@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5701154159198208
+
+Project: libhevc
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: hevc_dec_fuzzer
+
+Job Type: libfuzzer_asan_libhevc
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+(ps_buf_mgr->au4_status[buf_id] != 2)
+
+ihevc_buf_mgr_set_status
+
+ihevcd_decode
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libhevc&range=201909050154:201909060229
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5701154159198208
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

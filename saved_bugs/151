@@ -1,0 +1,40 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=6380176053108736
+
+Target: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_SUBTITLE_AV_CODEC_ID_SUBRIP_fuzzer
+
+Fuzzer binary: ffmpeg_SUBTITLE_AV_CODEC_ID_SUBRIP_fuzzer
+
+Job Type: libfuzzer_asan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Stack-buffer-overflow READ 1
+
+Crash Address: 0x7f71190d38b0
+
+Crash State:
+
+ff_htmlmarkup_to_ass
+
+srt_to_ass
+
+srt_decode_frame
+
+Recommended Security Severity: Medium
+
+Minimized Testcase (0.30 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94wZV8lrIKdJcua5q2dIsRGiHN8iu2EJ-wgbn_Khh1BhjVqfrKstRyHFO3i2VZYvDRM6zLYEGRFb738fwdRy4DD0443qck9RoF_mryo_P3eWhZsCGlg1fqJGYvG6aZh2d0C_WwMBcCyvasfMlTYwZcZ9ZBnbDWKs20fgACkB63AQDhBc9Q?testcase_id=6380176053108736
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

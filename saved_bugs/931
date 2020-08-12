@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5036643692052480
+
+Project: lcms
+
+Fuzzer: afl_lcms_cms_transform_fuzzer
+
+Fuzz target binary: cms_transform_fuzzer
+
+Job Type: afl_asan_lcms
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 4
+
+Crash Address: 0x60800000500c
+
+Crash State:
+
+TetrahedralInterpFloat
+
+_LUTevalFloat
+
+XFormSampler16
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94WfMnKl9-d80Xe4cnwxX6LLaFnd0L4xnjg8-J5RyVTr60RB4tKtPuYY2Iwm3Zn0gZWR1LU25qF0PcAwsc8zCR0JGI58pM7ZOw5iU4-j1e7mPvY6-SOHb_WwCaMEH6nFe-tbJjCTpob3T7Qfkj0HY3G5GFtYz_Xcy0JaHMLHgB3o1o97qfh9Vuga6URXsrdJAqoozbcgBhMLZ0qp-9OxXL0sGAlnDNn1xjWpfdRIl-ehcy2z7X-qpipnwDSSVNVLW6IOCUvfnrr7soxFQrewFbFDxeAsmhNM68dREqEI3k6dLtJHuYPy9h8eGXtfOWzmYMCkklkq90T5WqCV_7T1rYMkLKQO0LdW2zLutu2jFLYBPcdZUaoChU2xS_qAwNUF3T04kRAPS3435s-CnPN_O4rZn8-5SU6lHKVSJndJkCnws3L0tY?testcase_id=5036643692052480
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

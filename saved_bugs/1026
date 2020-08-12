@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5958424892276736
+
+Project: libxml2
+
+Fuzzer: libFuzzer_libxml2_xml_read_memory_fuzzer
+
+Fuzz target binary: libxml2_xml_read_memory_fuzzer
+
+Job Type: libfuzzer_msan_libxml2
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+xmlParseSystemLiteral
+
+xmlParseExternalID
+
+xmlParseDocTypeDecl
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_libxml2&range=201608301640:201704050427
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97KYJdtHKzfrD_cuY7mbFZTLCZZhaDzX0xoDaL4VHCmX234-qKec7r5pyy7ewCY5zFgNiXaYKlcX6WMnuuUC61Kuw_HEUApbu3ArGYe4U_Rw6iF8jJIKDVvc8j8Rmh1OWK3SGGfzrX2zdmEv17wSnuu3zKdWDCipGSuCpRoryyKqNr2ov8Lh_IDpzx4rx6qlQBnKvwrO5QuWHjki9rC3sTpYy9Q2MrUCtp160_Cu84CcmrYLEzMIq_UzaGmlbKhTRhaqaGj6iHVTQFRUMPQoKj9GpDejKXLDFx7uek_zf-193Wu10OX6ZEcq5iaeOsuVkeoBKV2vg7XRue5MNDJFHkMbWh0nqbs7BPqbWTicHc42hr-sPxH5x9S7nVVLO22s5lIQ7Au?testcase_id=5958424892276736
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

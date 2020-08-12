@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6308289423343616
+
+Project: llvm
+
+Fuzzing engine: libFuzzer
+
+Fuzz target: llvm-opt-fuzzer--x86_64-gvn
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow READ 8
+
+Crash Address: 0x61d0000046c8
+
+Crash State:
+
+std::__1::enable_if<is_hashable_data<char const>::value, llvm::hash_code>::type
+
+bool llvm::DenseMapBase<llvm::DenseMap<llvm::StringRef, llvm::detail::DenseSetEm
+
+llvm::detail::DenseSetPair<llvm::StringRef>* llvm::DenseMapBase<llvm::DenseMap<l
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201905290205:201905310209
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6308289423343616
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

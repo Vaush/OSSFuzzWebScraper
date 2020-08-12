@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6157314526543872
+
+Project: botan
+
+Fuzzer: libFuzzer_botan_cert
+
+Fuzz target binary: cert
+
+Job Type: libfuzzer_msan_botan
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+Botan::Charset::is_space
+
+Botan::x500_name_cmp
+
+Botan::operator==
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96JUEl4DaKIyXRl_6C7ZBg3K6Sok-tBh9cbjwBggT8BV2ou-gp8buBpWE3BqCCxLBBuFwFu7gQ_-1UpsaqgpKvgzFCt-O4oSPKrH5v8dMq1J8ZdGELjegmDhLwZvn-B5A1psvndfwUwevZ9D9NsnxEc8rcVwOG7rD6r-NLHrrNyZ4UBVHsslPd4njV8FoyibqTB_BZUjLWMmPGJO99p2-FnpeYcVbwHmEkEatymkcmdFrKvIEhGYpSWNSqAbNG6ibsvgNAUBIW4aOIxNh0gS8oqRvFEpR6DSIMp4MaOiJTKGGhibAUcWNcJeNbMQQiCKcn1WZEXqa_cIunVUiO-ERHMQ5TcOm00R1LjkYxRET4CfopVunRsGpY4Mk6I5zr5JU4uNRFenHcf29atBV2U5bSKdkgU9qTgTY2IaQwpLUheIMU_0Ss?testcase_id=6157314526543872
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

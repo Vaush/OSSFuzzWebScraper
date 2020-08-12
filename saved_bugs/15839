@@ -1,0 +1,44 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6201290255761408
+
+Project: llvm
+
+Fuzzer: libFuzzer_llvm_llvm-opt-fuzzer--x86_64-loop_vectorize
+
+Fuzz target binary: llvm-opt-fuzzer--x86_64-loop_vectorize
+
+Job Type: libfuzzer_asan_llvm
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+Index < Length && "Invalid index!"
+
+llvm::X86TTIImpl::getIntrinsicInstrCost
+
+llvm::TargetTransformInfo::getIntrinsicInstrCost
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_llvm&range=201907140313:201907150311
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=6201290255761408
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+

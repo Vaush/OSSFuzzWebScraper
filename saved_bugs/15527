@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5711765729443840
+
+Project: bloaty
+
+Fuzzer: libFuzzer_bloaty_fuzz_target
+
+Fuzz target binary: fuzz_target
+
+Job Type: libfuzzer_ubsan_bloaty
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+bloaty::ReadELFRelaEntries
+
+bloaty::ReadELFTables
+
+void bloaty::ForEachElf<bloaty::ReadELFTables
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_bloaty&range=201906260221:201906270223
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5711765729443840
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

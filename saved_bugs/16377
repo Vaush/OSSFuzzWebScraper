@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5632907177099264
+
+Project: imagemagick
+
+Fuzzing engine: libFuzzer
+
+Fuzz target: encoder_dng_fuzzer
+
+Job Type: libfuzzer_msan_imagemagick
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+LibRaw::parse_makernote_ADDRESS
+
+LibRaw::parse_makernote_ADDRESS
+
+LibRaw::parse_tiff_ifd
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_imagemagick&range=201804090435:201804100437
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5632907177099264
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

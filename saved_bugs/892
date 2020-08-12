@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6499964752494592
+
+Project: sqlite3
+
+Fuzzer: libFuzzer_sqlite3_ossfuzz
+
+Fuzz target binary: ossfuzz
+
+Job Type: libfuzzer_asan_sqlite3
+
+Platform Id: linux
+
+Crash Type: ASSERT
+
+Crash Address:
+
+Crash State:
+
+0
+
+sqlite3ExprIfTrue
+
+sqlite3Pragma
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_sqlite3&range=201703121620:201703141448
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97wgPc9ibQqxtKSbf-9YI3sUShEojF9a0kTluxvCwvRjCILVmzO_ugx82jzpHbSEM0N7adgPnrQn0QGb2MaUERydh5oJI-o2OW3pD7vZJ0zgEw9UwhokXnICIRgEz8pGl36EOcUbzXaHyWRGM1F1txwYFPDJVpEVNC3TFR5U-eR8j9by80ox2VTQHnc7En7fsp2nSvk-Ge2eh-KmWB-qCXs9uzDe0idZGqLucdbyW4-a60CFEnrah_4vqHDqBelJEC7a5-4todF2OO0TIfzb4kKFI2ic0puZbOWXqiArDvTqtsD32hDoAiCrXjphWWBHZzYzEkH8grvJQBF5EV1FqwFCi_VCaCbKeWYcYsIxOgedMB7yb1LRDcf-qTCSGpecMhwMseEfcj3FaQoIzmsKenWNTfjjsQ1jSNxUst9JZiiZouriAE?testcase_id=6499964752494592
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

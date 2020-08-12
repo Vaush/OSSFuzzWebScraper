@@ -1,0 +1,44 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5343456134168576
+
+Project: tpm2
+
+Fuzzer: libFuzzer_tpm2_execute_command_fuzzer
+
+Fuzz target binary: tpm2_execute_command_fuzzer
+
+Job Type: libfuzzer_ubsan_tpm2
+
+Platform Id: linux
+
+Crash Type: Undefined-shift
+
+Crash Address:
+
+Crash State:
+
+ObjectAllocateSlot
+
+AllocateSequenceSlot
+
+ObjectCreateEventSequence
+
+Minimized Testcase (0.01 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv96Gi2sJnI6REvsr2yWHy2DN84lWo2dcE_G_qbu_faly1A4ThCtrjNg7oDpzpmkijYYw7pJ2UqB5Lj0lDGGXyL4FXFlGo6tBAgI5Hd_UmLVbPFdUXvBKPcOffnvnqIHttS51dZrxDBRD_D3d4Me_38EcqyX0HVNd8cgfaOW8SbEYVWZuu5I?testcase_id=5343456134168576
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

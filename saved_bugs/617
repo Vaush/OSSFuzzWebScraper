@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6413875723370496
+
+Project: ffmpeg
+
+Fuzzer: libFuzzer_ffmpeg_SUBTITLE_AV_CODEC_ID_SUBRIP_fuzzer
+
+Fuzz target binary: ffmpeg_SUBTITLE_AV_CODEC_ID_SUBRIP_fuzzer
+
+Job Type: libfuzzer_ubsan_ffmpeg
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+srt_decode_frame
+
+avcodec_decode_subtitle2
+
+subtitle_handler
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv9509RWRRXahuQRYDNBeg6NTNgViD8zyVxnN3MZZ8MxqRLfS7TNWgJ3iBhqydnJuiVyFiWN0d_mJcggmaiRMXPD1wsiBXXHEa1QdegX0y6cBd5dw97WGW8FI4wFhep0Fu6jmS5Y9NL5qIRXI0Jx6HwtlWr9QQJyuiatCK_k8Ynyp7uNQE5cRh3uaOND1CC5t5zsUcq3Y-vgRcEvlYOk3j5vQE0lKFxJJPh6cWhzgOHz0JFcX4lwQA-hYJyMsSGWAJXAzOa7eHcluwkGGZqnzCKhRIagy75turZA0M6grKlWQucSTw2HER1z91JnoPs5SOokTa-ojBvf1uIjLGHkNxLVd13IhKGI7XafEIKoi1cPif2JfaBLytb67v11Xn9xU4OhKpA7BZNi3YX0dOt1MINyYDhYHgzCoJ0qWxEEz1FWpLoXdKxU?testcase_id=6413875723370496
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

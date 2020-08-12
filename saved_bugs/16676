@@ -1,0 +1,50 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5712089183682560
+
+Project: imagemagick
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: ping_mvg_fuzzer
+
+Job Type: libfuzzer_ubsan_imagemagick
+
+Platform Id: linux
+
+Crash Type: Null-dereference READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+TraceArcPath
+
+TracePath
+
+RenderMVGContent
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_imagemagick&range=201908170259:201908180257
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5712089183682560
+
+Issue filed automatically.
+
+See
+
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

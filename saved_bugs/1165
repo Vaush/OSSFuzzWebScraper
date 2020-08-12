@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6244439003496448
+
+Project: grpc
+
+Fuzzer: afl_grpc_client_fuzzer
+
+Fuzz target binary: client_fuzzer
+
+Job Type: afl_asan_grpc
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000060
+
+Crash State:
+
+grpc_slice_eq
+
+on_trailing_header
+
+on_hdr
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=afl_asan_grpc&range=201704171621:201704172155
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv94A5iD8bUU0ekn1iul15Jl794DtWAl_OMFFO1XEfCW48hujrB8-LFArHzlAQcRbCT8sPWJrhJ0mpih6XSMphqE8wvGF2zudLtKOrQZN5J8IpKS3I_6YSoCVCMLHsojWd75xSgm4dwhF_-lR7tn5I3lP0_jN1T548NOBBp-NYfVTzG6a5W8jXtqR3kWUke5nDeZqeNOZDZk2tA-psuClna-sb-wv5RWPbA3rDziEoVCFBvnpIUGphe3h7iheCv8vBwL4XEkUMyXCscVspj2KjwELROGxDNKOxiSeDLoqlsfdNZpiRXGihb_yYMy4BqGCJtw-Z_tXlfS5Izkm1LjiD5PU9ouB2KDxfuUC51TRTFfbrNxtkV1y8E05H2hS-rvdlANbXrlEPGmEoWsVFqPRhoAwVeQ_BAkYy9VsZlhJDXAjyuue4t0?testcase_id=6244439003496448
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

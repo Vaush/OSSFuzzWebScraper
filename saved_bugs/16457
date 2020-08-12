@@ -1,0 +1,52 @@
+Detailed Report:
+
+https://oss-fuzz.com/testcase?key=5076189185572864
+
+Project: flac
+
+Fuzzing Engine: libFuzzer
+
+Fuzz Target: fuzzer_decoder
+
+Job Type: libfuzzer_msan_flac
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x724000010000
+
+Crash State:
+
+FLAC__crc16_update_words32
+
+crc16_update_block_
+
+bitreader_read_from_client_
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Crash Revision:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_flac&revision=201908151754
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5076189185572864
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

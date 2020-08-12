@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5444170833461248
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_abwfuzzer
+
+Fuzz target binary: abwfuzzer
+
+Job Type: libfuzzer_asan_dlplibs
+
+Platform Id: linux
+
+Crash Type: UNKNOWN READ
+
+Crash Address: 0x000000000000
+
+Crash State:
+
+librevenge::RVNGStringImpl::empty
+
+findInt
+
+librevenge::RVNGPropertyList::insert
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_dlplibs&range=201704181619:201704191657
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95834ySwizUq8VU8ORdjQhu0WTbcQvOTsp5leQlsYjW8Lf0phNCyLBcsyKBOPK9fi9a6oR7vtpErmdtwbiw1XFRTdggtnlZOBnEHO16G1mnb5Cv3hUBzL4Y_1DHS0DOGsHCtUifmPJq_HNarIZy2Mtk6TNcOK9MFylfCP2o2mpXwKRA7Bq1qbaaoYA7sundPbs-YV4YtlK3u31ceBM4ORdZPd6rpy5IzpIil_ThpMRNHPYhOwj9PVu8OQK8WjFaeN9RDgWZhE2ZyMrq_S9sxTXQVPYShKjuJE_EFgSJO0nBRLUWh-l_rfbYEdGyh_DKeEYyFrxT2BhZjhh0K3s5F9FwSXCxHiIl2QKZtAQrUx5WbO39xYsnuS4Bi0RrCPWOSP4bq-H_xxR4JPc4vehhJaC57knrBYwsvNKb9HA8mceXBzbPj2Y?testcase_id=5444170833461248
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5392195622273024
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_macdrawfuzzer
+
+Fuzz target binary: macdrawfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+MacDrawProParser::createZones
+
+MacDrawProParser::parse
+
+MWAWDocument::parse
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704101617:201704141618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97LP929A9erWINO5GFLWzhLnwyClSQ0w4zaWWG__TAGdq-7JNJel5oF0syZM879JxcZv5W-64wGuC1D-a37ubStdt3YzyFjFUptVtG_XXc3Z1F9TS-w9eeXfwNAyH6V5-HGSlTgkDQnLmoN8sx2Rir7yE_ew80CWEAEaRfoSorDTmXb8r7bH9OuicK_2-Mnk9GzPrAuzedW4bemYBqgyRryd2W_jfIjBc6VjH16XLbxw7l-aPlE3EucyH0s-5DoUpsTma5Yu1ammzR0VHl17q8mW6X2hXpOOQJx8EEkBhdaFScHGZwqKTHcOhY8iyQVeBhCfLPyoiaW8ItyqVaEAVbJvdJClEKTK7qD_udfrZ2oUq7Qi_IUSaeGvLIRGzLSmKKuXRMkm3TI3N8z-rNUkbw9VsAujRv2be39RG1IykjYz6Qh4nM?testcase_id=5392195622273024
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

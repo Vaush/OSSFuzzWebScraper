@@ -1,0 +1,38 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4699729595203584
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x053900007e03
+
+Crash State:
+
+Js::JavascriptPromise::AsyncSpawnStep
+
+Js::JavascriptPromise::EntryJavascriptPromiseAsyncSpawnCallStepExecutorFunction
+
+amd64_CallFunction
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=4699729595203584
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

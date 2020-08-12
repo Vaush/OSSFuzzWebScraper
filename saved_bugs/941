@@ -1,0 +1,52 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6729909500116992
+
+Project: freetype2
+
+Fuzzer: libFuzzer_freetype2_ftfuzzer
+
+Fuzz target binary: ftfuzzer
+
+Job Type: libfuzzer_asan_freetype2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow WRITE 8
+
+Crash Address: 0x611000000258
+
+Crash State:
+
+psh_glyph_init
+
+ps_hints_apply
+
+t1_decoder_parse_charstrings
+
+Sanitizer: address (ASAN)
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_freetype2&range=201610262116:201610262300
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97P4O3NXl4wE1Hp3UodnmRKsL6Zl9fUQ2LVU8Nu7W3agF2wMdJZyErIH1kts7abBU8ZF1RxJOXya2Bxia4EWlY_CP0pOAWeCvZnCxFaRKo8M4NEPfBpUsd0300RZo89gX1wEh8kjpKS1Z3fZdA0feD6bSMt1nu6pWdp5JVMT3h7kzT5xOOGB9Jrx8fEHJAgcrjkYW-Mg3mO44Ifwp_-q5vSA7Da5o67oDFL1SlRvBkP6hGwKCgXzwHApm1mzBG0J_BRrw6ob8YaL1nmzPXUidlY-T4vksApn2nAE31Aue1TLRNpwncVi_nqZe7XPTKgQTO3-SU3m_X-kMaM8CwN76o47RF-43EgMNkgBblcp7lCw6P6GWu_NVlpUGYZSjiAPT1JjXlrhrgtMQq_vhXK07maJ5Ce6Bl9eSvJ_uyj_kTifPOZWXM?testcase_id=6729909500116992
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

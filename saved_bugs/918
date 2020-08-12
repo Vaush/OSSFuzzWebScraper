@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5211796082262016
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_svmfuzzer
+
+Fuzz target binary: svmfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Floating-point-exception
+
+Crash Address:
+
+Crash State:
+
+ImplLogicToPixel
+
+OutputDevice::ImplLogicToDevicePixel
+
+OutputDevice::ImplNewFont
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv943nNNmNcklH4ur0SK-ZRpMse95Hd-3T4b3EvcGiSrytKpUX_k7-ZgIm2jcLzAcyO9AtX2E013mvUp6DS8IJAX_r3Vy3p-W3wCEhOrP97wy6RD5R2-Wdpn_xtn8JQrlZ4itGlV9NN729uAVphUM4WEwFIOP--By68SIfIq8xCbWu2YHgtx2MRJejfD4Mx62M2vYteuyUf7usDPDUWcO9ITe5w6coBa2VLH2eveRKImVKlKHBj7kGSY57J3SEOaregRhGXf61TvAAmSkU6PQaXY_8ATMEoi7hiNj80pxVmmNSbPQ5lFkychMLgDYqeOoVBkXjOY-UmD4ZZc8_iEVEo5Nx8WRJX1Oj2XKzy1A1KYFyFiqB_hmUXsvuvlFNhi14-TJIYdRS2NapArlxFX14aOrqB0YYNOdaakIvdy9ZLBUUfO9epY?testcase_id=5211796082262016
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

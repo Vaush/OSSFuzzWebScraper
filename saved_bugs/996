@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=6488436909277184
+
+Project: icu
+
+Fuzzer: libFuzzer_icu_ucasemap_fuzzer
+
+Fuzz target binary: ucasemap_fuzzer
+
+Job Type: libfuzzer_msan_icu
+
+Platform Id: linux
+
+Crash Type: Use-of-uninitialized-value
+
+Crash Address:
+
+Crash State:
+
+u_strToUTF8WithSub_59
+
+u_strToUTF8_59
+
+appendResult
+
+Sanitizer: memory (MSAN)
+
+Recommended Security Severity: Medium
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv95vgrR6fe28_3gXFCdW_MYc4aAb9y6whhIcgDfOLIfZP6tbF9EQVFqmgDGhvvY1kONqWRH29Ee2blAiWYxOnhuVpBtImLAQW8eMHLebUMAvWJTzK8aHu-ELxhE6amlvpqPk4_DwyN46TqpljrxeYG4UomfBT4AxMEHD2D9Hac86xqF6_9T5nsdNg4jCAZPZaBdXpKxSI9Tgm2UyRwqDe8vze1wvVZIZzZ9hWKq1TUDNscduZAJXOktteOZfUsLoPT_MOcZ8FcaCxd99xhcEUKMYsOJamJ_DPpp_wWyvoVUeUjjWCJpX4RsIxJ1YBFHBBf29zJJKmeIAzKJNHn06dgpPb0qq5B_jLsmYkzVGpmffKCp6pcmfGRC63PO_62GWSkDj1g372fw4lTIFjSJQPAWsaCenaibUy62q1guuDWUjLXS-qPE?testcase_id=6488436909277184
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

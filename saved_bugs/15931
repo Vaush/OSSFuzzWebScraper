@@ -1,0 +1,46 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5718581146288128
+
+Project: lz4
+
+Fuzzer: libFuzzer_lz4_compress_fuzzer
+
+Fuzz target binary: compress_fuzzer
+
+Job Type: libfuzzer_ubsan_lz4
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+compress_fuzzer.c
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_lz4&range=201907160228:201907170234
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5718581146288128
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

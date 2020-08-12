@@ -1,0 +1,52 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5285323600822272
+
+Project: pcre2
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Fuzz target binary: pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: UNKNOWN
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+_start
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201611231503:201611240926
+
+Minimized Testcase (0.02 Kb):
+
+Download:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94vd0EDFMyoo3L7O0ISFWf0FmA2EDbXCwxixUSUFCH7_SSKZaEmvgOUK0H2sLINZF4LX6X08-a04JJzrk5wMb4QWk84zm3j9Mz76iJOM4yfMdx36LQmFDd0SHu4wCfdtreJNeiL2EskAEb538IjtWegE2HVaorU4qQ5bboURt93Sj7-21zj_kt46j3YMr8nPW3BNiDyxsNbzB8b_IVFpWHlxIBI8xBFT9yb62ayJPnlFnEfPGhZnbuY9kAJ9ckzaVChRQ00-oUfLcIpSyownrTcRXeWz6H-UGKMX3jUcaazKGO6VSq11o245AODVMyXkY8bEv9KZ2tbxrDvauq2h6W3dcG49b5RlahG8OSrQPoSU2-Hsm_viRlbljGKG5FdhOOMF-qd?testcase_id=5285323600822272
+
+==()
+
+{(�+2\g+65534})
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

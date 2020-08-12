@@ -1,0 +1,48 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=4926748028305408
+
+Project: libreoffice
+
+Fuzzer: libFuzzer_libreoffice_pptfuzzer
+
+Job Type: libfuzzer_asan_libreoffice
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x000000000001
+
+Crash State:
+
+com::sun::star::uno::BaseReference::iquery_throw
+
+com::sun::star::uno::Reference<com::sun::star::container::XNameAccess>::Referenc
+
+filter::config::FilterCache::impl_load
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libreoffice&range=201703191631:201703201630
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv96QBOl2NrFzrBlb1h9ZI3ZBVGYdZsd_K4k34yHJV8xKnmoLXv65LZRchnJ6-vwZ1KIHJt_9SYPdAgvrYQruRfwkhIcTpaEYEOVH8-RqA3YGB4UoNt6l21wRyEbFNVDSUksQrJJ0_rpNGZYJmfS2al8YKJleQHuFvA4NwmkPs19Hl56cFHj_pDae6SQ2CxJvL5ZAAwruURsPVvzPZ_s4GR4t885tSKK7o7HRuGLvYEqqFt9OCBQwe5KACeDHouLGCIL3SpEIp-YxTbwvctp0B0XolXbSRtSwluwj4nYILG0WeIE2tsHBc_HLJX0CSKGf9yzegSXQS6bmvpHTKIIDpAR03mKZkL19Q7Ipbx58Gr5mbs4Dnvvobl8mZhQuZ9dZSv3VGQDDuShRTBujqZQEsw6Gr18vGF2qrDRmGqI_tdBU8ajiDmc?testcase_id=4926748028305408
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

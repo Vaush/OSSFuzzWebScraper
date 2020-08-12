@@ -1,0 +1,42 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5299240024670208
+
+Target: pcre2
+
+Fuzzer: libFuzzer_pcre2_fuzzer
+
+Job Type: libfuzzer_asan_pcre2
+
+Platform Id: linux
+
+Crash Type: Heap-buffer-overflow WRITE 4
+
+Crash Address: 0x622000001458
+
+Crash State:
+
+manage_callouts
+
+parse_regex
+
+pcre2_compile_8
+
+Recommended Security Severity: High
+
+Regressed:
+
+https://clusterfuzz-external.appspot.com/revisions?job=libfuzzer_asan_pcre2&range=201610311947:201610312023
+
+Minimized Testcase (0.30 Kb):
+
+https://clusterfuzz-external.appspot.com/download/AMIfv94EV0ZvAvi3Pq1TGE34wM29at2fmhBjLqPIu92ZJjhzZSIpctySM6tJMVelAAXM7kepelRC9eT05vG4PQDEUnSXcQXuzdH-xmZju9n1YPrJ3JgkESds_ODb1m4tYN4g5AAbG7RxerCg9KEDrpZF8ndNHJIIUW2kkKyMbaAwn6jSw8ryHNg?testcase_id=5299240024670208
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

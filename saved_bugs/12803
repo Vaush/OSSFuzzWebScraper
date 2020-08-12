@@ -1,0 +1,66 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5756860290826240
+
+Project: libpng-proto
+
+Fuzzer: libFuzzer_libpng-proto_png_transforms_fuzzer
+
+Fuzz target binary: png_transforms_fuzzer
+
+Job Type: libfuzzer_asan_libpng-proto
+
+Platform Id: linux
+
+Crash Type: Stack-use-after-return WRITE 8
+
+Crash Address: 0x7f8ce2b83230
+
+Crash State:
+
+OSS_FUZZ_png_safe_execute
+
+OSS_FUZZ_png_image_free
+
+OSS_FUZZ_png_safe_execute
+
+Sanitizer: address (ASAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_asan_libpng-proto&range=201901300220:201902010219
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5756860290826240
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for instructions to reproduce this bug locally.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
+When you fix this bug, please
+
+* mention the fix revision(s).
+
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+
+* add any other useful information.
+
+This information can help downstream consumers.
+
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
+https://github.com/google/oss-fuzz/issues
+
+.
+

@@ -1,0 +1,50 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5541729203650560
+
+Project: dlplibs
+
+Fuzzer: libFuzzer_dlplibs_powerpointfuzzer
+
+Fuzz target binary: powerpointfuzzer
+
+Job Type: libfuzzer_ubsan_dlplibs
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+PowerPoint3Parser::readStructList
+
+PowerPoint3Parser::createZones
+
+PowerPoint3Parser::parse
+
+Sanitizer: undefined (UBSAN)
+
+Regressed:
+
+https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_dlplibs&range=201704052230:201704061618
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download/AMIfv97aDScVl4L2ynhv_DflDUzVzYNV2uvGfZcZGfE3NMnoTJctaoU631Y5KKJ7eTeYcAxW91TfSokfRqrA6yxrrIGpgVpZWt1azgKlIboI9pgBxUt7XAAr_ovM_80dz7xpCJwPXFUr0EAlYXKbJMwyFFcDGEv5-egLANY4hs1H8qF03g3VuGkIBEVlhbg9U_ox5o4pHM4kKZC6euTNr_sFMo0ulLxy_PpKyMpNkUtcep7pMwnA23VKqA8mMZWn60tvXubzck9FHCD3BhfCvePO6NQzT-S1njtSxXB41AHrn6jk2EBpoSpp-kDZTysAzSK0v43CKJ8a5gZo86zDTE6r_4l5K-ht-8KjTQ4ZPOQy6WpDDGePBugEGW2P0qgoVt7yTDgF_9bbdK0NSkz9lz-E-czFqq8tuiYFPOS4CZDQcj-Tusp-79M?testcase_id=5541729203650560
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+

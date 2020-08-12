@@ -1,0 +1,38 @@
+Detailed report:
+
+https://oss-fuzz.com/testcase?key=5924442153680896
+
+Project: chakra
+
+Fuzzer: js_fuzzer
+
+Job Type: asan_chakra
+
+Platform Id: linux
+
+Crash Type: Abrt
+
+Crash Address: 0x053900000a8a
+
+Crash State:
+
+Js::JavascriptOperators::CallGetter
+
+Js::JavascriptOperators::CallGetter
+
+int Js::DictionaryTypeHandlerBase<unsigned short>::GetPropertyFromDescriptor<fal
+
+Sanitizer: address (ASAN)
+
+Reproducer Testcase:
+
+https://oss-fuzz.com/download?testcase_id=5924442153680896
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+

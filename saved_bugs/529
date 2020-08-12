@@ -1,0 +1,46 @@
+Detailed report:
+
+https://clusterfuzz-external.appspot.com/testcase?key=5349025951776768
+
+Project: lcms
+
+Fuzzer: libFuzzer_lcms_cmsIT8_load_fuzzer
+
+Fuzz target binary: cmsIT8_load_fuzzer
+
+Job Type: libfuzzer_ubsan_lcms
+
+Platform Id: linux
+
+Crash Type: Integer-overflow
+
+Crash Address:
+
+Crash State:
+
+InSymbol
+
+HeaderSection
+
+ParseIT8
+
+Sanitizer: undefined (UBSAN)
+
+Reproducer Testcase:
+
+https://clusterfuzz-external.appspot.com/download/AMIfv97CDQ8aSapA3ESpMOnY6Ihd4sxLBI7lCfDKaf3ND1eu_kPWcslBgF0lh1msqo5t2o7HRGW5R3r9oSW6a6O_7frmGDJ7CsvR7NoeWWAWu6QjXLzO2WKG0sFustoVNDDGOqapBPT1PUHEWQPKMsNDWOsRWMhtbhDHgG6oIKkPrh2VJQAMxg6mVoJ7AewWtUkc8M6wUYDEilXGoQD80aVGViWeL2QfULYEs9ZwsQnJmdxB8Hp4acjOQjORVVarQZHReO3Q6gUu10V8H2sJJzmeWyu2ANUDS2v3b7U6xn3VVLIGObGMVCffx7Bu05swQDQSTBEgj0Os65v4q8lEXyB7SAK_HMJmIoj0gxlKRlUdlkgBbX6f2ceYEgiDKuyPUavKstdFwZSV3h1uIVFWCQJTPHw3Md9SyWedXLVDVG8eGDPMY93nAzc?testcase_id=5349025951776768
+
+Issue filed automatically.
+
+See
+
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+
+for more information.
+
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
+without an upstream patch, then the bug report will automatically
+
+become visible to the public.
+
