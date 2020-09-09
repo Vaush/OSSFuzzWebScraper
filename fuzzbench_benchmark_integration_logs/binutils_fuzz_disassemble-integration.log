@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "./oss_fuzz_benchmark_integration.py", line 29, in <module>
+    from common import benchmark_utils
+  File "/home/vaush/Work/fuzzbench/common/benchmark_utils.py", line 21, in <module>
+    from common import logs
+  File "/home/vaush/Work/fuzzbench/common/logs.py", line 21, in <module>
+    import google.cloud.logging
+  File "/usr/local/lib/python3.7/dist-packages/google/cloud/logging/__init__.py", line 22, in <module>
+    from google.cloud.logging.client import Client
+  File "/usr/local/lib/python3.7/dist-packages/google/cloud/logging/client.py", line 29, in <module>
+    from google.cloud.client import ClientWithProject
+  File "/usr/local/lib/python3.7/dist-packages/google/cloud/client.py", line 27, in <module>
+    import google.auth.transport.requests
+  File "/usr/local/lib/python3.7/dist-packages/google/auth/transport/requests.py", line 25, in <module>
+    import requests
+  File "/usr/lib/python3/dist-packages/requests/__init__.py", line 112, in <module>
+    from . import utils
+  File "/usr/lib/python3/dist-packages/requests/utils.py", line 26, in <module>
+    from ._internal_utils import to_native_string
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 670, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 588, in module_from_spec
+  File "<frozen importlib._bootstrap>", line 36, in _new_module
+KeyboardInterrupt

@@ -1,35 +1,70 @@
 Detailed Report:
+
 https://oss-fuzz.com/testcase?key=5752574451122176
+
 Project: skia
+
 Fuzzing Engine: libFuzzer
+
 Fuzz Target: image_filter_deserialize_width
+
 Job Type: libfuzzer_asan_skia
+
 Platform Id: linux
+
 Crash Type: UNKNOWN READ
+
 Crash Address: 0x606081037628
+
 Crash State:
+
 SkReader32::readInt
+
 SkReader32::readU32
+
 SkReader32::readString
+
 Sanitizer: address (ASAN)
+
 Recommended Security Severity: Medium
+
 Regressed:
+
 https://oss-fuzz.com/revisions?job=libfuzzer_asan_skia&range=202004280326:202004290324
+
 Reproducer Testcase:
+
 https://oss-fuzz.com/download?testcase_id=5752574451122176
+
 Issue filed automatically.
+
 See
+
 https://skia.org/dev/testing/fuzz
+
 for instructions to reproduce this bug locally.
+
 When you fix this bug, please
+
 * mention the fix revision(s).
+
 * state whether the bug was a short-lived regression or an old bug in any stable releases.
+
 * add any other useful information.
+
 This information can help downstream consumers.
+
 If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
 https://github.com/google/oss-fuzz/issues
+
 .
+
 Comments on individual Monorail issues are not monitored.
+
 This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
 without an upstream patch, then the bug report will automatically
+
 become visible to the public.
+

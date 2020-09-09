@@ -1,34 +1,68 @@
 Detailed Report:
+
 https://oss-fuzz.com/testcase?key=5719027034095616
+
 Project: gopacket
+
 Fuzzing Engine: libFuzzer
+
 Fuzz Target: fuzz_layers
+
 Job Type: libfuzzer_asan_gopacket
+
 Platform Id: linux
+
 Crash Type: Slice bounds out of range
+
 Crash Address:
+
 Crash State:
+
 layers.(*DHCPv6Option).decode
+
 layers.(*DHCPv6).DecodeFromBytes
+
 layers.decodeDHCPv6
+
 Sanitizer: address (ASAN)
+
 Crash Revision:
+
 https://oss-fuzz.com/revisions?job=libfuzzer_asan_gopacket&revision=202005061400
+
 Reproducer Testcase:
+
 https://oss-fuzz.com/download?testcase_id=5719027034095616
+
 Issue filed automatically.
+
 See
+
 https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
 for instructions to reproduce this bug locally.
+
 When you fix this bug, please
+
 * mention the fix revision(s).
+
 * state whether the bug was a short-lived regression or an old bug in any stable releases.
+
 * add any other useful information.
+
 This information can help downstream consumers.
+
 If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
 https://github.com/google/oss-fuzz/issues
+
 .
+
 Comments on individual Monorail issues are not monitored.
+
 This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
 without an upstream patch, then the bug report will automatically
+
 become visible to the public.
+

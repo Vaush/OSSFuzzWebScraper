@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "./oss_fuzz_benchmark_integration.py", line 17, in <module>
+    import argparse
+  File "/usr/lib/python3.7/argparse.py", line 857, in <module>
+    class _StoreAction(Action):
+KeyboardInterrupt

@@ -1,0 +1,35 @@
+Detailed Report:
+https://oss-fuzz.com/testcase?key=5645212561178624
+Project: libhevc
+Fuzzing Engine: libFuzzer
+Fuzz Target: hevc_dec_fuzzer
+Job Type: libfuzzer_msan_libhevc
+Platform Id: linux
+Crash Type: Use-of-uninitialized-value
+Crash Address:
+Crash State:
+ihevc_inter_pred_chroma_copy_ssse3
+ihevcd_inter_pred_ctb
+ihevcd_process
+Sanitizer: memory (MSAN)
+Recommended Security Severity: Medium
+Regressed:
+https://oss-fuzz.com/revisions?job=libfuzzer_msan_libhevc&range=201911140251:201911150251
+Reproducer Testcase:
+https://oss-fuzz.com/download?testcase_id=5645212561178624
+Issue filed automatically.
+See
+https://google.github.io/oss-fuzz/advanced-topics/reproducing
+for instructions to reproduce this bug locally.
+When you fix this bug, please
+* mention the fix revision(s).
+* state whether the bug was a short-lived regression or an old bug in any stable releases.
+* add any other useful information.
+This information can help downstream consumers.
+If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+https://github.com/google/oss-fuzz/issues
+.
+Comments on individual Monorail issues are not monitored.
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+without an upstream patch, then the bug report will automatically
+become visible to the public.

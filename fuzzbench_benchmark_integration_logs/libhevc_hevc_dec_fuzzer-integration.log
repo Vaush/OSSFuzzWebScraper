@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "./oss_fuzz_benchmark_integration.py", line 19, in <module>
+    from distutils import spawn
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 670, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 583, in module_from_spec
+  File "/home/vaush/.local/lib/python3.7/site-packages/_distutils_hack/__init__.py", line 83, in create_module
+    return importlib.import_module('setuptools._distutils')
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/vaush/.local/lib/python3.7/site-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+  File "/home/vaush/.local/lib/python3.7/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/home/vaush/.local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 36, in <module>
+    import textwrap
+  File "/usr/lib/python3.7/textwrap.py", line 17, in <module>
+    class TextWrapper:
+KeyboardInterrupt
