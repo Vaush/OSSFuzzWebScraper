@@ -2,4 +2,4 @@ backups/*
 analysis
 integration.log
 _pycache_/*
-
+fuzzbench_benchmark_integration_logs/*
