@@ -1,34 +1,68 @@
 Detailed Report:
+
 https://oss-fuzz.com/testcase?key=6556622097481728
+
 Project: libheif
+
 Fuzzing Engine: libFuzzer
+
 Fuzz Target: color-conversion-fuzzer
+
 Job Type: libfuzzer_ubsan_libheif
+
 Platform Id: linux
+
 Crash Type: Null-dereference READ
+
 Crash Address: 0x0000000004f7
+
 Crash State:
+
 heif::HeifPixelImage::~HeifPixelImage
+
 std::__1::__shared_ptr_emplace<heif::HeifPixelImage, std::__1::allocator<heif::H
+
 std::__1::__shared_weak_count::__release_shared
+
 Sanitizer: undefined (UBSAN)
+
 Regressed:
+
 https://oss-fuzz.com/revisions?job=libfuzzer_ubsan_libheif&range=202006180141:202006190142
+
 Reproducer Testcase:
+
 https://oss-fuzz.com/download?testcase_id=6556622097481728
+
 Issue filed automatically.
+
 See
+
 https://google.github.io/oss-fuzz/advanced-topics/reproducing
+
 for instructions to reproduce this bug locally.
+
 When you fix this bug, please
+
 * mention the fix revision(s).
+
 * state whether the bug was a short-lived regression or an old bug in any stable releases.
+
 * add any other useful information.
+
 This information can help downstream consumers.
+
 If you need to contact the OSS-Fuzz team with a question, concern, or any other feedback, please file an issue at
+
 https://github.com/google/oss-fuzz/issues
+
 .
+
 Comments on individual Monorail issues are not monitored.
+
 This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+
 without an upstream patch, then the bug report will automatically
+
 become visible to the public.
+

@@ -1,0 +1,26 @@
+Detailed report:
+https://oss-fuzz.com/testcase?key=5644042643177472
+Project: freetype2
+Fuzzer: afl_freetype2_bzip2
+Fuzz target binary: bzip2
+Job Type: afl_asan_freetype2
+Platform Id: linux
+Crash Type: UNKNOWN READ
+Crash Address: 0x63000013000c
+Crash State:
+BZ2_decompress
+BZ2_bzDecompress
+ft_bzip2_file_fill_output
+Sanitizer: address (ASAN)
+Recommended Security Severity: Medium
+Regressed:
+https://oss-fuzz.com/revisions?job=afl_asan_freetype2&range=201907020132:201907030132
+Reproducer Testcase:
+https://oss-fuzz.com/download?testcase_id=5644042643177472
+Issue filed automatically.
+See
+https://github.com/google/oss-fuzz/blob/master/docs/reproducing.md
+for instructions to reproduce this bug locally.
+This bug is subject to a 90 day disclosure deadline. If 90 days elapse
+without an upstream patch, then the bug report will automatically
+become visible to the public.

@@ -37,6 +37,7 @@ do
 	IFS=' ' read -ra tokens <<< "$line"
 	date=$(echo ${tokens[2]} | tr -dc '[:digit:]')
 	benchmark_name=${tokens[0]}_${tokens[1]}
+	source ../.venv/bin/activate
 	if PYTHONPATH=.. python3 ./oss_fuzz_benchmark_integration.py -p ${tokens[0]} -f ${tokens[1]} -c ${tokens[3]} -d ${tokens[2]} -n $benchmark_name > $cwd/fuzzbench_benchmark_integration_logs/$benchmark_name-integration.log 2>&1; then
 		if rsync -a $cwd/testcases/$benchmark_name/ ${fuzzbench_folder}/benchmarks/$benchmark_name/; then
 			echo "${GREEN}Integration completed for project ${tokens[0]} with target ${tokens[1]}${NC}"

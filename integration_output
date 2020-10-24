@@ -1,0 +1,29 @@
+[32mIntegration completed for project matio with target matio_fuzzer(B[m
+[32mBuild testing completed for project matio with target matio_fuzzer(B[m
+[32mIntegration completed for project arrow with target parquet-arrow-fuzz(B[m
+[32mBuild testing completed for project arrow with target parquet-arrow-fuzz(B[m
+[32mIntegration completed for project binutils with target fuzz_disassemble(B[m
+[31mBuild testing failed for project binutils with target fuzz_disassemble(B[m
+[32mIntegration completed for project pcapplusplus with target FuzzTarget(B[m
+[31mBuild testing failed for project pcapplusplus with target FuzzTarget(B[m
+[32mIntegration completed for project opensc with target fuzz_pkcs15_reader(B[m
+[31mBuild testing failed for project opensc with target fuzz_pkcs15_reader(B[m
+[32mIntegration completed for project ndpi with target fuzz_ndpi_reader(B[m
+[32mBuild testing completed for project ndpi with target fuzz_ndpi_reader(B[m
+[32mIntegration completed for project harfbuzz with target hb-subset-fuzzer(B[m
+[32mBuild testing completed for project harfbuzz with target hb-subset-fuzzer(B[m
+[32mIntegration completed for project binutils with target fuzz_bfd(B[m
+[31mBuild testing failed for project binutils with target fuzz_bfd(B[m
+[32mIntegration completed for project ffmpeg with target ffmpeg_DEMUXER_fuzzer(B[m
+[31mBuild testing failed for project ffmpeg with target ffmpeg_DEMUXER_fuzzer(B[m
+[32mIntegration completed for project openh264 with target decoder_fuzzer(B[m
+[32mBuild testing completed for project openh264 with target decoder_fuzzer(B[m
+[32mIntegration completed for project stb with target stbi_read_fuzzer(B[m
+[32mBuild testing completed for project stb with target stbi_read_fuzzer(B[m
+[32mIntegration completed for project mtail with target vm-fuzzer(B[m
+[32mBuild testing completed for project mtail with target vm-fuzzer(B[m
+[32mIntegration completed for project libhevc with target hevc_dec_fuzzer(B[m
+[32mBuild testing completed for project libhevc with target hevc_dec_fuzzer(B[m
+[32mIntegration completed for project firestore with target serializer_fuzzer(B[m
+[31mBuild testing failed for project firestore with target serializer_fuzzer(B[m
+[31mIntegration failed for project firestore with target serializer_fuzzer(B[m
